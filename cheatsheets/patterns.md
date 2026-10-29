@@ -9,17 +9,38 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Top / most frequent k** -> Counting + bucket sort or heap (0347)
 - **Product/sum of everything except i, no division** -> Prefix & suffix passes (0238)
 - **Longest run of consecutive values, O(n)** -> Hash set, only start counting at run starts (0128)
+- **One-to-one mapping between two sequences** -> Two maps, forward and reverse (0205, 0290)
+- **Element appearing > n/2 times, O(1) space** -> Boyer-Moore voting (0169)
+- **O(1) insert + delete + random pick** -> Hashmap value->index + array, swap with last on delete (0380)
+- **Answer is a count bounded by n (h-index, frequency)** -> Bucket/counting sort capped at n (0274, 0347)
+- **Valid Sudoku / grid groups** -> Seen-sets per row, col, box; box = (r/3)*3 + c/3 (0036)
+- **Serialize a list of arbitrary strings** -> Length-prefix encoding "len#str" (0271)
+- **Rotate array / reverse word order in place** -> Reverse all, then reverse the parts (0189, 0151)
+- **Find a substring** -> Brute window; KMP (LPS array) for guaranteed O(n+m) (0028)
+- **Roman numerals / formatting rules** -> Lookup table + greedy or look-ahead (0013, 0012)
+- **Write text in a pattern / justify lines** -> Simulate rows or lines directly (0006, 0068)
 
 ## Two Pointers
 - **Sorted array + pair/target** -> Two pointers converging (0167, 0015)
 - **Palindrome check** -> Pointers from both ends (0125)
 - **In-place remove/dedupe, O(1) space** -> Read/write pointers (0026, 0027)
 - **Maximize area/water between bars** -> Converge, move the shorter side (0011, 0042)
+- **Water trapped above each bar** -> min(maxLeft, maxRight) - h; two pointers move the smaller max (0042)
+- **Merge into an array that has free space at the end** -> Fill from the back (0088)
+- **Keep at most m copies in a sorted array** -> Read/write, compare with nums[k-m] (0026, 0080)
+- **Is s a subsequence of t** -> One pointer per string, greedy match (0392)
+- **Three/four numbers summing to target** -> Sort, fix one, two-pointer the rest, skip duplicates (0015)
 
 ## Sliding Window
 - **Longest/shortest contiguous subarray/substring with a constraint** -> Variable window, grow right, shrink left (0003, 0076)
 - **Fixed length k / anagram of pattern in string** -> Fixed window + counts (0567)
 - **Max/min of every window of size k** -> Monotonic deque (0239)
+- **Best buy-then-sell / best pair (i < j)** -> Running min of the prefix (0121)
+- **Duplicate within distance k** -> Fixed window of a hash set (0219)
+- **Shortest subarray with sum >= target, all positive** -> Grow right, shrink left while valid (0209)
+- **Make window one letter with <= k changes** -> Valid iff len - maxFreq <= k (0424)
+- **Smallest window containing all chars of t** -> Variable window + have/need counter (0076)
+- **Concatenation of equal-length words** -> Token window, one pass per offset (0030)
 
 ## Stack
 - **Matching brackets / nested structure** -> Stack (0020)

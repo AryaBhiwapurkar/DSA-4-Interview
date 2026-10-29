@@ -6,10 +6,10 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 
 | List | Problems | Done |
 |------|---------:|-----:|
-| NeetCode 150 (NC150) | 150 | 1 |
-| LeetCode Top Interview 150 (TI150) | 150 | 1 |
-| In both lists | 77 | 1 |
-| **Unique total** | **223** | **1** |
+| NeetCode 150 (NC150) | 150 | 20 |
+| LeetCode Top Interview 150 (TI150) | 150 | 37 |
+| In both lists | 77 | 14 |
+| **Unique total** | **223** | **43** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
@@ -17,9 +17,9 @@ Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.
 
 | Topic | Problems | Done |
 |-------|---------:|-----:|
-| [01. Arrays & Hashing](topics/01-arrays-hashing/) | 24 | 1 |
-| [02. Two Pointers](topics/02-two-pointers/) | 10 | 0 |
-| [03. Sliding Window](topics/03-sliding-window/) | 9 | 0 |
+| [01. Arrays & Hashing](topics/01-arrays-hashing/) | 24 | 24 |
+| [02. Two Pointers](topics/02-two-pointers/) | 10 | 10 |
+| [03. Sliding Window](topics/03-sliding-window/) | 9 | 9 |
 | [04. Stack](topics/04-stack/) | 9 | 0 |
 | [05. Binary Search](topics/05-binary-search/) | 11 | 0 |
 | [06. Linked List](topics/06-linked-list/) | 16 | 0 |
@@ -43,58 +43,58 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
 | 0001 | [Two Sum](topics/01-arrays-hashing/0001-two-sum/) | Easy | Hashmap complement lookup | NC150, TI150 | ✅ |
-| 0013 | Roman to Integer | Easy | Hashmap, subtractive rule | TI150 | ⬜ |
-| 0014 | Longest Common Prefix | Easy | Vertical scan | TI150 | ⬜ |
-| 0028 | Find the Index of the First Occurrence in a String | Easy | String matching (KMP optional) | TI150 | ⬜ |
-| 0058 | Length of Last Word | Easy | Reverse scan | TI150 | ⬜ |
-| 0169 | Majority Element | Easy | Boyer-Moore voting | TI150 | ⬜ |
-| 0205 | Isomorphic Strings | Easy | Two-way mapping | TI150 | ⬜ |
-| 0217 | Contains Duplicate | Easy | Hash set | NC150 | ⬜ |
-| 0242 | Valid Anagram | Easy | Frequency count | NC150, TI150 | ⬜ |
-| 0290 | Word Pattern | Easy | Two-way mapping | TI150 | ⬜ |
-| 0383 | Ransom Note | Easy | Frequency count | TI150 | ⬜ |
-| 0006 | Zigzag Conversion | Medium | Row simulation | TI150 | ⬜ |
-| 0012 | Integer to Roman | Medium | Greedy over value table | TI150 | ⬜ |
-| 0036 | Valid Sudoku | Medium | Hash sets per row/col/box | NC150, TI150 | ⬜ |
-| 0049 | Group Anagrams | Medium | Hashmap with canonical key | NC150, TI150 | ⬜ |
-| 0128 | Longest Consecutive Sequence | Medium | Hash set, start-of-run | NC150, TI150 | ⬜ |
-| 0151 | Reverse Words in a String | Medium | Split + reverse | TI150 | ⬜ |
-| 0189 | Rotate Array | Medium | Reverse in place | TI150 | ⬜ |
-| 0238 | Product of Array Except Self | Medium | Prefix & suffix products | NC150, TI150 | ⬜ |
-| 0271 | Encode and Decode Strings | Medium | Length-prefix encoding | NC150 | ⬜ |
-| 0274 | H-Index | Medium | Sort / counting | TI150 | ⬜ |
-| 0347 | Top K Frequent Elements | Medium | Bucket sort / heap | NC150 | ⬜ |
-| 0380 | Insert Delete GetRandom O(1) | Medium | Hashmap + array, swap-delete | TI150 | ⬜ |
-| 0068 | Text Justification | Hard | Greedy line packing | TI150 | ⬜ |
+| 0013 | [Roman to Integer](topics/01-arrays-hashing/0013-roman-to-integer/) | Easy | Hashmap, subtractive rule | TI150 | ✅ |
+| 0014 | [Longest Common Prefix](topics/01-arrays-hashing/0014-longest-common-prefix/) | Easy | Vertical scan | TI150 | ✅ |
+| 0028 | [Find the Index of the First Occurrence in a String](topics/01-arrays-hashing/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy | String matching (KMP optional) | TI150 | ✅ |
+| 0058 | [Length of Last Word](topics/01-arrays-hashing/0058-length-of-last-word/) | Easy | Reverse scan | TI150 | ✅ |
+| 0169 | [Majority Element](topics/01-arrays-hashing/0169-majority-element/) | Easy | Boyer-Moore voting | TI150 | ✅ |
+| 0205 | [Isomorphic Strings](topics/01-arrays-hashing/0205-isomorphic-strings/) | Easy | Two-way mapping | TI150 | ✅ |
+| 0217 | [Contains Duplicate](topics/01-arrays-hashing/0217-contains-duplicate/) | Easy | Hash set | NC150 | ✅ |
+| 0242 | [Valid Anagram](topics/01-arrays-hashing/0242-valid-anagram/) | Easy | Frequency count | NC150, TI150 | ✅ |
+| 0290 | [Word Pattern](topics/01-arrays-hashing/0290-word-pattern/) | Easy | Two-way mapping | TI150 | ✅ |
+| 0383 | [Ransom Note](topics/01-arrays-hashing/0383-ransom-note/) | Easy | Frequency count | TI150 | ✅ |
+| 0006 | [Zigzag Conversion](topics/01-arrays-hashing/0006-zigzag-conversion/) | Medium | Row simulation | TI150 | ✅ |
+| 0012 | [Integer to Roman](topics/01-arrays-hashing/0012-integer-to-roman/) | Medium | Greedy over value table | TI150 | ✅ |
+| 0036 | [Valid Sudoku](topics/01-arrays-hashing/0036-valid-sudoku/) | Medium | Hash sets per row/col/box | NC150, TI150 | ✅ |
+| 0049 | [Group Anagrams](topics/01-arrays-hashing/0049-group-anagrams/) | Medium | Hashmap with canonical key | NC150, TI150 | ✅ |
+| 0128 | [Longest Consecutive Sequence](topics/01-arrays-hashing/0128-longest-consecutive-sequence/) | Medium | Hash set, start-of-run | NC150, TI150 | ✅ |
+| 0151 | [Reverse Words in a String](topics/01-arrays-hashing/0151-reverse-words-in-a-string/) | Medium | Split + reverse | TI150 | ✅ |
+| 0189 | [Rotate Array](topics/01-arrays-hashing/0189-rotate-array/) | Medium | Reverse in place | TI150 | ✅ |
+| 0238 | [Product of Array Except Self](topics/01-arrays-hashing/0238-product-of-array-except-self/) | Medium | Prefix & suffix products | NC150, TI150 | ✅ |
+| 0271 | [Encode and Decode Strings](topics/01-arrays-hashing/0271-encode-and-decode-strings/) | Medium | Length-prefix encoding | NC150 | ✅ |
+| 0274 | [H-Index](topics/01-arrays-hashing/0274-h-index/) | Medium | Sort / counting | TI150 | ✅ |
+| 0347 | [Top K Frequent Elements](topics/01-arrays-hashing/0347-top-k-frequent-elements/) | Medium | Bucket sort / heap | NC150 | ✅ |
+| 0380 | [Insert Delete GetRandom O(1)](topics/01-arrays-hashing/0380-insert-delete-getrandom-o1/) | Medium | Hashmap + array, swap-delete | TI150 | ✅ |
+| 0068 | [Text Justification](topics/01-arrays-hashing/0068-text-justification/) | Hard | Greedy line packing | TI150 | ✅ |
 
 ## 02. Two Pointers
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0026 | Remove Duplicates from Sorted Array | Easy | Read/write pointers | TI150 | ⬜ |
-| 0027 | Remove Element | Easy | Read/write pointers | TI150 | ⬜ |
-| 0088 | Merge Sorted Array | Easy | Merge from the back | TI150 | ⬜ |
-| 0125 | Valid Palindrome | Easy | Converging pointers | NC150, TI150 | ⬜ |
-| 0392 | Is Subsequence | Easy | Two pointers on two strings | TI150 | ⬜ |
-| 0011 | Container With Most Water | Medium | Converging, move shorter side | NC150, TI150 | ⬜ |
-| 0015 | 3Sum | Medium | Sort + fix one + two pointers | NC150, TI150 | ⬜ |
-| 0080 | Remove Duplicates from Sorted Array II | Medium | Read/write, compare k back | TI150 | ⬜ |
-| 0167 | Two Sum II - Input Array Is Sorted | Medium | Converging pointers on sorted | NC150, TI150 | ⬜ |
-| 0042 | Trapping Rain Water | Hard | Two pointers with running max | NC150, TI150 | ⬜ |
+| 0026 | [Remove Duplicates from Sorted Array](topics/02-two-pointers/0026-remove-duplicates-from-sorted-array/) | Easy | Read/write pointers | TI150 | ✅ |
+| 0027 | [Remove Element](topics/02-two-pointers/0027-remove-element/) | Easy | Read/write pointers | TI150 | ✅ |
+| 0088 | [Merge Sorted Array](topics/02-two-pointers/0088-merge-sorted-array/) | Easy | Merge from the back | TI150 | ✅ |
+| 0125 | [Valid Palindrome](topics/02-two-pointers/0125-valid-palindrome/) | Easy | Converging pointers | NC150, TI150 | ✅ |
+| 0392 | [Is Subsequence](topics/02-two-pointers/0392-is-subsequence/) | Easy | Two pointers on two strings | TI150 | ✅ |
+| 0011 | [Container With Most Water](topics/02-two-pointers/0011-container-with-most-water/) | Medium | Converging, move shorter side | NC150, TI150 | ✅ |
+| 0015 | [3Sum](topics/02-two-pointers/0015-3sum/) | Medium | Sort + fix one + two pointers | NC150, TI150 | ✅ |
+| 0080 | [Remove Duplicates from Sorted Array II](topics/02-two-pointers/0080-remove-duplicates-from-sorted-array-ii/) | Medium | Read/write, compare k back | TI150 | ✅ |
+| 0167 | [Two Sum II - Input Array Is Sorted](topics/02-two-pointers/0167-two-sum-ii-input-array-is-sorted/) | Medium | Converging pointers on sorted | NC150, TI150 | ✅ |
+| 0042 | [Trapping Rain Water](topics/02-two-pointers/0042-trapping-rain-water/) | Hard | Two pointers with running max | NC150, TI150 | ✅ |
 
 ## 03. Sliding Window
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0121 | Best Time to Buy and Sell Stock | Easy | Running min | NC150, TI150 | ⬜ |
-| 0219 | Contains Duplicate II | Easy | Fixed window + set | TI150 | ⬜ |
-| 0003 | Longest Substring Without Repeating Characters | Medium | Variable window + last-seen map | NC150, TI150 | ⬜ |
-| 0209 | Minimum Size Subarray Sum | Medium | Variable window, shrink while valid | TI150 | ⬜ |
-| 0424 | Longest Repeating Character Replacement | Medium | Variable window + max freq | NC150 | ⬜ |
-| 0567 | Permutation in String | Medium | Fixed window + counts | NC150 | ⬜ |
-| 0030 | Substring with Concatenation of All Words | Hard | Fixed window per offset + counts | TI150 | ⬜ |
-| 0076 | Minimum Window Substring | Hard | Variable window + need/have | NC150, TI150 | ⬜ |
-| 0239 | Sliding Window Maximum | Hard | Monotonic deque | NC150 | ⬜ |
+| 0121 | [Best Time to Buy and Sell Stock](topics/03-sliding-window/0121-best-time-to-buy-and-sell-stock/) | Easy | Running min | NC150, TI150 | ✅ |
+| 0219 | [Contains Duplicate II](topics/03-sliding-window/0219-contains-duplicate-ii/) | Easy | Fixed window + set | TI150 | ✅ |
+| 0003 | [Longest Substring Without Repeating Characters](topics/03-sliding-window/0003-longest-substring-without-repeating-characters/) | Medium | Variable window + last-seen map | NC150, TI150 | ✅ |
+| 0209 | [Minimum Size Subarray Sum](topics/03-sliding-window/0209-minimum-size-subarray-sum/) | Medium | Variable window, shrink while valid | TI150 | ✅ |
+| 0424 | [Longest Repeating Character Replacement](topics/03-sliding-window/0424-longest-repeating-character-replacement/) | Medium | Variable window + max freq | NC150 | ✅ |
+| 0567 | [Permutation in String](topics/03-sliding-window/0567-permutation-in-string/) | Medium | Fixed window + counts | NC150 | ✅ |
+| 0030 | [Substring with Concatenation of All Words](topics/03-sliding-window/0030-substring-with-concatenation-of-all-words/) | Hard | Fixed window per offset + counts | TI150 | ✅ |
+| 0076 | [Minimum Window Substring](topics/03-sliding-window/0076-minimum-window-substring/) | Hard | Variable window + need/have | NC150, TI150 | ✅ |
+| 0239 | [Sliding Window Maximum](topics/03-sliding-window/0239-sliding-window-maximum/) | Hard | Monotonic deque | NC150 | ✅ |
 
 ## 04. Stack
 

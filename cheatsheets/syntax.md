@@ -15,6 +15,14 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Copy | `auto b = a;` | `b = a[:]` | `b := slices.Clone(a)` |
 | Reverse | `reverse(a.begin(), a.end());` | `a.reverse()` / `a[::-1]` | `slices.Reverse(a)` |
 | Index + value loop | `for (int i = 0; i < (int)a.size(); i++)` | `for i, x in enumerate(a):` | `for i, x := range a {` |
+| Fixed-size zeroed array | `array<int, 26> c{};` | `c = [0] * 26` | `var c [26]int` |
+| Compare whole arrays | `a == b` (vector/array) | `a == b` | `a == b` (arrays only); `slices.Equal(a, b)` |
+| Max of range | `*max_element(a.begin(), a.end())` | `max(a)` | `slices.Max(a)` |
+| Prefix sums | `partial_sum(a.begin(), a.end(), p.begin()+1)` | `[0, *accumulate(a)]` | loop: `p[i+1] = p[i] + a[i]` |
+| Running max | loop | `list(accumulate(a, max))` | loop |
+| Drop adjacent duplicates | `a.erase(unique(a.begin(), a.end()), a.end());` | `list(dict.fromkeys(a))` (all dups) | `a = slices.Compact(a)` |
+| Remove value in place | `a.erase(remove(a.begin(), a.end(), v), a.end());` | `a[:] = [x for x in a if x != v]` | `a = slices.DeleteFunc(a, func(x int) bool { return x == v })` |
+| Replace contents in place | `a = b;` (by-ref param) | `a[:] = b` (not `a = b`) | `copy(a, b)` |
 
 ## Hashmap
 
@@ -26,6 +34,10 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Delete | `m.erase(k);` | `del m[k]` / `m.pop(k, None)` | `delete(m, k)` |
 | Iterate | `for (auto& [k, v] : m)` | `for k, v in m.items():` | `for k, v := range m {` (random order) |
 | Default values | `m[k]` inserts `0` if missing | `defaultdict(list)` | missing key returns zero value |
+| Insert only if absent | `m.emplace(k, v)` (keeps old) | `m.setdefault(k, v)` | `if _, ok := m[k]; !ok { m[k] = v }` |
+| Composite / array key | build a `string` key | `tuple(counts)` key | `map[[26]int][]string` (arrays are comparable) |
+| Most common | sort pairs by count | `Counter(a).most_common(k)` | sort keys by count |
+| Clear | `m.clear();` | `m.clear()` | `clear(m)` (Go 1.21+) |
 
 ## Set
 
@@ -35,6 +47,9 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Add | `s.insert(x);` | `s.add(x)` | `s[x] = struct{}{}` |
 | Contains | `s.count(x)` | `x in s` | `_, ok := s[x]` |
 | Remove | `s.erase(x);` | `s.discard(x)` | `delete(s, x)` |
+| Insert + "was it new?" | `s.insert(x).second` | `if x not in s: s.add(x)` | `if _, ok := s[x]; !ok { s[x] = struct{}{} }` |
+| Build from list | `unordered_set<int> s(a.begin(), a.end());` | `set(a)` | loop over `a` |
+| Bool set (small domain) | `bool seen[256] = {};` | `[False] * 256` | `var seen [256]bool` |
 | Ordered set | `set<int>` (`lower_bound`) | `sorted()` + `bisect` | sorted slice + `sort.SearchInts` |
 
 ## Heap (Priority Queue) with Custom Comparator
@@ -101,6 +116,10 @@ func (h *IntHeap) Pop() any {
 | Multi-key | compare `tie(x[0], y[1]) < tie(y[0], x[1])` | `key=lambda x: (x[0], -x[1])` | `slices.SortFunc(a, func(x, y T) int { return cmp.Or(cmp.Compare(x.a, y.a), cmp.Compare(y.b, x.b)) })` |
 | Stable | `stable_sort(...)` | `sort` is always stable | `sort.SliceStable(...)` / `slices.SortStableFunc` |
 | Binary search | `lower_bound(a.begin(), a.end(), x) - a.begin()` | `bisect.bisect_left(a, x)` | `sort.SearchInts(a, x)` |
+| First > x (upper bound) | `upper_bound(a.begin(), a.end(), x)` | `bisect.bisect_right(a, x)` | `sort.SearchInts(a, x+1)` (ints) |
+| Search a sub-range | `lower_bound(a.begin()+lo, a.end(), x)` | `bisect_left(a, x, lo)` | `lo + sort.SearchInts(a[lo:], x)` |
+| Sort slice of slices | `sort(v.begin(), v.end());` | `sorted(v)` | `slices.SortFunc(v, func(x, y []int) int { return slices.Compare(x, y) })` |
+| Count matching | `count_if(a.begin(), a.end(), pred)` | `sum(pred(x) for x in a)` | loop |
 
 C++ comparators must be strict (`<`, never `<=`) or sort can crash.
 
@@ -116,6 +135,14 @@ C++ comparators must be strict (`<`, never `<=`) or sort can crash.
 | Int <-> string | `stoi(s)`, `to_string(x)` | `int(s)`, `str(x)` | `strconv.Atoi(s)`, `strconv.Itoa(x)` |
 | Is digit / alnum | `isdigit(c)`, `isalnum(c)` | `c.isdigit()`, `c.isalnum()` | `unicode.IsDigit(r)`, `unicode.IsLetter(r)` |
 | Sort chars | `sort(s.begin(), s.end());` | `"".join(sorted(s))` | `b := []byte(s); slices.Sort(b); string(b)` |
+| Find (from pos) | `s.find(t, pos)` (`string::npos` if absent) | `s.find(t, pos)` (-1) / `s.index` (raises) | `strings.Index(s[pos:], t)` (+pos; -1 if absent) |
+| Starts with | `s.compare(0, p.size(), p) == 0` | `s.startswith(p)` | `strings.HasPrefix(s, p)` |
+| Join | loop with `" "` separator | `" ".join(words)` | `strings.Join(words, " ")` |
+| Repeat / pad | `string(k, ' ')` | `" " * k`, `s.ljust(w)` | `strings.Repeat(" ", k)` |
+| Lower / upper | `tolower(c)` | `c.lower()` | `unicode.ToLower(r)` / `strings.ToLower(s)` |
+| Reverse | `reverse(s.begin(), s.end());` | `s[::-1]` | `b := []byte(s); slices.Reverse(b)` |
+| Char safety | cast `(unsigned char)c` before `isalnum` / array index | n/a | `s[i]` is a byte; `range s` yields runes |
+| Print quoted | `"\"" << s << "\""` | `f'"{s}"'` / `repr(s)` | `fmt.Printf("%q", s)` |
 
 Python and Go strings are immutable; C++ `std::string` is mutable.
 
@@ -130,3 +157,6 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 | Integer division toward | zero (`-7/2 == -3`) | floor (`-7//2 == -4`) | zero (`-7/2 == -3`) |
 | Modulo of negative | `-7 % 3 == -1` | `-7 % 3 == 2` | `-7 % 3 == -1` |
 | Min / max | `min(a, b)`, `max({a, b, c})` | `min(a, b, c)` | `min(a, b, c)` (built-in, Go 1.21+) |
+| Quotient + remainder | `a / b`, `a % b` | `q, r = divmod(a, b)` | `a / b`, `a % b` |
+| Counting down safely | use `int i`, not `size_t` (wraps below 0) | n/a | `len()` is a signed `int` |
+| "Not found" sentinel | `INT_MAX`, convert to 0/-1 at the end | `math.inf` (float!) → `int()` | `math.MaxInt` |
