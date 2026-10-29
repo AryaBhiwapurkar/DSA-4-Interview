@@ -1,0 +1,14 @@
+# Compiled binaries
+a.out
+*.out
+*.o
+*.exe
+sol
+solution
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
