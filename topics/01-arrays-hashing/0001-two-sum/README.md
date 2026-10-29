@@ -7,7 +7,7 @@ pattern: Hashmap (complement lookup)
 link: https://leetcode.com/problems/two-sum/
 lists: [NeetCode 150, LC Top Interview 150]
 followup_of: []
-related: [0167, 0015, 0018, 0653]
+related: ["0167 Two Sum II - Input Array Is Sorted", "0015 3Sum", "0018 4Sum", "0653 Two Sum IV - Input is a BST"]
 ---
 
 # 0001. Two Sum
@@ -19,6 +19,26 @@ related: [0167, 0015, 0018, 0653]
 
 ## Problem
 Given an integer array and a target, return the indices of the two numbers that add up to the target. Exactly one valid answer exists, and the same element can't be used twice.
+
+**Examples:**
+```
+Input:  nums = [2,7,11,15], target = 9
+Output: [0,1]
+Why:    2 + 7 = 9, and they sit at indices 0 and 1.
+
+Input:  nums = [3,2,4], target = 6
+Output: [1,2]
+Why:    2 + 4 = 6. Index 0 (3) can't pair with itself to make 6.
+
+Input:  nums = [3,3], target = 6
+Output: [0,1]
+Why:    Equal values are fine as long as they are different elements.
+```
+
+**Constraints:**
+- 2 ≤ n ≤ 10⁴, so O(n²) passes but O(n) is expected.
+- -10⁹ ≤ nums[i], target ≤ 10⁹, so `target - x` fits in a 32-bit int.
+- Exactly one valid answer exists.
 
 ## Hints
 <details><summary>Hint 1</summary>
@@ -86,8 +106,8 @@ For each element, check whether `target - x` is in the map. If it is, return bot
 - Handle duplicates and the check-before-insert order without being prompted.
 
 ## Follow-ups
-- **Input is sorted?** Use two pointers for O(1) space: LC 0167 Two Sum II (not added yet)
-- **Find all unique triplets summing to 0:** LC 0015 3Sum (not added yet)
+- **Input is sorted?** Use two pointers for O(1) space: [LC 0167 Two Sum II](../../02-two-pointers/0167-two-sum-ii-input-array-is-sorted/)
+- **Find all unique triplets summing to 0:** [LC 0015 3Sum](../../02-two-pointers/0015-3sum/)
 - **Four numbers, with overflow concerns:** LC 0018 4Sum (not added yet)
 - **Input is a BST:** LC 0653 Two Sum IV (not added yet)
 - **Numbers arrive as a stream (add/find design):** LC 0170 Two Sum III. Trade-off between a fast `add` and a fast `find`.

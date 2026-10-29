@@ -46,9 +46,15 @@ before creating a new folder. Never rename, merge, or split folders without aski
 
 ## Problem README: Section Order
 1. Frontmatter: number, title, difficulty, topic, pattern, link, lists,
-   followup_of, related
+   followup_of, related. `followup_of` and `related` are lists of
+   "NNNN Title" strings, e.g. `["0167 Two Sum II - Input Array Is Sorted"]`.
 2. ⚡ 30-Second Summary: pattern, key insight (1-2 lines), go-to + complexity
-3. Problem: paraphrase in 1-3 sentences + link. NEVER copy LeetCode text.
+3. Problem: paraphrase in 1-3 sentences + link. NEVER copy LeetCode text. Then:
+   - **Examples:** every LeetCode example in one code block, each as
+     `Input:  ...` / `Output: ...` followed by a one-line `Why:` in my own
+     words (never copy LeetCode's explanation).
+   - **Constraints:** only the ones that matter for the solution (input size,
+     value range, guarantees like "exactly one answer"), as short bullets.
 4. Hints: exactly 3, progressive, each in its own collapsed `<details>`.
    Hint 3 nearly gives it away but contains no code.
 5. Clarifying Questions: including edge cases worth asking about
@@ -68,7 +74,8 @@ before creating a new folder. Never rename, merge, or split folders without aski
 
 ## Solution Files
 - Header comment: `NNNN. Title | Difficulty | Topic`, link, paraphrased
-  problem, examples with expected outputs, approaches with complexity and ⭐.
+  problem, examples with expected outputs (ALL LeetCode examples, plus any
+  extra edge cases), approaches with complexity and ⭐.
 - One function per approach, same order as the README. The go-to uses the
   LeetCode function name; the others get suffixes (Brute, Sorted...).
 - Comments: short "why" comments only. Explanations live in the README.
@@ -105,3 +112,4 @@ report a problem as done if verification failed.
 
 ## Git
 Never commit or push. I review and commit myself.
+Never read, print, or cat .git/config or .git/credentials.
