@@ -103,5 +103,5 @@ Count, then `buckets[count].push(value)`, then collect from the highest bucket d
 ## Follow-ups
 - **Top k words with alphabetical tie-break:** heap with custom comparator: LC 0692 Top K Frequent Words (not added yet)
 - **Data arrives as a stream:** size-k min-heap, O(log k) per update.
-- **Kth largest value instead of frequency:** LC 0215 Kth Largest Element in an Array (not added yet)
+- **Kth largest value instead of frequency:** [LC 0215 Kth Largest Element in an Array](../../09-heap-priority-queue/0215-kth-largest-element-in-an-array/)
 - **Average O(n) without extra buckets:** quickselect on the distinct values by count.

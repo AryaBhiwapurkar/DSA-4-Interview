@@ -64,6 +64,8 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Pop top | `pq.top(); pq.pop();` | `heapq.heappop(h)` | `heap.Pop(h).(int)` |
 | Peek | `pq.top()` | `h[0]` | `(*h)[0]` |
 | Heapify list | `priority_queue<int> pq(a.begin(), a.end());` | `heapq.heapify(a)` | `heap.Init(h)` |
+| Min-heap of tuples | `priority_queue<T, vector<T>, greater<T>>` with `T = tuple<...>` | push tuples; compared element-wise | struct + `Less` using `cmp.Or(cmp.Compare(...), ...)` |
+| Two heaps (median) | `priority_queue<int>` + `greater<int>` version | `low` stores negatives, `high` plain | one min-heap type, negate values for the max side |
 | Heap of pointers (min by field) | `auto cmp = [](Node* a, Node* b){ return a->val > b->val; };` | `(node.val, i, node)`: unique `i` so nodes are never compared | `type nodeHeap []*Node` with `Less: h[i].Val < h[j].Val` |
 
 C++ comparator is "inverted": returning `a > b` gives a **min**-heap.
@@ -127,6 +129,20 @@ func (h *IntHeap) Pop() any {
 | Free a removed node | `delete p;` | automatic (GC) | automatic (GC) |
 | Built-in DLL | `list<T>` + `splice` | `collections.OrderedDict` (`move_to_end`) | `container/list` (`MoveToFront`) |
 
+## Binary Tree
+
+| Operation | C++ | Python | Go |
+|-----------|-----|--------|----|
+| Node type | `struct TreeNode { int val; TreeNode *left, *right; };` | `class TreeNode: val, left, right` | `type TreeNode struct { Val int; Left, Right *TreeNode }` |
+| Leaf test | `!n->left && !n->right` | `not n.left and not n.right` | `n.Left == nil && n.Right == nil` |
+| Shared answer in DFS | `int& best` parameter | `nonlocal best` in a nested def | closure captures `best` |
+| Recursive helper | free function / member | nested `def dfs(n):` | `var dfs func(*TreeNode) int; dfs = func(...)` |
+| BFS level snapshot | `for (int sz = q.size(); sz > 0; sz--)` | `for _ in range(len(q)):` | `for sz := len(q); sz > 0; sz-- {` |
+| Pair queue item | `queue<pair<TreeNode*, int>>` | `deque([(node, x)])` | local `type item struct{ n *TreeNode; x int }` |
+| Both children | `for (auto c : {n->left, n->right})` | `for c in (n.left, n.right):` | `for _, c := range []*TreeNode{n.Left, n.Right}` |
+| Type alias | `using TreeNode = Node;` | `TreeNode = Node` | `type TreeNode = Node` |
+| "No bound yet" | `LLONG_MIN` / `LLONG_MAX` | `float("-inf")` / `float("inf")` | nil pointer bound (`*TreeNode`) |
+
 ## Sort with Comparator
 
 | Operation | C++ | Python | Go |
@@ -169,6 +185,7 @@ C++ comparators must be strict (`<`, never `<=`) or sort can crash.
 | Reverse | `reverse(s.begin(), s.end());` | `s[::-1]` | `b := []byte(s); slices.Reverse(b)` |
 | Char safety | cast `(unsigned char)c` before `isalnum` / array index | n/a | `s[i]` is a byte; `range s` yields runes |
 | Print quoted | `"\"" << s << "\""` | `f'"{s}"'` / `repr(s)` | `fmt.Printf("%q", s)` |
+| Bool to 0/1 | `int(b)` or implicit | `int(b)` | helper `b2i(b)` (no conversion) |
 | Print bool as word | `cout << boolalpha << b` | `str(b).lower()` (prints `True`) | `fmt.Println(b)` / `%t` |
 | Fixed decimals | `printf("%.5f", x)` | `f"{x:.5f}"` | `fmt.Printf("%.5f", x)` |
 

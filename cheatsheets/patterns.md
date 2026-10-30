@@ -84,14 +84,34 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Level by level / right side view** -> BFS with queue size per level (0102, 0199)
 - **BST + sorted order / kth** -> Inorder traversal (0230)
 - **Validate BST** -> DFS with (low, high) bounds (0098)
+- **Mirror / identical / contains a subtree** -> Parallel DFS on two trees (0100, 0101, 0572)
+- **Best path anywhere (diameter, max path sum)** -> Return one branch up, record the bent path in a global (0543, 0124)
+- **Balanced check** -> Bottom-up height with -1 for "unbalanced" (0110)
+- **Condition on the root-to-node path** -> Pass state down: path max, remaining sum, number so far (1448, 0112, 0129)
+- **LCA in a BST** -> Walk down until p and q split (0235); general tree -> postorder "found" returns (0236)
+- **Rebuild from two traversals** -> Preorder/postorder give roots, inorder index map gives the split (0105, 0106)
+- **Serialize a tree** -> Preorder with null markers (0297)
+- **Iterate a BST lazily** -> Stack of the pending left spine (0173)
+- **Flatten / link levels in O(1) space** -> Splice rightmost of left subtree (0114); walk levels via next + dummy (0117)
+- **Count nodes of a complete tree fast** -> Equal spine heights mean 2^h - 1 (0222)
+- **Sorted array to balanced BST / quad tree** -> Divide at the middle / into quadrants (0108, 0427)
 
 ## Tries
 - **Prefix queries / many words against one grid or stream** -> Trie (0208, 0212)
+- **Dictionary search with '.' wildcards** -> Trie + DFS branching only on '.' (0211)
+- **Find many words on a grid** -> Trie of words + one backtracking DFS per cell, prune found branches (0212)
 
 ## Heap / Priority Queue
 - **Kth largest/smallest, top k** -> Heap of size k (0215, 0973)
 - **Running median** -> Two heaps (0295)
 - **Merge k sorted things** -> Min-heap of heads (0023)
+- **k-th largest in a stream / k largest overall** -> Min-heap of size k (0703, 0215); quickselect for one-off arrays (0215)
+- **k closest / k smallest by a key** -> Max-heap of size k (0973)
+- **Repeatedly take the largest and put back a remainder** -> Max-heap simulation (1046)
+- **Same item needs a cooldown** -> Count formula from the most frequent item, or heap + cooldown queue (0621)
+- **Latest 10 across many timelines** -> Heap merge of per-user lists (0355)
+- **Greedy best affordable option as budget grows** -> Sort by requirement + max-heap (0502)
+- **k smallest pair sums from two sorted arrays** -> Heap frontier over rows (0373)
 
 ## Backtracking
 - **All subsets / permutations / combinations** -> Backtracking with choose/explore/unchoose (0078, 0046, 0039)

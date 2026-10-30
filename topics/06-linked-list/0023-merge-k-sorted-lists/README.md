@@ -104,5 +104,5 @@ Merge lists i and i + step for step = 1, 2, 4, …; reuses the 0021 merge. Same 
 ## Follow-ups
 - **Two lists:** [LC 0021 Merge Two Sorted Lists](../0021-merge-two-sorted-lists/)
 - **Kth smallest across sorted rows:** heap of row heads: LC 0378 Kth Smallest Element in a Sorted Matrix (not added yet)
-- **k smallest pairs from two arrays:** heap of candidate pairs: LC 0373 Find K Pairs with Smallest Sums (not added yet)
+- **k smallest pairs from two arrays:** heap of candidate pairs: [LC 0373 Find K Pairs with Smallest Sums](../../09-heap-priority-queue/0373-find-k-pairs-with-smallest-sums/)
 - **External merge of k huge files:** the same heap, with buffered readers.

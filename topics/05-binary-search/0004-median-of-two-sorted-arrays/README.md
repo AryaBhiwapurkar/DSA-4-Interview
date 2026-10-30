@@ -94,5 +94,5 @@ Search i in [0, m] on the shorter array A.
 ## Follow-ups
 - **Kth smallest of two sorted arrays:** same idea with half = k, or eliminate k/2 per step.
 - **Merge two sorted arrays:** [LC 0088 Merge Sorted Array](../../02-two-pointers/0088-merge-sorted-array/)
-- **Median of a stream:** two heaps: LC 0295 Find Median from Data Stream (not added yet)
-- **Kth largest in one unsorted array:** quickselect or heap: LC 0215 Kth Largest Element in an Array (not added yet)
+- **Median of a stream:** two heaps: [LC 0295 Find Median from Data Stream](../../09-heap-priority-queue/0295-find-median-from-data-stream/)
+- **Kth largest in one unsorted array:** quickselect or heap: [LC 0215 Kth Largest Element in an Array](../../09-heap-priority-queue/0215-kth-largest-element-in-an-array/)

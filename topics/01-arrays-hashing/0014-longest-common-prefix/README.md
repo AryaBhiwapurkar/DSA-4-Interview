@@ -92,6 +92,6 @@ For each index i of strs[0], check every other string at i. Stop on a mismatch o
 - Mention the trie approach if asked about many queries.
 
 ## Follow-ups
-- **Many queries for the LCP of different subsets:** build a trie: LC 0208 Implement Trie (Prefix Tree) (not added yet)
+- **Many queries for the LCP of different subsets:** build a trie: [LC 0208 Implement Trie (Prefix Tree)](../../08-tries/0208-implement-trie-prefix-tree/)
 - **Divide and conquer:** LCP(left half) with LCP(right half), O(S) time, O(m log n) stack.
 - **Binary search on the prefix length** with an "all start with prefix of length L?" check.

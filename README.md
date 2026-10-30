@@ -6,10 +6,10 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 
 | List | Problems | Done |
 |------|---------:|-----:|
-| NeetCode 150 (NC150) | 150 | 45 |
-| LeetCode Top Interview 150 (TI150) | 150 | 64 |
-| In both lists | 77 | 30 |
-| **Unique total** | **223** | **79** |
+| NeetCode 150 (NC150) | 150 | 70 |
+| LeetCode Top Interview 150 (TI150) | 150 | 94 |
+| In both lists | 77 | 44 |
+| **Unique total** | **223** | **120** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
@@ -23,9 +23,9 @@ Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.
 | [04. Stack](topics/04-stack/) | 9 | 9 |
 | [05. Binary Search](topics/05-binary-search/) | 11 | 11 |
 | [06. Linked List](topics/06-linked-list/) | 16 | 16 |
-| [07. Trees](topics/07-trees/) | 29 | 0 |
-| [08. Tries](topics/08-tries/) | 3 | 0 |
-| [09. Heap / Priority Queue](topics/09-heap-priority-queue/) | 9 | 0 |
+| [07. Trees](topics/07-trees/) | 29 | 29 |
+| [08. Tries](topics/08-tries/) | 3 | 3 |
+| [09. Heap / Priority Queue](topics/09-heap-priority-queue/) | 9 | 9 |
 | [10. Backtracking](topics/10-backtracking/) | 11 | 0 |
 | [11. Graphs](topics/11-graphs/) | 16 | 0 |
 | [12. Advanced Graphs](topics/12-advanced-graphs/) | 6 | 0 |
@@ -151,57 +151,57 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0100 | Same Tree | Easy | Parallel DFS | NC150, TI150 | ⬜ |
-| 0101 | Symmetric Tree | Easy | Mirror DFS | TI150 | ⬜ |
-| 0104 | Maximum Depth of Binary Tree | Easy | DFS height | NC150, TI150 | ⬜ |
-| 0108 | Convert Sorted Array to Binary Search Tree | Easy | Divide at middle | TI150 | ⬜ |
-| 0110 | Balanced Binary Tree | Easy | DFS height with early exit | NC150 | ⬜ |
-| 0112 | Path Sum | Easy | DFS with remaining sum | TI150 | ⬜ |
-| 0222 | Count Complete Tree Nodes | Easy | Compare left/right heights | TI150 | ⬜ |
-| 0226 | Invert Binary Tree | Easy | DFS swap children | NC150, TI150 | ⬜ |
-| 0530 | Minimum Absolute Difference in BST | Easy | Inorder, track prev | TI150 | ⬜ |
-| 0543 | Diameter of Binary Tree | Easy | DFS height, update global | NC150 | ⬜ |
-| 0572 | Subtree of Another Tree | Easy | DFS + same-tree check | NC150 | ⬜ |
-| 0637 | Average of Levels in Binary Tree | Easy | BFS by level | TI150 | ⬜ |
-| 0098 | Validate Binary Search Tree | Medium | DFS with bounds | NC150, TI150 | ⬜ |
-| 0102 | Binary Tree Level Order Traversal | Medium | BFS by level | NC150, TI150 | ⬜ |
-| 0103 | Binary Tree Zigzag Level Order Traversal | Medium | BFS, alternate direction | TI150 | ⬜ |
-| 0105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | Recursion + inorder index map | NC150, TI150 | ⬜ |
-| 0106 | Construct Binary Tree from Inorder and Postorder Traversal | Medium | Recursion + inorder index map | TI150 | ⬜ |
-| 0114 | Flatten Binary Tree to Linked List | Medium | Reverse preorder / Morris | TI150 | ⬜ |
-| 0117 | Populating Next Right Pointers in Each Node II | Medium | Level linking with dummy | TI150 | ⬜ |
-| 0129 | Sum Root to Leaf Numbers | Medium | DFS carrying the number | TI150 | ⬜ |
-| 0173 | Binary Search Tree Iterator | Medium | Controlled inorder with stack | TI150 | ⬜ |
-| 0199 | Binary Tree Right Side View | Medium | BFS, last per level | NC150, TI150 | ⬜ |
-| 0230 | Kth Smallest Element in a BST | Medium | Inorder traversal | NC150, TI150 | ⬜ |
-| 0235 | Lowest Common Ancestor of a Binary Search Tree | Medium | BST split point | NC150 | ⬜ |
-| 0236 | Lowest Common Ancestor of a Binary Tree | Medium | Postorder DFS | TI150 | ⬜ |
-| 0427 | Construct Quad Tree | Medium | Divide & conquer on grid | TI150 | ⬜ |
-| 1448 | Count Good Nodes in Binary Tree | Medium | DFS with path max | NC150 | ⬜ |
-| 0124 | Binary Tree Maximum Path Sum | Hard | DFS gain, update global | NC150, TI150 | ⬜ |
-| 0297 | Serialize and Deserialize Binary Tree | Hard | Preorder with null markers | NC150 | ⬜ |
+| 0100 | [Same Tree](topics/07-trees/0100-same-tree/) | Easy | Parallel DFS | NC150, TI150 | ✅ |
+| 0101 | [Symmetric Tree](topics/07-trees/0101-symmetric-tree/) | Easy | Mirror DFS | TI150 | ✅ |
+| 0104 | [Maximum Depth of Binary Tree](topics/07-trees/0104-maximum-depth-of-binary-tree/) | Easy | DFS height | NC150, TI150 | ✅ |
+| 0108 | [Convert Sorted Array to Binary Search Tree](topics/07-trees/0108-convert-sorted-array-to-binary-search-tree/) | Easy | Divide at middle | TI150 | ✅ |
+| 0110 | [Balanced Binary Tree](topics/07-trees/0110-balanced-binary-tree/) | Easy | DFS height with early exit | NC150 | ✅ |
+| 0112 | [Path Sum](topics/07-trees/0112-path-sum/) | Easy | DFS with remaining sum | TI150 | ✅ |
+| 0222 | [Count Complete Tree Nodes](topics/07-trees/0222-count-complete-tree-nodes/) | Easy | Compare left/right heights | TI150 | ✅ |
+| 0226 | [Invert Binary Tree](topics/07-trees/0226-invert-binary-tree/) | Easy | DFS swap children | NC150, TI150 | ✅ |
+| 0530 | [Minimum Absolute Difference in BST](topics/07-trees/0530-minimum-absolute-difference-in-bst/) | Easy | Inorder, track prev | TI150 | ✅ |
+| 0543 | [Diameter of Binary Tree](topics/07-trees/0543-diameter-of-binary-tree/) | Easy | DFS height, update global | NC150 | ✅ |
+| 0572 | [Subtree of Another Tree](topics/07-trees/0572-subtree-of-another-tree/) | Easy | DFS + same-tree check | NC150 | ✅ |
+| 0637 | [Average of Levels in Binary Tree](topics/07-trees/0637-average-of-levels-in-binary-tree/) | Easy | BFS by level | TI150 | ✅ |
+| 0098 | [Validate Binary Search Tree](topics/07-trees/0098-validate-binary-search-tree/) | Medium | DFS with bounds | NC150, TI150 | ✅ |
+| 0102 | [Binary Tree Level Order Traversal](topics/07-trees/0102-binary-tree-level-order-traversal/) | Medium | BFS by level | NC150, TI150 | ✅ |
+| 0103 | [Binary Tree Zigzag Level Order Traversal](topics/07-trees/0103-binary-tree-zigzag-level-order-traversal/) | Medium | BFS, alternate direction | TI150 | ✅ |
+| 0105 | [Construct Binary Tree from Preorder and Inorder Traversal](topics/07-trees/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium | Recursion + inorder index map | NC150, TI150 | ✅ |
+| 0106 | [Construct Binary Tree from Inorder and Postorder Traversal](topics/07-trees/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium | Recursion + inorder index map | TI150 | ✅ |
+| 0114 | [Flatten Binary Tree to Linked List](topics/07-trees/0114-flatten-binary-tree-to-linked-list/) | Medium | Reverse preorder / Morris | TI150 | ✅ |
+| 0117 | [Populating Next Right Pointers in Each Node II](topics/07-trees/0117-populating-next-right-pointers-in-each-node-ii/) | Medium | Level linking with dummy | TI150 | ✅ |
+| 0129 | [Sum Root to Leaf Numbers](topics/07-trees/0129-sum-root-to-leaf-numbers/) | Medium | DFS carrying the number | TI150 | ✅ |
+| 0173 | [Binary Search Tree Iterator](topics/07-trees/0173-binary-search-tree-iterator/) | Medium | Controlled inorder with stack | TI150 | ✅ |
+| 0199 | [Binary Tree Right Side View](topics/07-trees/0199-binary-tree-right-side-view/) | Medium | BFS, last per level | NC150, TI150 | ✅ |
+| 0230 | [Kth Smallest Element in a BST](topics/07-trees/0230-kth-smallest-element-in-a-bst/) | Medium | Inorder traversal | NC150, TI150 | ✅ |
+| 0235 | [Lowest Common Ancestor of a Binary Search Tree](topics/07-trees/0235-lowest-common-ancestor-of-a-binary-search-tree/) | Medium | BST split point | NC150 | ✅ |
+| 0236 | [Lowest Common Ancestor of a Binary Tree](topics/07-trees/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium | Postorder DFS | TI150 | ✅ |
+| 0427 | [Construct Quad Tree](topics/07-trees/0427-construct-quad-tree/) | Medium | Divide & conquer on grid | TI150 | ✅ |
+| 1448 | [Count Good Nodes in Binary Tree](topics/07-trees/1448-count-good-nodes-in-binary-tree/) | Medium | DFS with path max | NC150 | ✅ |
+| 0124 | [Binary Tree Maximum Path Sum](topics/07-trees/0124-binary-tree-maximum-path-sum/) | Hard | DFS gain, update global | NC150, TI150 | ✅ |
+| 0297 | [Serialize and Deserialize Binary Tree](topics/07-trees/0297-serialize-and-deserialize-binary-tree/) | Hard | Preorder with null markers | NC150 | ✅ |
 
 ## 08. Tries
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0208 | Implement Trie (Prefix Tree) | Medium | Trie | NC150, TI150 | ⬜ |
-| 0211 | Design Add and Search Words Data Structure | Medium | Trie + DFS on wildcard | NC150, TI150 | ⬜ |
-| 0212 | Word Search II | Hard | Trie + grid backtracking | NC150, TI150 | ⬜ |
+| 0208 | [Implement Trie (Prefix Tree)](topics/08-tries/0208-implement-trie-prefix-tree/) | Medium | Trie | NC150, TI150 | ✅ |
+| 0211 | [Design Add and Search Words Data Structure](topics/08-tries/0211-design-add-and-search-words-data-structure/) | Medium | Trie + DFS on wildcard | NC150, TI150 | ✅ |
+| 0212 | [Word Search II](topics/08-tries/0212-word-search-ii/) | Hard | Trie + grid backtracking | NC150, TI150 | ✅ |
 
 ## 09. Heap / Priority Queue
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0703 | Kth Largest Element in a Stream | Easy | Min-heap of size k | NC150 | ⬜ |
-| 1046 | Last Stone Weight | Easy | Max-heap simulation | NC150 | ⬜ |
-| 0215 | Kth Largest Element in an Array | Medium | Min-heap of size k / quickselect | NC150, TI150 | ⬜ |
-| 0355 | Design Twitter | Medium | Heap merge of k feeds | NC150 | ⬜ |
-| 0373 | Find K Pairs with Smallest Sums | Medium | Min-heap frontier | TI150 | ⬜ |
-| 0621 | Task Scheduler | Medium | Greedy counting / max-heap | NC150 | ⬜ |
-| 0973 | K Closest Points to Origin | Medium | Max-heap of size k | NC150 | ⬜ |
-| 0295 | Find Median from Data Stream | Hard | Two heaps | NC150, TI150 | ⬜ |
-| 0502 | IPO | Hard | Sort by capital + max-heap | TI150 | ⬜ |
+| 0703 | [Kth Largest Element in a Stream](topics/09-heap-priority-queue/0703-kth-largest-element-in-a-stream/) | Easy | Min-heap of size k | NC150 | ✅ |
+| 1046 | [Last Stone Weight](topics/09-heap-priority-queue/1046-last-stone-weight/) | Easy | Max-heap simulation | NC150 | ✅ |
+| 0215 | [Kth Largest Element in an Array](topics/09-heap-priority-queue/0215-kth-largest-element-in-an-array/) | Medium | Min-heap of size k / quickselect | NC150, TI150 | ✅ |
+| 0355 | [Design Twitter](topics/09-heap-priority-queue/0355-design-twitter/) | Medium | Heap merge of k feeds | NC150 | ✅ |
+| 0373 | [Find K Pairs with Smallest Sums](topics/09-heap-priority-queue/0373-find-k-pairs-with-smallest-sums/) | Medium | Min-heap frontier | TI150 | ✅ |
+| 0621 | [Task Scheduler](topics/09-heap-priority-queue/0621-task-scheduler/) | Medium | Greedy counting / max-heap | NC150 | ✅ |
+| 0973 | [K Closest Points to Origin](topics/09-heap-priority-queue/0973-k-closest-points-to-origin/) | Medium | Max-heap of size k | NC150 | ✅ |
+| 0295 | [Find Median from Data Stream](topics/09-heap-priority-queue/0295-find-median-from-data-stream/) | Hard | Two heaps | NC150, TI150 | ✅ |
+| 0502 | [IPO](topics/09-heap-priority-queue/0502-ipo/) | Hard | Sort by capital + max-heap | TI150 | ✅ |
 
 ## 10. Backtracking
 

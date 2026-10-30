@@ -92,5 +92,5 @@ Decode `"5#Hello5#World"`
 
 ## Follow-ups
 - **Fixed-width length header (e.g. 4 bytes) instead of '#':** no separator needed, decoder reads 4 bytes then the payload.
-- **Serialize a tree:** LC 0297 Serialize and Deserialize Binary Tree (not added yet)
+- **Serialize a tree:** [LC 0297 Serialize and Deserialize Binary Tree](../../07-trees/0297-serialize-and-deserialize-binary-tree/)
 - **Arbitrary Unicode:** encode each string to UTF-8 bytes and prefix the byte length.
