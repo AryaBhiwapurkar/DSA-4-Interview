@@ -96,4 +96,4 @@ Ops: insert 1, remove 2, insert 2, getRandom, remove 1, insert 2, getRandom
 ## Follow-ups
 - **Duplicates allowed:** map val → set of indices: LC 0381 Insert Delete GetRandom O(1) - Duplicates allowed (not added yet)
 - **Weighted random pick:** prefix sums + binary search (LC 0528 Random Pick with Weight, not added yet).
-- **Another map + linked-structure design:** LC 0146 LRU Cache (not added yet)
+- **Another map + linked-structure design:** [LC 0146 LRU Cache](../../06-linked-list/0146-lru-cache/)

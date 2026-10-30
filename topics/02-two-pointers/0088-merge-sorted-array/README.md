@@ -97,6 +97,6 @@ Fill from the end with the larger tail; loop while `j ≥ 0`.
 - Correct termination when one array runs out.
 
 ## Follow-ups
-- **Merge two sorted linked lists:** LC 0021 Merge Two Sorted Lists (not added yet)
-- **Merge k sorted arrays/lists:** min-heap of heads: LC 0023 Merge k Sorted Lists (not added yet)
+- **Merge two sorted linked lists:** [LC 0021 Merge Two Sorted Lists](../../06-linked-list/0021-merge-two-sorted-lists/)
+- **Merge k sorted arrays/lists:** min-heap of heads: [LC 0023 Merge k Sorted Lists](../../06-linked-list/0023-merge-k-sorted-lists/)
 - **Squares of a sorted array (with negatives):** fill from the back with the larger absolute value: LC 0977 Squares of a Sorted Array (not added yet)

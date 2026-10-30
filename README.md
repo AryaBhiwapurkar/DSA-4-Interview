@@ -6,10 +6,10 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 
 | List | Problems | Done |
 |------|---------:|-----:|
-| NeetCode 150 (NC150) | 150 | 20 |
-| LeetCode Top Interview 150 (TI150) | 150 | 37 |
-| In both lists | 77 | 14 |
-| **Unique total** | **223** | **43** |
+| NeetCode 150 (NC150) | 150 | 45 |
+| LeetCode Top Interview 150 (TI150) | 150 | 64 |
+| In both lists | 77 | 30 |
+| **Unique total** | **223** | **79** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
@@ -20,9 +20,9 @@ Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.
 | [01. Arrays & Hashing](topics/01-arrays-hashing/) | 24 | 24 |
 | [02. Two Pointers](topics/02-two-pointers/) | 10 | 10 |
 | [03. Sliding Window](topics/03-sliding-window/) | 9 | 9 |
-| [04. Stack](topics/04-stack/) | 9 | 0 |
-| [05. Binary Search](topics/05-binary-search/) | 11 | 0 |
-| [06. Linked List](topics/06-linked-list/) | 16 | 0 |
+| [04. Stack](topics/04-stack/) | 9 | 9 |
+| [05. Binary Search](topics/05-binary-search/) | 11 | 11 |
+| [06. Linked List](topics/06-linked-list/) | 16 | 16 |
 | [07. Trees](topics/07-trees/) | 29 | 0 |
 | [08. Tries](topics/08-tries/) | 3 | 0 |
 | [09. Heap / Priority Queue](topics/09-heap-priority-queue/) | 9 | 0 |
@@ -100,52 +100,52 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0020 | Valid Parentheses | Easy | Stack matching | NC150, TI150 | ⬜ |
-| 0022 | Generate Parentheses | Medium | Backtracking on open/close counts | NC150, TI150 | ⬜ |
-| 0071 | Simplify Path | Medium | Stack of directory names | TI150 | ⬜ |
-| 0150 | Evaluate Reverse Polish Notation | Medium | Operand stack | NC150, TI150 | ⬜ |
-| 0155 | Min Stack | Medium | Stack of (val, min) | NC150, TI150 | ⬜ |
-| 0739 | Daily Temperatures | Medium | Monotonic decreasing stack | NC150 | ⬜ |
-| 0853 | Car Fleet | Medium | Sort by position + stack of arrival times | NC150 | ⬜ |
-| 0084 | Largest Rectangle in Histogram | Hard | Monotonic increasing stack | NC150 | ⬜ |
-| 0224 | Basic Calculator | Hard | Stack for sign/paren context | TI150 | ⬜ |
+| 0020 | [Valid Parentheses](topics/04-stack/0020-valid-parentheses/) | Easy | Stack matching | NC150, TI150 | ✅ |
+| 0022 | [Generate Parentheses](topics/04-stack/0022-generate-parentheses/) | Medium | Backtracking on open/close counts | NC150, TI150 | ✅ |
+| 0071 | [Simplify Path](topics/04-stack/0071-simplify-path/) | Medium | Stack of directory names | TI150 | ✅ |
+| 0150 | [Evaluate Reverse Polish Notation](topics/04-stack/0150-evaluate-reverse-polish-notation/) | Medium | Operand stack | NC150, TI150 | ✅ |
+| 0155 | [Min Stack](topics/04-stack/0155-min-stack/) | Medium | Stack of (val, min) | NC150, TI150 | ✅ |
+| 0739 | [Daily Temperatures](topics/04-stack/0739-daily-temperatures/) | Medium | Monotonic decreasing stack | NC150 | ✅ |
+| 0853 | [Car Fleet](topics/04-stack/0853-car-fleet/) | Medium | Sort by position + stack of arrival times | NC150 | ✅ |
+| 0084 | [Largest Rectangle in Histogram](topics/04-stack/0084-largest-rectangle-in-histogram/) | Hard | Monotonic increasing stack | NC150 | ✅ |
+| 0224 | [Basic Calculator](topics/04-stack/0224-basic-calculator/) | Hard | Stack for sign/paren context | TI150 | ✅ |
 
 ## 05. Binary Search
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0035 | Search Insert Position | Easy | Lower bound | TI150 | ⬜ |
-| 0069 | Sqrt(x) | Easy | Binary search on answer | TI150 | ⬜ |
-| 0704 | Binary Search | Easy | Classic binary search | NC150 | ⬜ |
-| 0033 | Search in Rotated Sorted Array | Medium | Find the sorted half | NC150, TI150 | ⬜ |
-| 0034 | Find First and Last Position of Element in Sorted Array | Medium | Lower & upper bound | TI150 | ⬜ |
-| 0074 | Search a 2D Matrix | Medium | Treat as flat sorted array | NC150, TI150 | ⬜ |
-| 0153 | Find Minimum in Rotated Sorted Array | Medium | Compare mid with right | NC150, TI150 | ⬜ |
-| 0162 | Find Peak Element | Medium | Binary search on slope | TI150 | ⬜ |
-| 0875 | Koko Eating Bananas | Medium | Binary search on answer | NC150 | ⬜ |
-| 0981 | Time Based Key-Value Store | Medium | Hashmap + binary search on time | NC150 | ⬜ |
-| 0004 | Median of Two Sorted Arrays | Hard | Binary search on partition | NC150, TI150 | ⬜ |
+| 0035 | [Search Insert Position](topics/05-binary-search/0035-search-insert-position/) | Easy | Lower bound | TI150 | ✅ |
+| 0069 | [Sqrt(x)](topics/05-binary-search/0069-sqrtx/) | Easy | Binary search on answer | TI150 | ✅ |
+| 0704 | [Binary Search](topics/05-binary-search/0704-binary-search/) | Easy | Classic binary search | NC150 | ✅ |
+| 0033 | [Search in Rotated Sorted Array](topics/05-binary-search/0033-search-in-rotated-sorted-array/) | Medium | Find the sorted half | NC150, TI150 | ✅ |
+| 0034 | [Find First and Last Position of Element in Sorted Array](topics/05-binary-search/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium | Lower & upper bound | TI150 | ✅ |
+| 0074 | [Search a 2D Matrix](topics/05-binary-search/0074-search-a-2d-matrix/) | Medium | Treat as flat sorted array | NC150, TI150 | ✅ |
+| 0153 | [Find Minimum in Rotated Sorted Array](topics/05-binary-search/0153-find-minimum-in-rotated-sorted-array/) | Medium | Compare mid with right | NC150, TI150 | ✅ |
+| 0162 | [Find Peak Element](topics/05-binary-search/0162-find-peak-element/) | Medium | Binary search on slope | TI150 | ✅ |
+| 0875 | [Koko Eating Bananas](topics/05-binary-search/0875-koko-eating-bananas/) | Medium | Binary search on answer | NC150 | ✅ |
+| 0981 | [Time Based Key-Value Store](topics/05-binary-search/0981-time-based-key-value-store/) | Medium | Hashmap + binary search on time | NC150 | ✅ |
+| 0004 | [Median of Two Sorted Arrays](topics/05-binary-search/0004-median-of-two-sorted-arrays/) | Hard | Binary search on partition | NC150, TI150 | ✅ |
 
 ## 06. Linked List
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0021 | Merge Two Sorted Lists | Easy | Dummy head merge | NC150, TI150 | ⬜ |
-| 0141 | Linked List Cycle | Easy | Floyd fast/slow | NC150, TI150 | ⬜ |
-| 0206 | Reverse Linked List | Easy | Iterative reversal | NC150 | ⬜ |
-| 0002 | Add Two Numbers | Medium | Digit-wise add with carry | NC150, TI150 | ⬜ |
-| 0019 | Remove Nth Node From End of List | Medium | Fast/slow with n gap | NC150, TI150 | ⬜ |
-| 0061 | Rotate List | Medium | Close ring, cut at n-k | TI150 | ⬜ |
-| 0082 | Remove Duplicates from Sorted List II | Medium | Dummy + skip duplicate runs | TI150 | ⬜ |
-| 0086 | Partition List | Medium | Two dummy lists | TI150 | ⬜ |
-| 0092 | Reverse Linked List II | Medium | Sublist reversal | TI150 | ⬜ |
-| 0138 | Copy List with Random Pointer | Medium | Hashmap old→new / interleave | NC150, TI150 | ⬜ |
-| 0143 | Reorder List | Medium | Find mid + reverse + merge | NC150 | ⬜ |
-| 0146 | LRU Cache | Medium | Hashmap + doubly linked list | NC150, TI150 | ⬜ |
-| 0148 | Sort List | Medium | Merge sort on list | TI150 | ⬜ |
-| 0287 | Find the Duplicate Number | Medium | Floyd cycle on indices | NC150 | ⬜ |
-| 0023 | Merge k Sorted Lists | Hard | Min-heap / divide & conquer | NC150, TI150 | ⬜ |
-| 0025 | Reverse Nodes in k-Group | Hard | Group reversal with dummy | NC150, TI150 | ⬜ |
+| 0021 | [Merge Two Sorted Lists](topics/06-linked-list/0021-merge-two-sorted-lists/) | Easy | Dummy head merge | NC150, TI150 | ✅ |
+| 0141 | [Linked List Cycle](topics/06-linked-list/0141-linked-list-cycle/) | Easy | Floyd fast/slow | NC150, TI150 | ✅ |
+| 0206 | [Reverse Linked List](topics/06-linked-list/0206-reverse-linked-list/) | Easy | Iterative reversal | NC150 | ✅ |
+| 0002 | [Add Two Numbers](topics/06-linked-list/0002-add-two-numbers/) | Medium | Digit-wise add with carry | NC150, TI150 | ✅ |
+| 0019 | [Remove Nth Node From End of List](topics/06-linked-list/0019-remove-nth-node-from-end-of-list/) | Medium | Fast/slow with n gap | NC150, TI150 | ✅ |
+| 0061 | [Rotate List](topics/06-linked-list/0061-rotate-list/) | Medium | Close ring, cut at n-k | TI150 | ✅ |
+| 0082 | [Remove Duplicates from Sorted List II](topics/06-linked-list/0082-remove-duplicates-from-sorted-list-ii/) | Medium | Dummy + skip duplicate runs | TI150 | ✅ |
+| 0086 | [Partition List](topics/06-linked-list/0086-partition-list/) | Medium | Two dummy lists | TI150 | ✅ |
+| 0092 | [Reverse Linked List II](topics/06-linked-list/0092-reverse-linked-list-ii/) | Medium | Sublist reversal | TI150 | ✅ |
+| 0138 | [Copy List with Random Pointer](topics/06-linked-list/0138-copy-list-with-random-pointer/) | Medium | Hashmap old→new / interleave | NC150, TI150 | ✅ |
+| 0143 | [Reorder List](topics/06-linked-list/0143-reorder-list/) | Medium | Find mid + reverse + merge | NC150 | ✅ |
+| 0146 | [LRU Cache](topics/06-linked-list/0146-lru-cache/) | Medium | Hashmap + doubly linked list | NC150, TI150 | ✅ |
+| 0148 | [Sort List](topics/06-linked-list/0148-sort-list/) | Medium | Merge sort on list | TI150 | ✅ |
+| 0287 | [Find the Duplicate Number](topics/06-linked-list/0287-find-the-duplicate-number/) | Medium | Floyd cycle on indices | NC150 | ✅ |
+| 0023 | [Merge k Sorted Lists](topics/06-linked-list/0023-merge-k-sorted-lists/) | Hard | Min-heap / divide & conquer | NC150, TI150 | ✅ |
+| 0025 | [Reverse Nodes in k-Group](topics/06-linked-list/0025-reverse-nodes-in-k-group/) | Hard | Group reversal with dummy | NC150, TI150 | ✅ |
 
 ## 07. Trees
 

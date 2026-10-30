@@ -103,5 +103,5 @@ Each index is pushed and popped at most once.
 ## Follow-ups
 - **Window minimum:** flip the comparison (increasing deque).
 - **Longest subarray with max - min ≤ limit:** two deques + variable window: LC 1438 (not added yet)
-- **Next greater element (no window):** monotonic stack: LC 0739 Daily Temperatures (not added yet)
-- **O(1) max/min with push/pop at one end:** LC 0155 Min Stack (not added yet)
+- **Next greater element (no window):** monotonic stack: [LC 0739 Daily Temperatures](../../04-stack/0739-daily-temperatures/)
+- **O(1) max/min with push/pop at one end:** [LC 0155 Min Stack](../../04-stack/0155-min-stack/)

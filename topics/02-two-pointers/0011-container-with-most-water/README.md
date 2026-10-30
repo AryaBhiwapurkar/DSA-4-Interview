@@ -96,5 +96,5 @@ Check every pair. 5·10⁹ pairs at n = 10⁵: too slow.
 
 ## Follow-ups
 - **Water trapped by all bars together:** [LC 0042 Trapping Rain Water](../0042-trapping-rain-water/)
-- **Largest rectangle under a histogram (contiguous bars):** monotonic stack: LC 0084 Largest Rectangle in Histogram (not added yet)
+- **Largest rectangle under a histogram (contiguous bars):** monotonic stack: [LC 0084 Largest Rectangle in Histogram](../../04-stack/0084-largest-rectangle-in-histogram/)
 - **Return the indices too:** store l, r when best updates.

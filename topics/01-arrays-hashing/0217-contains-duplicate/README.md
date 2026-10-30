@@ -102,5 +102,5 @@ Walk the array; if the value is already in the set, return true, else insert it.
 ## Follow-ups
 - **Duplicate within distance k:** sliding window of a set: [LC 0219 Contains Duplicate II](../../03-sliding-window/0219-contains-duplicate-ii/)
 - **Values within t and indices within k:** buckets or an ordered set: LC 0220 Contains Duplicate III (not added yet)
-- **O(1) extra space, can't modify input?** Not possible in general for arbitrary values; if values are in [1, n], use index marking or Floyd's cycle: LC 0287 Find the Duplicate Number (not added yet)
+- **O(1) extra space, can't modify input?** Not possible in general for arbitrary values; if values are in [1, n], use index marking or Floyd's cycle: [LC 0287 Find the Duplicate Number](../../06-linked-list/0287-find-the-duplicate-number/)
 - **Return the duplicate values:** same set, collect instead of returning.

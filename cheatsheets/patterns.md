@@ -46,17 +46,38 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Matching brackets / nested structure** -> Stack (0020)
 - **Next greater/smaller element** -> Monotonic stack (0739, 0084)
 - **Evaluate expression / undo last thing** -> Operand stack (0150, 0224)
+- **Aggregate (min/max) that must survive pops** -> Stack of (value, aggregate so far) (0155)
+- **Generate all balanced strings** -> Backtracking with open/close counts (0022)
+- **Largest rectangle / span bounded by shorter bars** -> Increasing stack: pop gives next smaller, new top gives previous smaller (0084)
+- **Infix with + - and parens** -> Running result + sign, stack of (result, sign) per "(" (0224)
+- **Path with "." and ".."** -> Split + stack of names (0071)
+- **Things that catch up and merge (fleets)** -> Sort by position, compare arrival times to the one ahead (0853)
 
 ## Binary Search
 - **Sorted input, find target/boundary** -> Binary search / lower bound (0704, 0035)
 - **"Minimum X such that condition holds", monotonic feasibility** -> Binary search on the answer (0875)
 - **Rotated sorted array** -> Find which half is sorted (0033, 0153)
+- **First / last occurrence, insert position** -> Lower bound; last = lowerBound(x+1) - 1 (0035, 0034)
+- **Integer sqrt / "largest k with f(k) ≤ x"** -> Binary search on k, record and go right (0069)
+- **Sorted matrix where rows chain together** -> Flat index k -> (k / cols, k % cols) (0074)
+- **Unsorted but "any local peak"** -> Compare mid with mid+1, go uphill (0162)
+- **Versions per key, "latest at or before t"** -> Hashmap of sorted lists + upper bound - 1 (0981)
+- **Median / kth of two sorted arrays in log time** -> Binary search the partition of the shorter array (0004)
 
 ## Linked List
 - **Cycle / middle / nth from end** -> Fast & slow pointers (0141, 0019)
 - **Head may change** -> Dummy node (0021, 0082)
 - **Reverse all or part of a list** -> Iterative prev/curr/next (0206, 0092)
 - **O(1) get/put with eviction order** -> Hashmap + doubly linked list (0146)
+- **Merge sorted lists** -> Dummy + tail (0021); k lists: min-heap of heads or pairwise merge (0023)
+- **Interleave front and back of a list** -> Find mid + reverse second half + weave (0143)
+- **Reverse in groups / a sub-range** -> Check k exist, reverse with prev = groupNext, reconnect (0025); head insertion (0092)
+- **Deep copy with extra pointers** -> Map old -> new in two passes, or interleave copies (0138)
+- **Values in [1, n], find the repeat, O(1) space** -> Floyd on i -> nums[i] (0287)
+- **Rotate list by k** -> k mod n, close ring, cut at n - k (0061)
+- **Stable partition / remove runs** -> Two dummy chains (0086); dummy + skip whole run (0082)
+- **Sort a linked list** -> Merge sort; split with fast = head.next (0148)
+- **Big numbers as digit lists** -> Digit-wise add with carry, loop while l1 or l2 or carry (0002)
 
 ## Trees
 - **Depth / height / path property** -> DFS returning a value up, global for the answer (0104, 0124)
