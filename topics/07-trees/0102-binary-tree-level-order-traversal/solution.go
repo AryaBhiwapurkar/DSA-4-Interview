@@ -1,0 +1,132 @@
+/*
+ * 0102. Binary Tree Level Order Traversal  |  Medium  |  Trees
+ * Link: https://leetcode.com/problems/binary-tree-level-order-traversal/
+ *
+ * Problem: Return node values level by level, left to right.
+ *
+ * Examples (level order, null = missing):
+ *   [3,9,20,null,null,15,7]  -> [[3] [9 20] [15 7]]
+ *   [1]                      -> [[1]]
+ *   []                       -> []
+ *   [1,2,null,3]             -> [[1] [2] [3]]
+ *
+ * Approaches:
+ *   1. BFS with level size  ⭐   O(n) time, O(w) space   <- go-to
+ *   2. DFS with depth           O(n) time, O(h) space
+ */
+
+package main
+
+import (
+	"fmt"
+	"math"
+	"strconv"
+	"strings"
+)
+
+type TreeNode struct {
+	Val         int
+	Left, Right *TreeNode
+}
+
+// ---------- Approach 1: BFS With Level Size ⭐ ----------
+func levelOrder(root *TreeNode) [][]int {
+	res := [][]int{}
+	q := []*TreeNode{}
+	if root != nil {
+		q = append(q, root)
+	}
+	for len(q) > 0 {
+		level := []int{}
+		for sz := len(q); sz > 0; sz-- { // snapshot: exactly this level
+			n := q[0]
+			q = q[1:]
+			level = append(level, n.Val)
+			if n.Left != nil {
+				q = append(q, n.Left)
+			}
+			if n.Right != nil {
+				q = append(q, n.Right)
+			}
+		}
+		res = append(res, level)
+	}
+	return res
+}
+
+// ---------- Approach 2: DFS With Depth ----------
+func levelOrderDFS(root *TreeNode) [][]int {
+	res := [][]int{}
+	var dfs func(n *TreeNode, depth int)
+	dfs = func(n *TreeNode, depth int) {
+		if n == nil {
+			return
+		}
+		if depth == len(res) { // first visit to this depth
+			res = append(res, []int{})
+		}
+		res[depth] = append(res[depth], n.Val)
+		dfs(n.Left, depth+1) // left first keeps left-to-right order
+		dfs(n.Right, depth+1)
+	}
+	dfs(root, 0)
+	return res
+}
+
+// ---------- Driver ----------
+const null = math.MinInt // marks a missing node in level-order input
+
+func build(vals []int) *TreeNode { // LeetCode level order
+	if len(vals) == 0 || vals[0] == null {
+		return nil
+	}
+	root := &TreeNode{Val: vals[0]}
+	q := []*TreeNode{root}
+	for i := 1; i < len(vals); i += 2 {
+		n := q[0]
+		q = q[1:]
+		if vals[i] != null {
+			n.Left = &TreeNode{Val: vals[i]}
+			q = append(q, n.Left)
+		}
+		if i+1 < len(vals) && vals[i+1] != null {
+			n.Right = &TreeNode{Val: vals[i+1]}
+			q = append(q, n.Right)
+		}
+	}
+	return root
+}
+
+func serialize(root *TreeNode) string { // level order, trailing nulls trimmed
+	out := []string{}
+	q := []*TreeNode{root}
+	for len(q) > 0 {
+		n := q[0]
+		q = q[1:]
+		if n == nil {
+			out = append(out, "null")
+			continue
+		}
+		out = append(out, strconv.Itoa(n.Val))
+		q = append(q, n.Left, n.Right)
+	}
+	for len(out) > 0 && out[len(out)-1] == "null" {
+		out = out[:len(out)-1]
+	}
+	return "[" + strings.Join(out, ",") + "]"
+}
+
+func main() {
+	for _, v := range [][]int{{3, 9, 20, null, null, 15, 7}, {1}, {}, {1, 2, null, 3}} {
+		root := build(v)
+		fmt.Println("bfs:", levelOrder(root))
+		fmt.Println("dfs:", levelOrderDFS(root))
+		fmt.Println("---")
+	}
+}
+
+/*
+ * Syntax notes (Go):
+ * - res[depth] = append(res[depth], x) must assign back: append may reallocate.
+ * - The closure appends to res captured by reference.
+ */
