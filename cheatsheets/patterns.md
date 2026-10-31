@@ -116,6 +116,13 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 ## Backtracking
 - **All subsets / permutations / combinations** -> Backtracking with choose/explore/unchoose (0078, 0046, 0039)
 - **Input has duplicates, unique results** -> Sort + skip `i > start && a[i] == a[i-1]` (0090, 0040)
+- **Each digit/position picks from its own option list** -> One recursion level per position (0017)
+- **Target sum, unlimited reuse** -> Sorted loop from start, recurse with `i`, break on overshoot (0039)
+- **Choose exactly k of 1..n** -> Start index + "enough left" prune `i <= n - need + 1` (0077)
+- **Order matters (arrangements)** -> Loop over all indices with `used[]` (0046)
+- **Trace a word through adjacent grid cells** -> DFS with in-place mark/unmark (0079)
+- **Split a string into valid pieces** -> Backtrack over the next cut end (0131)
+- **Place items with row/col/diagonal conflicts** -> Row-by-row + sets for c, r-c, r+c (or bitmasks) (0051, 0052)
 
 ## Graphs
 - **Grid of islands / connected regions** -> DFS/BFS flood fill (0200)
@@ -123,17 +130,36 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Spreads from many sources at once** -> Multi-source BFS (0994)
 - **Prerequisites / ordering / cycle in directed graph** -> Topological sort (Kahn's) (0207, 0210)
 - **Dynamic connectivity / redundant edge** -> Union-Find (0684)
+- **Size of the largest region** -> Flood fill returning `1 + sum(neighbours)` (0695)
+- **Regions that touch / reach the border** -> Flood fill *from* the border, then sweep (0130, 0417)
+- **Cells that can reach two targets** -> Reverse search from each target, intersect (0417)
+- **Distance to nearest of many sources** -> Multi-source BFS, first visit wins (0286, 0994)
+- **Deep-copy a graph with cycles** -> DFS/BFS with old → new map as visited (0133)
+- **Is this undirected graph a tree?** -> Exactly n - 1 edges + no failed union (0261)
+- **Count components from an edge list** -> Union-Find: start at n, decrement per successful union (0323)
+- **Ratios / a/b = k relations** -> Weighted edges, multiply along a path; or weighted Union-Find (0399)
+- **Fewest single-letter changes between strings** -> BFS; neighbours by substitution or wildcard buckets (0433, 0127)
+- **Board game with jumps, fewest moves** -> Flatten board to 1-D, BFS on squares (0909)
 
 ## Advanced Graphs
 - **Shortest path, non-negative weights** -> Dijkstra (0743)
 - **Connect all points with min total cost** -> MST, Prim's or Kruskal's (1584)
 - **Shortest path with at most k edges** -> Bellman-Ford, k+1 rounds (0787)
+- **Path cost = max cell/edge on the path** -> Dijkstra with max instead of +, or binary search + flood fill (0778)
+- **Use every edge exactly once / itinerary** -> Hierholzer post-order DFS, reverse at the end (0332)
+- **Order hidden in sorted words** -> First differing letter of adjacent pairs = edge, then topo sort (0269)
 
 ## 1-D DP
 - **Count ways / min cost to reach step i** -> dp[i] from dp[i-1], dp[i-2] (0070, 0746)
 - **Pick non-adjacent items** -> Take/skip DP (0198)
 - **Min coins / can amount be formed** -> Unbounded knapsack (0322)
 - **Can string be split into dictionary words** -> Prefix DP (0139)
+- **Count ways to decode / segment with rules** -> dp[i] adds dp[i-1], dp[i-2] only when the step is valid (0091)
+- **Circular non-adjacent picks** -> Two linear passes: skip first / skip last (0213)
+- **Max product subarray** -> Track max and min ending here (0152)
+- **Longest increasing subsequence** -> tails + binary search, O(n log n) (0300)
+- **Split into two equal-sum halves / exact subset sum** -> 0/1 knapsack, sweep sums backwards (0416)
+- **Longest / count palindromic substrings** -> Expand around 2n-1 centers (0005, 0647)
 
 ## 2-D DP
 - **Two strings, compare/align** -> dp[i][j] over prefixes (1143, 0072)

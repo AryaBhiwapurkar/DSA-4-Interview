@@ -6,10 +6,10 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 
 | List | Problems | Done |
 |------|---------:|-----:|
-| NeetCode 150 (NC150) | 150 | 70 |
-| LeetCode Top Interview 150 (TI150) | 150 | 94 |
-| In both lists | 77 | 44 |
-| **Unique total** | **223** | **120** |
+| NeetCode 150 (NC150) | 150 | 110 |
+| LeetCode Top Interview 150 (TI150) | 150 | 115 |
+| In both lists | 77 | 60 |
+| **Unique total** | **223** | **165** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
@@ -26,10 +26,10 @@ Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.
 | [07. Trees](topics/07-trees/) | 29 | 29 |
 | [08. Tries](topics/08-tries/) | 3 | 3 |
 | [09. Heap / Priority Queue](topics/09-heap-priority-queue/) | 9 | 9 |
-| [10. Backtracking](topics/10-backtracking/) | 11 | 0 |
-| [11. Graphs](topics/11-graphs/) | 16 | 0 |
-| [12. Advanced Graphs](topics/12-advanced-graphs/) | 6 | 0 |
-| [13. 1-D Dynamic Programming](topics/13-1d-dp/) | 12 | 0 |
+| [10. Backtracking](topics/10-backtracking/) | 11 | 11 |
+| [11. Graphs](topics/11-graphs/) | 16 | 16 |
+| [12. Advanced Graphs](topics/12-advanced-graphs/) | 6 | 6 |
+| [13. 1-D Dynamic Programming](topics/13-1d-dp/) | 12 | 12 |
 | [14. 2-D Dynamic Programming](topics/14-2d-dp/) | 17 | 0 |
 | [15. Greedy](topics/15-greedy/) | 11 | 0 |
 | [16. Intervals](topics/16-intervals/) | 8 | 0 |
@@ -207,66 +207,66 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0017 | Letter Combinations of a Phone Number | Medium | Backtrack over digit map | NC150, TI150 | ⬜ |
-| 0039 | Combination Sum | Medium | Backtrack with reuse | NC150, TI150 | ⬜ |
-| 0040 | Combination Sum II | Medium | Sort + skip duplicates, no reuse | NC150 | ⬜ |
-| 0046 | Permutations | Medium | Backtrack with used[] | NC150, TI150 | ⬜ |
-| 0077 | Combinations | Medium | Backtrack choose k | TI150 | ⬜ |
-| 0078 | Subsets | Medium | Include/exclude | NC150 | ⬜ |
-| 0079 | Word Search | Medium | Grid DFS backtracking | NC150, TI150 | ⬜ |
-| 0090 | Subsets II | Medium | Sort + skip duplicates | NC150 | ⬜ |
-| 0131 | Palindrome Partitioning | Medium | Backtrack on cut points | NC150 | ⬜ |
-| 0051 | N-Queens | Hard | Backtrack with col/diag sets | NC150 | ⬜ |
-| 0052 | N-Queens II | Hard | Backtrack with col/diag sets (count) | TI150 | ⬜ |
+| 0017 | [Letter Combinations of a Phone Number](topics/10-backtracking/0017-letter-combinations-of-a-phone-number/) | Medium | Backtrack over digit map | NC150, TI150 | ✅ |
+| 0039 | [Combination Sum](topics/10-backtracking/0039-combination-sum/) | Medium | Backtrack with reuse | NC150, TI150 | ✅ |
+| 0040 | [Combination Sum II](topics/10-backtracking/0040-combination-sum-ii/) | Medium | Sort + skip duplicates, no reuse | NC150 | ✅ |
+| 0046 | [Permutations](topics/10-backtracking/0046-permutations/) | Medium | Backtrack with used[] | NC150, TI150 | ✅ |
+| 0077 | [Combinations](topics/10-backtracking/0077-combinations/) | Medium | Backtrack choose k | TI150 | ✅ |
+| 0078 | [Subsets](topics/10-backtracking/0078-subsets/) | Medium | Include/exclude | NC150 | ✅ |
+| 0079 | [Word Search](topics/10-backtracking/0079-word-search/) | Medium | Grid DFS backtracking | NC150, TI150 | ✅ |
+| 0090 | [Subsets II](topics/10-backtracking/0090-subsets-ii/) | Medium | Sort + skip duplicates | NC150 | ✅ |
+| 0131 | [Palindrome Partitioning](topics/10-backtracking/0131-palindrome-partitioning/) | Medium | Backtrack on cut points | NC150 | ✅ |
+| 0051 | [N-Queens](topics/10-backtracking/0051-n-queens/) | Hard | Backtrack with col/diag sets | NC150 | ✅ |
+| 0052 | [N-Queens II](topics/10-backtracking/0052-n-queens-ii/) | Hard | Backtrack with col/diag sets (count) | TI150 | ✅ |
 
 ## 11. Graphs
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0130 | Surrounded Regions | Medium | DFS from border | NC150, TI150 | ⬜ |
-| 0133 | Clone Graph | Medium | DFS + hashmap old→new | NC150, TI150 | ⬜ |
-| 0200 | Number of Islands | Medium | Grid DFS/BFS flood fill | NC150, TI150 | ⬜ |
-| 0207 | Course Schedule | Medium | Cycle detection / Kahn's | NC150, TI150 | ⬜ |
-| 0210 | Course Schedule II | Medium | Topological sort | NC150, TI150 | ⬜ |
-| 0261 | Graph Valid Tree | Medium | n-1 edges + connected | NC150 | ⬜ |
-| 0286 | Walls and Gates | Medium | Multi-source BFS | NC150 | ⬜ |
-| 0323 | Number of Connected Components in an Undirected Graph | Medium | Union-Find / DFS | NC150 | ⬜ |
-| 0399 | Evaluate Division | Medium | Weighted graph DFS / weighted Union-Find | TI150 | ⬜ |
-| 0417 | Pacific Atlantic Water Flow | Medium | Reverse DFS from both oceans | NC150 | ⬜ |
-| 0433 | Minimum Genetic Mutation | Medium | BFS over strings | TI150 | ⬜ |
-| 0684 | Redundant Connection | Medium | Union-Find | NC150 | ⬜ |
-| 0695 | Max Area of Island | Medium | Grid DFS | NC150 | ⬜ |
-| 0909 | Snakes and Ladders | Medium | BFS on board | TI150 | ⬜ |
-| 0994 | Rotting Oranges | Medium | Multi-source BFS | NC150 | ⬜ |
-| 0127 | Word Ladder | Hard | BFS with wildcard buckets | NC150, TI150 | ⬜ |
+| 0130 | [Surrounded Regions](topics/11-graphs/0130-surrounded-regions/) | Medium | DFS from border | NC150, TI150 | ✅ |
+| 0133 | [Clone Graph](topics/11-graphs/0133-clone-graph/) | Medium | DFS + hashmap old→new | NC150, TI150 | ✅ |
+| 0200 | [Number of Islands](topics/11-graphs/0200-number-of-islands/) | Medium | Grid DFS/BFS flood fill | NC150, TI150 | ✅ |
+| 0207 | [Course Schedule](topics/11-graphs/0207-course-schedule/) | Medium | Cycle detection / Kahn's | NC150, TI150 | ✅ |
+| 0210 | [Course Schedule II](topics/11-graphs/0210-course-schedule-ii/) | Medium | Topological sort | NC150, TI150 | ✅ |
+| 0261 | [Graph Valid Tree](topics/11-graphs/0261-graph-valid-tree/) | Medium | n-1 edges + connected | NC150 | ✅ |
+| 0286 | [Walls and Gates](topics/11-graphs/0286-walls-and-gates/) | Medium | Multi-source BFS | NC150 | ✅ |
+| 0323 | [Number of Connected Components in an Undirected Graph](topics/11-graphs/0323-number-of-connected-components-in-an-undirected-graph/) | Medium | Union-Find / DFS | NC150 | ✅ |
+| 0399 | [Evaluate Division](topics/11-graphs/0399-evaluate-division/) | Medium | Weighted graph DFS / weighted Union-Find | TI150 | ✅ |
+| 0417 | [Pacific Atlantic Water Flow](topics/11-graphs/0417-pacific-atlantic-water-flow/) | Medium | Reverse DFS from both oceans | NC150 | ✅ |
+| 0433 | [Minimum Genetic Mutation](topics/11-graphs/0433-minimum-genetic-mutation/) | Medium | BFS over strings | TI150 | ✅ |
+| 0684 | [Redundant Connection](topics/11-graphs/0684-redundant-connection/) | Medium | Union-Find | NC150 | ✅ |
+| 0695 | [Max Area of Island](topics/11-graphs/0695-max-area-of-island/) | Medium | Grid DFS | NC150 | ✅ |
+| 0909 | [Snakes and Ladders](topics/11-graphs/0909-snakes-and-ladders/) | Medium | BFS on board | TI150 | ✅ |
+| 0994 | [Rotting Oranges](topics/11-graphs/0994-rotting-oranges/) | Medium | Multi-source BFS | NC150 | ✅ |
+| 0127 | [Word Ladder](topics/11-graphs/0127-word-ladder/) | Hard | BFS with wildcard buckets | NC150, TI150 | ✅ |
 
 ## 12. Advanced Graphs
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0743 | Network Delay Time | Medium | Dijkstra | NC150 | ⬜ |
-| 0787 | Cheapest Flights Within K Stops | Medium | Bellman-Ford, k+1 rounds | NC150 | ⬜ |
-| 1584 | Min Cost to Connect All Points | Medium | MST (Prim's) | NC150 | ⬜ |
-| 0269 | Alien Dictionary | Hard | Topological sort on chars | NC150 | ⬜ |
-| 0332 | Reconstruct Itinerary | Hard | Hierholzer (Eulerian path) | NC150 | ⬜ |
-| 0778 | Swim in Rising Water | Hard | Dijkstra on max edge | NC150 | ⬜ |
+| 0743 | [Network Delay Time](topics/12-advanced-graphs/0743-network-delay-time/) | Medium | Dijkstra | NC150 | ✅ |
+| 0787 | [Cheapest Flights Within K Stops](topics/12-advanced-graphs/0787-cheapest-flights-within-k-stops/) | Medium | Bellman-Ford, k+1 rounds | NC150 | ✅ |
+| 1584 | [Min Cost to Connect All Points](topics/12-advanced-graphs/1584-min-cost-to-connect-all-points/) | Medium | MST (Prim's) | NC150 | ✅ |
+| 0269 | [Alien Dictionary](topics/12-advanced-graphs/0269-alien-dictionary/) | Hard | Topological sort on chars | NC150 | ✅ |
+| 0332 | [Reconstruct Itinerary](topics/12-advanced-graphs/0332-reconstruct-itinerary/) | Hard | Hierholzer (Eulerian path) | NC150 | ✅ |
+| 0778 | [Swim in Rising Water](topics/12-advanced-graphs/0778-swim-in-rising-water/) | Hard | Dijkstra on max edge | NC150 | ✅ |
 
 ## 13. 1-D Dynamic Programming
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0070 | Climbing Stairs | Easy | Fibonacci DP | NC150, TI150 | ⬜ |
-| 0746 | Min Cost Climbing Stairs | Easy | Linear DP | NC150 | ⬜ |
-| 0005 | Longest Palindromic Substring | Medium | Expand around center | NC150, TI150 | ⬜ |
-| 0091 | Decode Ways | Medium | Linear DP on 1/2 digits | NC150 | ⬜ |
-| 0139 | Word Break | Medium | Prefix DP + dictionary | NC150, TI150 | ⬜ |
-| 0152 | Maximum Product Subarray | Medium | Track max & min | NC150 | ⬜ |
-| 0198 | House Robber | Medium | Take/skip DP | NC150, TI150 | ⬜ |
-| 0213 | House Robber II | Medium | Two passes of House Robber | NC150 | ⬜ |
-| 0300 | Longest Increasing Subsequence | Medium | DP / patience sort + binary search | NC150, TI150 | ⬜ |
-| 0322 | Coin Change | Medium | Unbounded knapsack (min) | NC150, TI150 | ⬜ |
-| 0416 | Partition Equal Subset Sum | Medium | 0/1 knapsack subset sum | NC150 | ⬜ |
-| 0647 | Palindromic Substrings | Medium | Expand around center | NC150 | ⬜ |
+| 0070 | [Climbing Stairs](topics/13-1d-dp/0070-climbing-stairs/) | Easy | Fibonacci DP | NC150, TI150 | ✅ |
+| 0746 | [Min Cost Climbing Stairs](topics/13-1d-dp/0746-min-cost-climbing-stairs/) | Easy | Linear DP | NC150 | ✅ |
+| 0005 | [Longest Palindromic Substring](topics/13-1d-dp/0005-longest-palindromic-substring/) | Medium | Expand around center | NC150, TI150 | ✅ |
+| 0091 | [Decode Ways](topics/13-1d-dp/0091-decode-ways/) | Medium | Linear DP on 1/2 digits | NC150 | ✅ |
+| 0139 | [Word Break](topics/13-1d-dp/0139-word-break/) | Medium | Prefix DP + dictionary | NC150, TI150 | ✅ |
+| 0152 | [Maximum Product Subarray](topics/13-1d-dp/0152-maximum-product-subarray/) | Medium | Track max & min | NC150 | ✅ |
+| 0198 | [House Robber](topics/13-1d-dp/0198-house-robber/) | Medium | Take/skip DP | NC150, TI150 | ✅ |
+| 0213 | [House Robber II](topics/13-1d-dp/0213-house-robber-ii/) | Medium | Two passes of House Robber | NC150 | ✅ |
+| 0300 | [Longest Increasing Subsequence](topics/13-1d-dp/0300-longest-increasing-subsequence/) | Medium | DP / patience sort + binary search | NC150, TI150 | ✅ |
+| 0322 | [Coin Change](topics/13-1d-dp/0322-coin-change/) | Medium | Unbounded knapsack (min) | NC150, TI150 | ✅ |
+| 0416 | [Partition Equal Subset Sum](topics/13-1d-dp/0416-partition-equal-subset-sum/) | Medium | 0/1 knapsack subset sum | NC150 | ✅ |
+| 0647 | [Palindromic Substrings](topics/13-1d-dp/0647-palindromic-substrings/) | Medium | Expand around center | NC150 | ✅ |
 
 ## 14. 2-D Dynamic Programming
 

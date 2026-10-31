@@ -65,6 +65,7 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Peek | `pq.top()` | `h[0]` | `(*h)[0]` |
 | Heapify list | `priority_queue<int> pq(a.begin(), a.end());` | `heapq.heapify(a)` | `heap.Init(h)` |
 | Min-heap of tuples | `priority_queue<T, vector<T>, greater<T>>` with `T = tuple<...>` | push tuples; compared element-wise | struct + `Less` using `cmp.Or(cmp.Compare(...), ...)` |
+| Min-heap of fixed arrays | `priority_queue<array<int,3>, vector<array<int,3>>, greater<>> pq;` | push `(t, r, c)` tuples | struct `{t, r, c int}` + `Less` on `t` |
 | Two heaps (median) | `priority_queue<int>` + `greater<int>` version | `low` stores negatives, `high` plain | one min-heap type, negate values for the max side |
 | Heap of pointers (min by field) | `auto cmp = [](Node* a, Node* b){ return a->val > b->val; };` | `(node.val, i, node)`: unique `i` so nodes are never compared | `type nodeHeap []*Node` with `Less: h[i].Val < h[j].Val` |
 
@@ -179,6 +180,7 @@ C++ comparators must be strict (`<`, never `<=`) or sort can crash.
 | Sort chars | `sort(s.begin(), s.end());` | `"".join(sorted(s))` | `b := []byte(s); slices.Sort(b); string(b)` |
 | Find (from pos) | `s.find(t, pos)` (`string::npos` if absent) | `s.find(t, pos)` (-1) / `s.index` (raises) | `strings.Index(s[pos:], t)` (+pos; -1 if absent) |
 | Starts with | `s.compare(0, p.size(), p) == 0` | `s.startswith(p)` | `strings.HasPrefix(s, p)` |
+| Match word at position i | `s.compare(i, w.size(), w) == 0` | `s.startswith(w, i)` | `strings.HasPrefix(s[i:], w)` |
 | Join | loop with `" "` separator | `" ".join(words)` | `strings.Join(words, " ")` |
 | Repeat / pad | `string(k, ' ')` | `" " * k`, `s.ljust(w)` | `strings.Repeat(" ", k)` |
 | Lower / upper | `tolower(c)` | `c.lower()` | `unicode.ToLower(r)` / `strings.ToLower(s)` |
@@ -215,5 +217,46 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 |-----------|-----|--------|----|
 | Recursive helper with shared state | pass by reference: `void dfs(..., vector<string>& res)` | nested `def` + `nonlocal x` to rebind | `var dfs func(int); dfs = func(i int) { ... }` |
 | Do-while | `do { ... } while (cond);` | `while True: ...; if not cond: break` | `for { ...; if !cond { break } }` |
+| Loop with "no break happened" branch | bool flag | `for ...: ... break` / `else:` | bool flag or labeled `continue` |
 | Infinite loop | `while (true)` / `for (;;)` | `while True:` | `for { }` |
 | Recursion depth | ~10⁴-10⁵ frames (8 MB default stack) | default limit ~1000 (`sys.setrecursionlimit`) | stacks grow dynamically |
+| Recursive lambda | `function<void(int)> f = [&](int i) { ... f(i + 1); };` | nested `def` | `var f func(int); f = func(i int) { ... }` |
+| Snapshot a backtracking path | `res.push_back(path)` (copies) | `res.append(path[:])` | `res = append(res, slices.Clone(path))` |
+| 4-direction neighbours | `const int DR[4] = {1,-1,0,0}, DC[4] = {0,0,1,-1};` | `DIRS = ((1,0),(-1,0),(0,1),(0,-1))` | `var dirs = [4][2]int{{1,0},{-1,0},{0,1},{0,-1}}` |
+| In-bounds check | `r >= 0 && c >= 0 && r < m && c < n` | `0 <= r < m and 0 <= c < n` | `r >= 0 && c >= 0 && r < m && c < n` |
+| Iterative DFS (no recursion limit) | `vector<int> st{s}; while (!st.empty()) { int u = st.back(); st.pop_back(); ... }` | `st = [s]` + `while st: u = st.pop()` | `st := []int{s}; for len(st) > 0 { u := st[len(st)-1]; st = st[:len(st)-1] }` |
+
+## DP / Memoization
+
+| Operation | C++ | Python | Go |
+|-----------|-----|--------|----|
+| Memoize a function | `vector<int> memo(n, -1);` + `if (memo[i] != -1) return memo[i];` | `@cache` (from `functools`) on a nested `def` | `memo := make([]int, n)` + sentinel check |
+| Store and return | `return memo[i] = res;` | (automatic with `@cache`) | `memo[i] = res; return res` |
+| dp with base dp[0] | `vector<int> dp(n + 1, INF); dp[0] = 0;` | `dp = [0] + [INF] * n` | `dp := make([]int, n+1)` + fill loop |
+| Rolling two values | `int c = f(a, b); a = b; b = c;` | `a, b = b, f(a, b)` | `a, b = b, f(a, b)` |
+| Safe "infinity" for min-count | `amount + 1` (not `INT_MAX`: `+1` wraps) | `float("inf")` or `amount + 1` | `amount + 1` |
+| Min over possibly empty set | init `best = INF`, loop | `min(gen, default=INF)` | init `best := math.MaxInt`, loop |
+| Subset-sum bitset | `bitset<10001> b(1); b \|= b << x; b[t]` | `b = 1; b \|= b << x; b >> t & 1` | `math/big`: `b.Or(b, new(big.Int).Lsh(b, x))` |
+| 0/1 knapsack sweep | `for (int s = S; s >= x; s--)` | `for s in range(S, x - 1, -1):` | `for s := S; s >= x; s-- {` |
+| Countdown sentinel memo (0 is valid) | fill with -1 or -2 | `@cache` avoids sentinels | fill with -1 |
+
+## Graph / Union-Find
+
+| Operation | C++ | Python | Go |
+|-----------|-----|--------|----|
+| Adjacency list | `vector<vector<int>> adj(n);` `adj[u].push_back(v);` | `adj = [[] for _ in range(n)]` | `adj := make([][]int, n)`; `adj[u] = append(adj[u], v)` |
+| String-keyed graph | `unordered_map<string, vector<pair<string,double>>> adj;` | `defaultdict(list)` | `map[string][]edge{}` |
+| DSU init | `vector<int> p(n); iota(p.begin(), p.end(), 0);` | `parent = list(range(n))` | loop `parent[i] = i` |
+| Find with compression | `return p[x] == x ? x : p[x] = find(p[x]);` | `while p[x] != x: p[x] = p[p[x]]; x = p[x]` | `if p[x] != x { p[x] = find(p[x]) }; return p[x]` |
+| Flatten a cell | `r * n + c` | `r * n + c` / `divmod(id, n)` | `r*n + c` |
+| Multi-source BFS seed | push every source before the loop | `deque((r, c) for ... if g[r][c] == 0)` | append every source to `q` first |
+| Pointer-identity map (clone) | `unordered_map<Node*, Node*>` | `dict[Node, Node]` (identity hash) | `map[*Node]*Node` |
+
+## Bits
+
+| Operation | C++ | Python | Go |
+|-----------|-----|--------|----|
+| Test bit j | `mask >> j & 1` | `mask >> j & 1` | `mask>>j&1 == 1` |
+| Lowest set bit | `x & -x` | `x & -x` | `x & -x` |
+| Low n bits mask | `(1 << n) - 1` | `(1 << n) - 1` | `1<<n - 1` |
+| Clear bits of y in x | `x & ~y` | `x & ~y` (mask result: `~` is negative) | `x &^ y` |

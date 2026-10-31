@@ -90,6 +90,6 @@ One DFS per starting cell explores all words at once; trie pruning kills paths t
 - Mention pruning found branches.
 
 ## Follow-ups
-- **Single word:** LC 0079 Word Search (not added yet)
+- **Single word:** [LC 0079 Word Search](../../10-backtracking/0079-word-search/)
 - **Trie basics:** [LC 0208 Implement Trie (Prefix Tree)](../0208-implement-trie-prefix-tree/)
 - **Wildcards in the words:** combine with [LC 0211](../0211-design-add-and-search-words-data-structure/)

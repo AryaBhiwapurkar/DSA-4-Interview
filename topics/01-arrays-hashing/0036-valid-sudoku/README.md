@@ -107,4 +107,4 @@ Second example (top-left changed to 8), first few filled cells in row-major orde
 ## Follow-ups
 - **Actually solve the board:** backtracking with the same three seen-structures: LC 0037 Sudoku Solver (not added yet)
 - **N×N Sudoku (N = k²):** box index `(r/k)*k + c/k`, same algorithm.
-- **Similar constraint tracking:** LC 0051 N-Queens (not added yet)
+- **Similar constraint tracking:** [LC 0051 N-Queens](../../10-backtracking/0051-n-queens/)

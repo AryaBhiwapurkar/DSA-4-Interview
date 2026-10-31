@@ -98,6 +98,6 @@ Insert each copy right after its original (A → A' → B → B' …), so `copy.
 - Mention the O(1)-space interleave trick as the follow-up.
 
 ## Follow-ups
-- **Clone a general graph:** the same old → new map with BFS/DFS: LC 0133 Clone Graph (not added yet)
+- **Clone a general graph:** the same old → new map with BFS/DFS: [LC 0133 Clone Graph](../../11-graphs/0133-clone-graph/)
 - **Tree with random pointers:** LC 1485 Clone Binary Tree With Random Pointer (not added yet)
 - **One-pass hashmap:** create copies lazily with a `getClone(node)` helper while walking.
