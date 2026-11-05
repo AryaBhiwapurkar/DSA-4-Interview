@@ -102,5 +102,5 @@ Length **4**.
 ## Follow-ups
 - **2-D version (envelopes):** LC 0354 Russian Doll Envelopes (not added yet). Sort by width ascending and height descending, then run LIS on heights.
 - **Count the LIS:** LC 0673 Number of Longest Increasing Subsequence (not added yet). O(n²) DP carrying lengths and counts.
-- **Two-sequence version:** LC 1143 Longest Common Subsequence (not added yet). 2-D DP.
+- **Two-sequence version:** [LC 1143 Longest Common Subsequence](../../14-2d-dp/1143-longest-common-subsequence/). 2-D DP.
 - **Reconstruct the subsequence:** store for each element the index of its predecessor in tails.

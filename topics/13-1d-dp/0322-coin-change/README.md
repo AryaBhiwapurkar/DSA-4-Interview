@@ -102,7 +102,7 @@ Fill dp from 0 to amount.
 - Contrast with Coin Change II (count combinations: loop over coins outside, amounts inside).
 
 ## Follow-ups
-- **Count combinations instead of min:** LC 0518 Coin Change II (not added yet). The coin loop goes outside so order doesn't matter.
+- **Count combinations instead of min:** [LC 0518 Coin Change II](../../14-2d-dp/0518-coin-change-ii/). The coin loop goes outside so order doesn't matter.
 - **Fewest perfect squares summing to n:** LC 0279 Perfect Squares (not added yet). Same DP with squares as coins.
 - **List all combinations:** [LC 0039 Combination Sum](../../10-backtracking/0039-combination-sum/)
 - **Each coin usable once:** 0/1 knapsack, as in [LC 0416 Partition Equal Subset Sum](../0416-partition-equal-subset-sum/)

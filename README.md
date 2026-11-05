@@ -6,10 +6,10 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 
 | List | Problems | Done |
 |------|---------:|-----:|
-| NeetCode 150 (NC150) | 150 | 110 |
-| LeetCode Top Interview 150 (TI150) | 150 | 115 |
-| In both lists | 77 | 60 |
-| **Unique total** | **223** | **165** |
+| NeetCode 150 (NC150) | 150 | 129 |
+| LeetCode Top Interview 150 (TI150) | 150 | 130 |
+| In both lists | 77 | 66 |
+| **Unique total** | **223** | **193** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
@@ -30,8 +30,8 @@ Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.
 | [11. Graphs](topics/11-graphs/) | 16 | 16 |
 | [12. Advanced Graphs](topics/12-advanced-graphs/) | 6 | 6 |
 | [13. 1-D Dynamic Programming](topics/13-1d-dp/) | 12 | 12 |
-| [14. 2-D Dynamic Programming](topics/14-2d-dp/) | 17 | 0 |
-| [15. Greedy](topics/15-greedy/) | 11 | 0 |
+| [14. 2-D Dynamic Programming](topics/14-2d-dp/) | 17 | 17 |
+| [15. Greedy](topics/15-greedy/) | 11 | 11 |
 | [16. Intervals](topics/16-intervals/) | 8 | 0 |
 | [17. Math & Geometry](topics/17-math-geometry/) | 12 | 0 |
 | [18. Bit Manipulation](topics/18-bit-manipulation/) | 10 | 0 |
@@ -272,39 +272,39 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0062 | Unique Paths | Medium | Grid DP | NC150 | ⬜ |
-| 0063 | Unique Paths II | Medium | Grid DP with obstacles | TI150 | ⬜ |
-| 0064 | Minimum Path Sum | Medium | Grid DP | TI150 | ⬜ |
-| 0072 | Edit Distance | Medium | Two-string DP | NC150, TI150 | ⬜ |
-| 0097 | Interleaving String | Medium | Two-string DP | NC150, TI150 | ⬜ |
-| 0120 | Triangle | Medium | Bottom-up DP | TI150 | ⬜ |
-| 0221 | Maximal Square | Medium | Grid DP, min of 3 neighbors | TI150 | ⬜ |
-| 0309 | Best Time to Buy and Sell Stock with Cooldown | Medium | State machine DP | NC150 | ⬜ |
-| 0494 | Target Sum | Medium | Subset-sum DP / memo | NC150 | ⬜ |
-| 0518 | Coin Change II | Medium | Unbounded knapsack (count) | NC150 | ⬜ |
-| 1143 | Longest Common Subsequence | Medium | Two-string DP | NC150 | ⬜ |
-| 0010 | Regular Expression Matching | Hard | Two-string DP with star | NC150 | ⬜ |
-| 0115 | Distinct Subsequences | Hard | Two-string DP | NC150 | ⬜ |
-| 0123 | Best Time to Buy and Sell Stock III | Hard | State machine DP (2 txns) | TI150 | ⬜ |
-| 0188 | Best Time to Buy and Sell Stock IV | Hard | State machine DP (k txns) | TI150 | ⬜ |
-| 0312 | Burst Balloons | Hard | Interval DP (last to burst) | NC150 | ⬜ |
-| 0329 | Longest Increasing Path in a Matrix | Hard | DFS + memo | NC150 | ⬜ |
+| 0062 | [Unique Paths](topics/14-2d-dp/0062-unique-paths/) | Medium | Grid DP | NC150 | ✅ |
+| 0063 | [Unique Paths II](topics/14-2d-dp/0063-unique-paths-ii/) | Medium | Grid DP with obstacles | TI150 | ✅ |
+| 0064 | [Minimum Path Sum](topics/14-2d-dp/0064-minimum-path-sum/) | Medium | Grid DP | TI150 | ✅ |
+| 0072 | [Edit Distance](topics/14-2d-dp/0072-edit-distance/) | Medium | Two-string DP | NC150, TI150 | ✅ |
+| 0097 | [Interleaving String](topics/14-2d-dp/0097-interleaving-string/) | Medium | Two-string DP | NC150, TI150 | ✅ |
+| 0120 | [Triangle](topics/14-2d-dp/0120-triangle/) | Medium | Bottom-up DP | TI150 | ✅ |
+| 0221 | [Maximal Square](topics/14-2d-dp/0221-maximal-square/) | Medium | Grid DP, min of 3 neighbors | TI150 | ✅ |
+| 0309 | [Best Time to Buy and Sell Stock with Cooldown](topics/14-2d-dp/0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | State machine DP | NC150 | ✅ |
+| 0494 | [Target Sum](topics/14-2d-dp/0494-target-sum/) | Medium | Subset-sum DP / memo | NC150 | ✅ |
+| 0518 | [Coin Change II](topics/14-2d-dp/0518-coin-change-ii/) | Medium | Unbounded knapsack (count) | NC150 | ✅ |
+| 1143 | [Longest Common Subsequence](topics/14-2d-dp/1143-longest-common-subsequence/) | Medium | Two-string DP | NC150 | ✅ |
+| 0010 | [Regular Expression Matching](topics/14-2d-dp/0010-regular-expression-matching/) | Hard | Two-string DP with star | NC150 | ✅ |
+| 0115 | [Distinct Subsequences](topics/14-2d-dp/0115-distinct-subsequences/) | Hard | Two-string DP | NC150 | ✅ |
+| 0123 | [Best Time to Buy and Sell Stock III](topics/14-2d-dp/0123-best-time-to-buy-and-sell-stock-iii/) | Hard | State machine DP (2 txns) | TI150 | ✅ |
+| 0188 | [Best Time to Buy and Sell Stock IV](topics/14-2d-dp/0188-best-time-to-buy-and-sell-stock-iv/) | Hard | State machine DP (k txns) | TI150 | ✅ |
+| 0312 | [Burst Balloons](topics/14-2d-dp/0312-burst-balloons/) | Hard | Interval DP (last to burst) | NC150 | ✅ |
+| 0329 | [Longest Increasing Path in a Matrix](topics/14-2d-dp/0329-longest-increasing-path-in-a-matrix/) | Hard | DFS + memo | NC150 | ✅ |
 
 ## 15. Greedy
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0045 | Jump Game II | Medium | BFS-style level greedy | NC150, TI150 | ⬜ |
-| 0053 | Maximum Subarray | Medium | Kadane | NC150, TI150 | ⬜ |
-| 0055 | Jump Game | Medium | Track farthest reach | NC150, TI150 | ⬜ |
-| 0122 | Best Time to Buy and Sell Stock II | Medium | Sum positive deltas | TI150 | ⬜ |
-| 0134 | Gas Station | Medium | Reset start on negative tank | NC150, TI150 | ⬜ |
-| 0678 | Valid Parenthesis String | Medium | Track min/max open count | NC150 | ⬜ |
-| 0763 | Partition Labels | Medium | Last occurrence + window end | NC150 | ⬜ |
-| 0846 | Hand of Straights | Medium | Sorted counts, build from min | NC150 | ⬜ |
-| 0918 | Maximum Sum Circular Subarray | Medium | Kadane on max & min | TI150 | ⬜ |
-| 1899 | Merge Triplets to Form Target Triplet | Medium | Filter valid triplets | NC150 | ⬜ |
-| 0135 | Candy | Hard | Two passes L→R, R→L | TI150 | ⬜ |
+| 0045 | [Jump Game II](topics/15-greedy/0045-jump-game-ii/) | Medium | BFS-style level greedy | NC150, TI150 | ✅ |
+| 0053 | [Maximum Subarray](topics/15-greedy/0053-maximum-subarray/) | Medium | Kadane | NC150, TI150 | ✅ |
+| 0055 | [Jump Game](topics/15-greedy/0055-jump-game/) | Medium | Track farthest reach | NC150, TI150 | ✅ |
+| 0122 | [Best Time to Buy and Sell Stock II](topics/15-greedy/0122-best-time-to-buy-and-sell-stock-ii/) | Medium | Sum positive deltas | TI150 | ✅ |
+| 0134 | [Gas Station](topics/15-greedy/0134-gas-station/) | Medium | Reset start on negative tank | NC150, TI150 | ✅ |
+| 0678 | [Valid Parenthesis String](topics/15-greedy/0678-valid-parenthesis-string/) | Medium | Track min/max open count | NC150 | ✅ |
+| 0763 | [Partition Labels](topics/15-greedy/0763-partition-labels/) | Medium | Last occurrence + window end | NC150 | ✅ |
+| 0846 | [Hand of Straights](topics/15-greedy/0846-hand-of-straights/) | Medium | Sorted counts, build from min | NC150 | ✅ |
+| 0918 | [Maximum Sum Circular Subarray](topics/15-greedy/0918-maximum-sum-circular-subarray/) | Medium | Kadane on max & min | TI150 | ✅ |
+| 1899 | [Merge Triplets to Form Target Triplet](topics/15-greedy/1899-merge-triplets-to-form-target-triplet/) | Medium | Filter valid triplets | NC150 | ✅ |
+| 0135 | [Candy](topics/15-greedy/0135-candy/) | Hard | Two passes L→R, R→L | TI150 | ✅ |
 
 ## 16. Intervals
 

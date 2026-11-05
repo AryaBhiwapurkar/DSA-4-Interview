@@ -85,5 +85,5 @@ search("b..") over {bad, dad, mad}
 
 ## Follow-ups
 - **Plain trie:** [LC 0208 Implement Trie (Prefix Tree)](../0208-implement-trie-prefix-tree/)
-- **'*' wildcards / regex:** DP: LC 0010 Regular Expression Matching (not added yet)
+- **'*' wildcards / regex:** DP: [LC 0010 Regular Expression Matching](../../14-2d-dp/0010-regular-expression-matching/)
 - **Speed-up for many dots:** bucket words by length so mismatched lengths are skipped immediately.

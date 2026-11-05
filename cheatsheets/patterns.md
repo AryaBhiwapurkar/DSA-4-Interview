@@ -163,12 +163,29 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 
 ## 2-D DP
 - **Two strings, compare/align** -> dp[i][j] over prefixes (1143, 0072)
-- **Paths in a grid** -> Grid DP (0062, 0064)
-- **Buy/sell with states (cooldown, k txns)** -> State machine DP (0309, 0188)
+- **Can s3 be a merge of s1 and s2** -> dp[i][j] over prefixes, s3 index = i + j (0097)
+- **Count ways t appears as a subsequence of s** -> Prefix DP, skip or use s[i-1], dp[i][0] = 1 (0115)
+- **Pattern with `.` and `*`** -> Memo on (i, j), look ahead for `*`: skip pair or eat one char (0010)
+- **Paths in a grid, right/down moves** -> Grid DP from top + left, one rolling row (0062, 0063, 0064)
+- **Triangle / pyramid min path** -> Fold bottom-up so every cell has two children (0120)
+- **Largest all-1 square** -> dp = 1 + min(top, left, diag) (0221)
+- **Buy/sell with states (cooldown, k txns)** -> State machine DP (0309, 0123, 0188)
+- **Count coin combinations (order doesn't matter)** -> Unbounded knapsack, coins outer loop (0518)
+- **± signs to hit a target** -> Count subsets summing to (total + target) / 2 (0494)
+- **Burst / merge where cost uses current neighbours** -> Interval DP, choose the LAST one in (l, r) (0312)
+- **Longest strictly increasing path in a grid** -> DFS + memo; increasing means DAG, no visited set (0329)
 
 ## Greedy
 - **Max subarray sum** -> Kadane (0053)
-- **Can reach end / min jumps** -> Track farthest reach (0055, 0045)
+- **Max subarray on a circular array** -> max(Kadane max, total - Kadane min); all-negative -> max element (0918)
+- **Can reach end / min jumps** -> Track farthest reach; BFS levels without a queue (0055, 0045)
+- **Circular route with gains and costs** -> Total >= 0 check, reset start when the tank goes negative (0134)
+- **Split into groups of k consecutive values** -> Sorted counts; smallest remaining value starts groups (0846)
+- **Reach a target with element-wise max merges** -> Drop anything that overshoots, then check each coordinate is hit (1899)
+- **Max pieces with each letter in one piece** -> Last occurrence + extend window end, cut at i == end (0763)
+- **Wildcards with several meanings (`*` = ( ) or empty)** -> Track [lo, hi] range of open counts (0678)
+- **Unlimited stock trades** -> Sum every positive day-to-day change (0122)
+- **Constraints toward both neighbours** -> Left pass + right pass, combine with max (0135)
 
 ## Intervals
 - **Overlapping intervals** -> Sort by start, merge (0056)

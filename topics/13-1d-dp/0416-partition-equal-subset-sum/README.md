@@ -96,7 +96,7 @@ dp[11] = **true**. On the first 5, sweeping down reads dp[1] and dp[0] from befo
 - Complexity in terms of the sum (pseudo-polynomial), plus the bitset trick.
 
 ## Follow-ups
-- **Assign + / - signs to hit a target:** LC 0494 Target Sum (not added yet). Subset sum with target (total + T) / 2.
+- **Assign + / - signs to hit a target:** [LC 0494 Target Sum](../../14-2d-dp/0494-target-sum/). Subset sum with target (total + T) / 2.
 - **k equal subsets:** LC 0698 Partition to K Equal Sum Subsets (not added yet). Backtracking or bitmask DP.
 - **Minimize the difference between halves:** LC 1049 Last Stone Weight II (not added yet). Largest reachable sum ≤ total / 2.
 - **Unlimited copies of each number:** iterate upwards, as in [LC 0322 Coin Change](../0322-coin-change/)

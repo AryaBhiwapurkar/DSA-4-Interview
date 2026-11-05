@@ -23,6 +23,8 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Drop adjacent duplicates | `a.erase(unique(a.begin(), a.end()), a.end());` | `list(dict.fromkeys(a))` (all dups) | `a = slices.Compact(a)` |
 | Remove value in place | `a.erase(remove(a.begin(), a.end(), v), a.end());` | `a[:] = [x for x in a if x != v]` | `a = slices.DeleteFunc(a, func(x int) bool { return x == v })` |
 | Replace contents in place | `a = b;` (by-ref param) | `a[:] = b` (not `a = b`) | `copy(a, b)` |
+| Consecutive pairs | `for (i = 1; i < n; i++)` use `a[i-1], a[i]` | `for x, y in zip(a, a[1:]):` | `for i := 1; i < len(a); i++` |
+| Any / all match | `any_of(a.begin(), a.end(), pred)` / `all_of` | `any(p(x) for x in a)` / `all(...)` | `slices.ContainsFunc(a, pred)` / loop |
 
 ## Hashmap
 
@@ -52,6 +54,8 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Build from list | `unordered_set<int> s(a.begin(), a.end());` | `set(a)` | loop over `a` |
 | Bool set (small domain) | `bool seen[256] = {};` | `[False] * 256` | `var seen [256]bool` |
 | Ordered set | `set<int>` (`lower_bound`) | `sorted()` + `bisect` | sorted slice + `sort.SearchInts` |
+| Multiset: remove ONE copy | `ms.erase(ms.find(x));` (`erase(x)` removes all) | `cnt[x] -= 1` on a `Counter` | `cnt[x]--` on a map |
+| Ordered counts, iterate ascending | `map<int,int> cnt;` + `for (auto& [k, c] : cnt)` | `for k in sorted(cnt):` | sort the keys, then loop |
 
 ## Heap (Priority Queue) with Custom Comparator
 
@@ -210,6 +214,8 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 | Float division of ints | `double(a) / b` | `a / b` | `float64(a) / float64(b)` |
 | Counting down safely | use `int i`, not `size_t` (wraps below 0) | n/a | `len()` is a signed `int` |
 | "Not found" sentinel | `INT_MAX`, convert to 0/-1 at the end | `math.inf` (float!) → `int()` | `math.MaxInt` |
+| Counting DP whose intermediates overflow | `unsigned long long` (wraps, defined) when the final answer is guaranteed small | not needed | `uint64` (wraps) |
+| Binomial C(n, k) | loop `r = r * (n - k + i) / i` in `long long` | `math.comb(n, k)` | same loop with `int` |
 
 ## Recursion / Loops
 
@@ -239,6 +245,10 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 | Subset-sum bitset | `bitset<10001> b(1); b \|= b << x; b[t]` | `b = 1; b \|= b << x; b >> t & 1` | `math/big`: `b.Or(b, new(big.Int).Lsh(b, x))` |
 | 0/1 knapsack sweep | `for (int s = S; s >= x; s--)` | `for s in range(S, x - 1, -1):` | `for s := S; s >= x; s-- {` |
 | Countdown sentinel memo (0 is valid) | fill with -1 or -2 | `@cache` avoids sentinels | fill with -1 |
+| Cache slot by reference | `int& m = memo[i][j]; if (m != -1) return m; ... return m = res;` | n/a (`@cache`) | `p := &memo[i][j]` |
+| Small extra state dimension | `vector<array<int, 2>> memo(n, {-1, -1});` | `@cache def f(i, holding)` | `memo := make([][2]int, n)` |
+| Two rolling rows | `swap(prev, cur);` (O(1)) | build a fresh `cur` each row, then `prev = cur` | `prev, cur = cur, prev` |
+| Negative state index | `memo[i][s + offset]` | `@cache` takes negative keys | `memo[i][s+offset]` |
 
 ## Graph / Union-Find
 

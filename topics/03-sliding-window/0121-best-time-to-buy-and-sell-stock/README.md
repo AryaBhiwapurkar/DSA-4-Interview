@@ -92,7 +92,7 @@ Keep `minPrice`; at each day, `best = max(best, price - minPrice)`, then `minPri
 - O(n), O(1), and a clean "never negative" answer.
 
 ## Follow-ups
-- **Unlimited transactions:** sum every positive day-to-day gain: LC 0122 Best Time to Buy and Sell Stock II (not added yet)
-- **At most two / k transactions:** state-machine DP: LC 0123 / LC 0188 (not added yet)
-- **With cooldown:** LC 0309 Best Time to Buy and Sell Stock with Cooldown (not added yet)
-- **Same idea on differences:** max subarray of daily changes (Kadane): LC 0053 Maximum Subarray (not added yet)
+- **Unlimited transactions:** sum every positive day-to-day gain: [LC 0122 Best Time to Buy and Sell Stock II](../../15-greedy/0122-best-time-to-buy-and-sell-stock-ii/)
+- **At most two / k transactions:** state-machine DP: [LC 0123](../../14-2d-dp/0123-best-time-to-buy-and-sell-stock-iii/) / [LC 0188](../../14-2d-dp/0188-best-time-to-buy-and-sell-stock-iv/)
+- **With cooldown:** [LC 0309 Best Time to Buy and Sell Stock with Cooldown](../../14-2d-dp/0309-best-time-to-buy-and-sell-stock-with-cooldown/)
+- **Same idea on differences:** max subarray of daily changes (Kadane): [LC 0053 Maximum Subarray](../../15-greedy/0053-maximum-subarray/)
