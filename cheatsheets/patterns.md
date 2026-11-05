@@ -189,8 +189,12 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 
 ## Intervals
 - **Overlapping intervals** -> Sort by start, merge (0056)
+- **Insert into a sorted disjoint list** -> Three phases: before / overlap (widen) / after, O(n) (0057)
+- **Can one person attend all meetings** -> Sort by start, compare neighbours (0252)
 - **Max non-overlapping / min removals / min arrows** -> Sort by end, greedy (0435, 0452)
 - **Max concurrent intervals (rooms)** -> Sorted starts & ends, or min-heap of ends (0253)
+- **Smallest interval containing each query** -> Sort queries offline, sweep + min-heap by size, lazy pop (1851)
+- **Sorted distinct ints into ranges** -> Scan while next == cur + 1 (watch INT_MAX + 1) (0228)
 
 ## Math & Geometry
 - **Matrix rotation / spiral** -> Transpose + reverse / shrinking bounds (0048, 0054)
@@ -198,4 +202,12 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 
 ## Bit Manipulation
 - **Every element twice except one** -> XOR all (0136)
+- **Every element three times except one** -> Count each bit mod 3 (0137)
+- **Missing number in 0..n** -> XOR indices and values (or Gauss sum) (0268)
 - **Count/clear lowest set bit** -> `n & (n-1)` (0191)
+- **Bit counts for all 0..n** -> ans[i] = ans[i >> 1] + (i & 1) (0338)
+- **Reverse a fixed-width bit pattern** -> Pop low bit, push onto result, exactly 32 times (0190)
+- **Add without + / -** -> XOR = sum without carry, (a & b) << 1 = carry; mask in Python (0371)
+- **Add numbers given as strings** -> Right-to-left with carry, loop while carry remains (0067)
+- **Reverse digits with 32-bit overflow** -> Check r against INT_MAX / 10 before pushing (0007)
+- **AND of a whole range** -> Common binary prefix of left and right (0201)

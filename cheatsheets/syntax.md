@@ -71,6 +71,7 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Min-heap of tuples | `priority_queue<T, vector<T>, greater<T>>` with `T = tuple<...>` | push tuples; compared element-wise | struct + `Less` using `cmp.Or(cmp.Compare(...), ...)` |
 | Min-heap of fixed arrays | `priority_queue<array<int,3>, vector<array<int,3>>, greater<>> pq;` | push `(t, r, c)` tuples | struct `{t, r, c int}` + `Less` on `t` |
 | Two heaps (median) | `priority_queue<int>` + `greater<int>` version | `low` stores negatives, `high` plain | one min-heap type, negate values for the max side |
+| Pop min and push in one step | `pq.pop(); pq.push(x);` | `heapq.heapreplace(h, x)` | `(*h)[0] = x; heap.Fix(h, 0)` |
 | Heap of pointers (min by field) | `auto cmp = [](Node* a, Node* b){ return a->val > b->val; };` | `(node.val, i, node)`: unique `i` so nodes are never compared | `type nodeHeap []*Node` with `Less: h[i].Val < h[j].Val` |
 
 C++ comparator is "inverted": returning `a > b` gives a **min**-heap.
@@ -166,6 +167,8 @@ func (h *IntHeap) Pop() any {
 | Merge two sorted | `merge(a.., b.., back_inserter(out))` | `list(heapq.merge(a, b))` | manual two-pointer loop |
 | Sort slice of slices | `sort(v.begin(), v.end());` | `sorted(v)` | `slices.SortFunc(v, func(x, y []int) int { return slices.Compare(x, y) })` |
 | Count matching | `count_if(a.begin(), a.end(), pred)` | `sum(pred(x) for x in a)` | loop |
+| Sort indices by another array (offline queries) | `iota(idx.begin(), idx.end(), 0); sort(..., [&](int i, int j){ return q[i] < q[j]; });` | `sorted(range(n), key=q.__getitem__)` or sort `(q, i)` pairs | `slices.SortFunc(idx, func(i, j int) int { return cmp.Compare(q[i], q[j]) })` |
+| Compare without overflow | `a[1] < b[1]` (never `a[1] - b[1] < 0`) | not an issue | `cmp.Compare(a[1], b[1])` |
 
 C++ comparators must be strict (`<`, never `<=`) or sort can crash.
 
@@ -207,6 +210,7 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 | Avoid overflow in product/sum | `(long long)a * b` | not needed | `int64(a) * int64(b)` if using `int32` |
 | Integer division toward | zero (`-7/2 == -3`) | floor (`-7//2 == -4`) | zero (`-7/2 == -3`) |
 | Modulo of negative | `-7 % 3 == -1` | `-7 % 3 == 2` | `-7 % 3 == -1` |
+| Overflow pre-check for r*10 + d | `r > INT_MAX / 10 \|\| (r == INT_MAX / 10 && d > 7)` | not needed (check range at the end) | same as C++ with `math.MaxInt32` |
 | Min / max | `min(a, b)`, `max({a, b, c})` | `min(a, b, c)` | `min(a, b, c)` (built-in, Go 1.21+) |
 | Quotient + remainder | `a / b`, `a % b` | `q, r = divmod(a, b)` | `a / b`, `a % b` |
 | Ceil division (positive) | `(a + b - 1) / b` (widen first) | `(a + b - 1) // b` or `-(-a // b)` | `(a + b - 1) / b` |
@@ -270,3 +274,9 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 | Lowest set bit | `x & -x` | `x & -x` | `x & -x` |
 | Low n bits mask | `(1 << n) - 1` | `(1 << n) - 1` | `1<<n - 1` |
 | Clear bits of y in x | `x & ~y` | `x & ~y` (mask result: `~` is negative) | `x &^ y` |
+| Clear lowest set bit | `x & (x - 1)` | `x & (x - 1)` | `x & (x - 1)` |
+| Count set bits | `__builtin_popcount(x)` / `bitset<32>(x).count()` | `x.bit_count()` (3.10+) | `bits.OnesCount(uint(x))` |
+| Unsigned 32-bit work | `uint32_t x = n;` (logical `>>`, defined wraparound) | `x & 0xFFFFFFFF` after every shift/add | `uint32(n)` |
+| 32-bit pattern back to signed | `(int)x` | `x - (1 << 32) if x >> 31 else x` | `int32(x)` |
+| Set bit k safely | `x \| (1u << k)` (`1 << 31` on int overflows) | `x \| (1 << k)` | `x \| (1 << k)` |
+| Parse / print binary | `stoull(s, nullptr, 2)` (≤ 64 bits), `bitset<32>(x).to_string()` | `int(s, 2)`, `bin(x)[2:]` | `strconv.ParseInt(s, 2, 64)`, `strconv.FormatInt(x, 2)` |

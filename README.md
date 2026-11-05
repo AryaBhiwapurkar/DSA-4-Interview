@@ -6,10 +6,10 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 
 | List | Problems | Done |
 |------|---------:|-----:|
-| NeetCode 150 (NC150) | 150 | 129 |
-| LeetCode Top Interview 150 (TI150) | 150 | 130 |
-| In both lists | 77 | 66 |
-| **Unique total** | **223** | **193** |
+| NeetCode 150 (NC150) | 150 | 142 |
+| LeetCode Top Interview 150 (TI150) | 150 | 140 |
+| In both lists | 77 | 71 |
+| **Unique total** | **223** | **211** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
@@ -32,9 +32,9 @@ Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.
 | [13. 1-D Dynamic Programming](topics/13-1d-dp/) | 12 | 12 |
 | [14. 2-D Dynamic Programming](topics/14-2d-dp/) | 17 | 17 |
 | [15. Greedy](topics/15-greedy/) | 11 | 11 |
-| [16. Intervals](topics/16-intervals/) | 8 | 0 |
+| [16. Intervals](topics/16-intervals/) | 8 | 8 |
 | [17. Math & Geometry](topics/17-math-geometry/) | 12 | 0 |
-| [18. Bit Manipulation](topics/18-bit-manipulation/) | 10 | 0 |
+| [18. Bit Manipulation](topics/18-bit-manipulation/) | 10 | 10 |
 
 Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Easy → Hard, then by number.
 
@@ -310,14 +310,14 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0228 | Summary Ranges | Easy | Linear scan of runs | TI150 | ⬜ |
-| 0252 | Meeting Rooms | Easy | Sort + check overlap | NC150 | ⬜ |
-| 0056 | Merge Intervals | Medium | Sort by start + merge | NC150, TI150 | ⬜ |
-| 0057 | Insert Interval | Medium | Merge on the fly | NC150, TI150 | ⬜ |
-| 0253 | Meeting Rooms II | Medium | Sorted starts/ends or min-heap | NC150 | ⬜ |
-| 0435 | Non-overlapping Intervals | Medium | Sort by end, greedy | NC150 | ⬜ |
-| 0452 | Minimum Number of Arrows to Burst Balloons | Medium | Sort by end, greedy | TI150 | ⬜ |
-| 1851 | Minimum Interval to Include Each Query | Hard | Sort queries + min-heap | NC150 | ⬜ |
+| 0228 | [Summary Ranges](topics/16-intervals/0228-summary-ranges/) | Easy | Linear scan of runs | TI150 | ✅ |
+| 0252 | [Meeting Rooms](topics/16-intervals/0252-meeting-rooms/) | Easy | Sort + check overlap | NC150 | ✅ |
+| 0056 | [Merge Intervals](topics/16-intervals/0056-merge-intervals/) | Medium | Sort by start + merge | NC150, TI150 | ✅ |
+| 0057 | [Insert Interval](topics/16-intervals/0057-insert-interval/) | Medium | Merge on the fly | NC150, TI150 | ✅ |
+| 0253 | [Meeting Rooms II](topics/16-intervals/0253-meeting-rooms-ii/) | Medium | Sorted starts/ends or min-heap | NC150 | ✅ |
+| 0435 | [Non-overlapping Intervals](topics/16-intervals/0435-non-overlapping-intervals/) | Medium | Sort by end, greedy | NC150 | ✅ |
+| 0452 | [Minimum Number of Arrows to Burst Balloons](topics/16-intervals/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium | Sort by end, greedy | TI150 | ✅ |
+| 1851 | [Minimum Interval to Include Each Query](topics/16-intervals/1851-minimum-interval-to-include-each-query/) | Hard | Sort queries + min-heap | NC150 | ✅ |
 
 ## 17. Math & Geometry
 
@@ -340,13 +340,13 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0067 | Add Binary | Easy | Carry addition | TI150 | ⬜ |
-| 0136 | Single Number | Easy | XOR | NC150, TI150 | ⬜ |
-| 0190 | Reverse Bits | Easy | Shift and build | NC150, TI150 | ⬜ |
-| 0191 | Number of 1 Bits | Easy | n & (n-1) | NC150, TI150 | ⬜ |
-| 0268 | Missing Number | Easy | XOR / sum formula | NC150 | ⬜ |
-| 0338 | Counting Bits | Easy | DP on bits | NC150 | ⬜ |
-| 0007 | Reverse Integer | Medium | Digit pop with overflow check | NC150 | ⬜ |
-| 0137 | Single Number II | Medium | Bit counting mod 3 | TI150 | ⬜ |
-| 0201 | Bitwise AND of Numbers Range | Medium | Common prefix | TI150 | ⬜ |
-| 0371 | Sum of Two Integers | Medium | XOR + carry | NC150 | ⬜ |
+| 0067 | [Add Binary](topics/18-bit-manipulation/0067-add-binary/) | Easy | Carry addition | TI150 | ✅ |
+| 0136 | [Single Number](topics/18-bit-manipulation/0136-single-number/) | Easy | XOR | NC150, TI150 | ✅ |
+| 0190 | [Reverse Bits](topics/18-bit-manipulation/0190-reverse-bits/) | Easy | Shift and build | NC150, TI150 | ✅ |
+| 0191 | [Number of 1 Bits](topics/18-bit-manipulation/0191-number-of-1-bits/) | Easy | n & (n-1) | NC150, TI150 | ✅ |
+| 0268 | [Missing Number](topics/18-bit-manipulation/0268-missing-number/) | Easy | XOR / sum formula | NC150 | ✅ |
+| 0338 | [Counting Bits](topics/18-bit-manipulation/0338-counting-bits/) | Easy | DP on bits | NC150 | ✅ |
+| 0007 | [Reverse Integer](topics/18-bit-manipulation/0007-reverse-integer/) | Medium | Digit pop with overflow check | NC150 | ✅ |
+| 0137 | [Single Number II](topics/18-bit-manipulation/0137-single-number-ii/) | Medium | Bit counting mod 3 | TI150 | ✅ |
+| 0201 | [Bitwise AND of Numbers Range](topics/18-bit-manipulation/0201-bitwise-and-of-numbers-range/) | Medium | Common prefix | TI150 | ✅ |
+| 0371 | [Sum of Two Integers](topics/18-bit-manipulation/0371-sum-of-two-integers/) | Medium | XOR + carry | NC150 | ✅ |

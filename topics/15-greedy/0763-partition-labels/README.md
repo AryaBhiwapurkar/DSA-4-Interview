@@ -95,6 +95,6 @@ The same merge, done implicitly in one sweep.
 - O(n) time, O(1) space.
 
 ## Follow-ups
-- **Explicit interval merging:** LC 0056 Merge Intervals (not added yet)
+- **Explicit interval merging:** [LC 0056 Merge Intervals](../../16-intervals/0056-merge-intervals/)
 - **Same "extend the reach" sweep:** [LC 0055 Jump Game](../0055-jump-game/)
 - **Return the substrings:** slice with the recorded start/end indices.
