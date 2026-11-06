@@ -18,7 +18,7 @@ related: ["0290 Word Pattern", "0890 Find and Replace Pattern"]
 **Go-to:** Two maps (s→t and t→s), O(n) time, O(1) space (bounded alphabet)
 
 ## Problem
-Two strings of equal length are isomorphic if you can replace every character in `s` consistently to get `t`, where no two different characters of `s` map to the same character of `t` (a character may map to itself). Return whether `s` and `t` are isomorphic.
+Two strings of equal length are isomorphic if you can replace every character in `s` consistently to get `t`, where no two different characters of `s` map to the same character of `t` (a character may map to itself). Return whether `s` and `t` are isomorphic. [LeetCode](https://leetcode.com/problems/isomorphic-strings/)
 
 **Examples:**
 ```

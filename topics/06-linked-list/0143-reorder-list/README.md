@@ -18,7 +18,7 @@ related: ["0206 Reverse Linked List", "0876 Middle of the Linked List", "0234 Pa
 **Go-to:** Mid + reverse + merge, O(n) time, O(1) space
 
 ## Problem
-Rearrange a linked list L0 → L1 → … → Ln into L0 → Ln → L1 → Ln-1 → L2 → … by relinking nodes (not by changing values). Modify it in place; return nothing.
+Rearrange a linked list L0 → L1 → … → Ln into L0 → Ln → L1 → Ln-1 → L2 → … by relinking nodes (not by changing values). Modify it in place; return nothing. [LeetCode](https://leetcode.com/problems/reorder-list/)
 
 **Examples:**
 ```

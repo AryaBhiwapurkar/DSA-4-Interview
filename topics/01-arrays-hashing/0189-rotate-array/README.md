@@ -18,7 +18,7 @@ related: ["0061 Rotate List", "0151 Reverse Words in a String", "0048 Rotate Ima
 **Go-to:** Three reversals, O(n) time, O(1) space
 
 ## Problem
-Rotate an integer array to the right by k steps, in place (each step moves the last element to the front).
+Rotate an integer array to the right by k steps, in place (each step moves the last element to the front). [LeetCode](https://leetcode.com/problems/rotate-array/)
 
 **Examples:**
 ```

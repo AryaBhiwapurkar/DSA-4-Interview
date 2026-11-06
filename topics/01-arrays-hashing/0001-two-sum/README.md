@@ -18,7 +18,7 @@ related: ["0167 Two Sum II - Input Array Is Sorted", "0015 3Sum", "0018 4Sum", "
 **Go-to:** One-pass hashmap, O(n) time, O(n) space
 
 ## Problem
-Given an integer array and a target, return the indices of the two numbers that add up to the target. Exactly one valid answer exists, and the same element can't be used twice.
+Given an integer array and a target, return the indices of the two numbers that add up to the target. Exactly one valid answer exists, and the same element can't be used twice. [LeetCode](https://leetcode.com/problems/two-sum/)
 
 **Examples:**
 ```

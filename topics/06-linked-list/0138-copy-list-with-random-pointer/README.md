@@ -18,7 +18,7 @@ related: ["0133 Clone Graph", "1485 Clone Binary Tree With Random Pointer"]
 **Go-to:** Two-pass hashmap, O(n) time, O(n) space
 
 ## Problem
-Each node has `next` and an extra `random` pointer (to any node or null). Return a deep copy: all new nodes, with the copies' `next` and `random` pointing at copies, never at original nodes. The examples show each node as [val, index of random node or null].
+Each node has `next` and an extra `random` pointer (to any node or null). Return a deep copy: all new nodes, with the copies' `next` and `random` pointing at copies, never at original nodes. The examples show each node as [val, index of random node or null]. [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/)
 
 **Examples:**
 ```

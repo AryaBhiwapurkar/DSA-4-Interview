@@ -18,7 +18,7 @@ related: ["0381 Insert Delete GetRandom O(1) - Duplicates allowed", "0146 LRU Ca
 **Go-to:** Map + array with swap-delete, O(1) average for every operation, O(n) space
 
 ## Problem
-Design a set of integers supporting `insert(val)` (returns true if it was absent), `remove(val)` (returns true if it was present), and `getRandom()` (returns a uniformly random current element; at least one exists when called). Each operation must be O(1) on average.
+Design a set of integers supporting `insert(val)` (returns true if it was absent), `remove(val)` (returns true if it was present), and `getRandom()` (returns a uniformly random current element; at least one exists when called). Each operation must be O(1) on average. [LeetCode](https://leetcode.com/problems/insert-delete-getrandom-o1/)
 
 **Examples:**
 ```

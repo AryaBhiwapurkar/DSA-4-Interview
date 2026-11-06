@@ -18,7 +18,7 @@ related: ["0189 Rotate Array", "0019 Remove Nth Node From End of List"]
 **Go-to:** Length + ring + cut, O(n) time, O(1) space
 
 ## Problem
-Rotate a linked list to the right by k places (each step moves the last node to the front) and return the new head. k can be much larger than the list length.
+Rotate a linked list to the right by k places (each step moves the last node to the front) and return the new head. k can be much larger than the list length. [LeetCode](https://leetcode.com/problems/rotate-list/)
 
 **Examples:**
 ```

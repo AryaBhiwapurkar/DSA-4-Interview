@@ -18,7 +18,7 @@ related: ["0042 Trapping Rain Water", "0084 Largest Rectangle in Histogram"]
 **Go-to:** Two pointers, O(n) time, O(1) space
 
 ## Problem
-Given heights of vertical lines at positions 0..n-1, pick two lines that, together with the x-axis, hold the most water. Return that maximum amount (the container can't be tilted).
+Given heights of vertical lines at positions 0..n-1, pick two lines that, together with the x-axis, hold the most water. Return that maximum amount (the container can't be tilted). [LeetCode](https://leetcode.com/problems/container-with-most-water/)
 
 **Examples:**
 ```

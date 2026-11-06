@@ -18,7 +18,7 @@ related: ["0141 Linked List Cycle", "0142 Linked List Cycle II", "0041 First Mis
 **Go-to:** Floyd's tortoise and hare (two phases), O(n) time, O(1) space
 
 ## Problem
-An array of n + 1 integers contains values in [1, n]. Exactly one value repeats (possibly many times). Return it without modifying the array and using O(1) extra space.
+An array of n + 1 integers contains values in [1, n]. Exactly one value repeats (possibly many times). Return it without modifying the array and using O(1) extra space. [LeetCode](https://leetcode.com/problems/find-the-duplicate-number/)
 
 **Examples:**
 ```

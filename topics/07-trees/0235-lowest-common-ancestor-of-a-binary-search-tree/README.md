@@ -18,7 +18,7 @@ related: ["0236 Lowest Common Ancestor of a Binary Tree", "0098 Validate Binary 
 **Go-to:** Iterative descent, O(h) time, O(1) space
 
 ## Problem
-Given a BST and two nodes p and q in it, return their lowest common ancestor: the deepest node that has both as descendants (a node counts as its own descendant).
+Given a BST and two nodes p and q in it, return their lowest common ancestor: the deepest node that has both as descendants (a node counts as its own descendant). [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
 **Examples:**
 ```

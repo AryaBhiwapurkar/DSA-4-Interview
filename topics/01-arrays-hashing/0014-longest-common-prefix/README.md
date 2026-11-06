@@ -18,7 +18,7 @@ related: ["0208 Implement Trie (Prefix Tree)"]
 **Go-to:** Vertical scan, O(S) time (S = total chars), O(1) extra space
 
 ## Problem
-Given an array of strings, return the longest prefix shared by all of them, or an empty string if there is none.
+Given an array of strings, return the longest prefix shared by all of them, or an empty string if there is none. [LeetCode](https://leetcode.com/problems/longest-common-prefix/)
 
 **Examples:**
 ```

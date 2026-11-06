@@ -18,7 +18,7 @@ related: ["0792 Number of Matching Subsequences", "1143 Longest Common Subsequen
 **Go-to:** Two pointers, O(|t|) time, O(1) space (binary-search index for the many-queries follow-up)
 
 ## Problem
-Given strings `s` and `t`, return true if `s` can be obtained by deleting some (possibly zero) characters from `t` without reordering the rest.
+Given strings `s` and `t`, return true if `s` can be obtained by deleting some (possibly zero) characters from `t` without reordering the rest. [LeetCode](https://leetcode.com/problems/is-subsequence/)
 
 **Examples:**
 ```

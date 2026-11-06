@@ -18,7 +18,7 @@ related: ["0022 Generate Parentheses", "0032 Longest Valid Parentheses", "0921 M
 **Go-to:** Stack of openers, O(n) time, O(n) space
 
 ## Problem
-Given a string made only of `()[]{}`, decide whether every bracket is closed by the same type, in the correct order, and every closer has a matching opener.
+Given a string made only of `()[]{}`, decide whether every bracket is closed by the same type, in the correct order, and every closer has a matching opener. [LeetCode](https://leetcode.com/problems/valid-parentheses/)
 
 **Examples:**
 ```

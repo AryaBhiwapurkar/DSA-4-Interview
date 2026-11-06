@@ -18,7 +18,7 @@ related: ["0101 Symmetric Tree", "0100 Same Tree", "0104 Maximum Depth of Binary
 **Go-to:** Recursive DFS, O(n) time, O(h) space
 
 ## Problem
-Mirror a binary tree (swap every node's left and right child) and return its root.
+Mirror a binary tree (swap every node's left and right child) and return its root. [LeetCode](https://leetcode.com/problems/invert-binary-tree/)
 
 **Examples:**
 ```

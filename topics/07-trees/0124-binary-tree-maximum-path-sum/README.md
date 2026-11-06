@@ -18,7 +18,7 @@ related: ["0543 Diameter of Binary Tree", "0112 Path Sum", "0687 Longest Univalu
 **Go-to:** Single DFS with a global max, O(n) time, O(h) space
 
 ## Problem
-A path is any sequence of connected nodes, each used at most once (it doesn't need to pass through the root and has at least one node). Return the maximum sum over all paths.
+A path is any sequence of connected nodes, each used at most once (it doesn't need to pass through the root and has at least one node). Return the maximum sum over all paths. [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
 **Examples:**
 ```

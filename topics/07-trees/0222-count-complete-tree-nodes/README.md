@@ -18,7 +18,7 @@ related: ["0104 Maximum Depth of Binary Tree", "0958 Check Completeness of a Bin
 **Go-to:** Spine heights + recursion, O(log² n) time, O(log n) space
 
 ## Problem
-Count the nodes of a complete binary tree (every level full except possibly the last, which is filled from the left), in less than O(n) time.
+Count the nodes of a complete binary tree (every level full except possibly the last, which is filled from the left), in less than O(n) time. [LeetCode](https://leetcode.com/problems/count-complete-tree-nodes/)
 
 **Examples:**
 ```

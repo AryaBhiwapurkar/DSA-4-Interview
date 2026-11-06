@@ -18,7 +18,7 @@ related: ["0100 Same Tree", "0226 Invert Binary Tree"]
 **Go-to:** Recursive mirror check, O(n) time, O(h) space
 
 ## Problem
-Return whether a binary tree is a mirror image of itself around its center.
+Return whether a binary tree is a mirror image of itself around its center. [LeetCode](https://leetcode.com/problems/symmetric-tree/)
 
 **Examples:**
 ```

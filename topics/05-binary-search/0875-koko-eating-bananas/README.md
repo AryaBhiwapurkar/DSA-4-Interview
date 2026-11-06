@@ -18,7 +18,7 @@ related: ["1011 Capacity To Ship Packages Within D Days", "0410 Split Array Larg
 **Go-to:** Binary search on speed k, O(n log max) time, O(1) space
 
 ## Problem
-There are n piles of bananas and h hours. Each hour Koko picks one pile and eats up to k bananas from it (if the pile has fewer, she finishes it and waits out the hour). Return the minimum integer k that lets her eat everything within h hours.
+There are n piles of bananas and h hours. Each hour Koko picks one pile and eats up to k bananas from it (if the pile has fewer, she finishes it and waits out the hour). Return the minimum integer k that lets her eat everything within h hours. [LeetCode](https://leetcode.com/problems/koko-eating-bananas/)
 
 **Examples:**
 ```

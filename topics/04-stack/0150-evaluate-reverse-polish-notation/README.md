@@ -18,7 +18,7 @@ related: ["0224 Basic Calculator", "0227 Basic Calculator II", "0020 Valid Paren
 **Go-to:** Stack, O(n) time, O(n) space
 
 ## Problem
-Evaluate an arithmetic expression given as tokens in Reverse Polish (postfix) notation, with `+ - * /` on integers. Division truncates toward zero. The expression is always valid, with no division by zero.
+Evaluate an arithmetic expression given as tokens in Reverse Polish (postfix) notation, with `+ - * /` on integers. Division truncates toward zero. The expression is always valid, with no division by zero. [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
 **Examples:**
 ```

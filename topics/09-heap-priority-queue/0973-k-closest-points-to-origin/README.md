@@ -18,7 +18,7 @@ related: ["0215 Kth Largest Element in an Array", "0347 Top K Frequent Elements"
 **Go-to:** Max-heap of size k, O(n log k) time, O(k) space
 
 ## Problem
-Return the k points closest to the origin (Euclidean distance). Any order; the answer is unique apart from order.
+Return the k points closest to the origin (Euclidean distance). Any order; the answer is unique apart from order. [LeetCode](https://leetcode.com/problems/k-closest-points-to-origin/)
 
 **Examples:**
 ```

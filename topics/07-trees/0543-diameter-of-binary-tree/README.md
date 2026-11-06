@@ -18,7 +18,7 @@ related: ["0104 Maximum Depth of Binary Tree", "0124 Binary Tree Maximum Path Su
 **Go-to:** Single DFS with a global max, O(n) time, O(h) space
 
 ## Problem
-Return the number of edges on the longest path between any two nodes. The path doesn't have to go through the root.
+Return the number of edges on the longest path between any two nodes. The path doesn't have to go through the root. [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/)
 
 **Examples:**
 ```

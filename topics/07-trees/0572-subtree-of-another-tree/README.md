@@ -18,7 +18,7 @@ related: ["0100 Same Tree", "0652 Find Duplicate Subtrees", "0028 Find the Index
 **Go-to:** DFS + isSameTree, O(m·n) time, O(h) space
 
 ## Problem
-Return whether `subRoot` appears in `root` as a complete subtree: some node of `root` together with all of its descendants is identical to `subRoot`.
+Return whether `subRoot` appears in `root` as a complete subtree: some node of `root` together with all of its descendants is identical to `subRoot`. [LeetCode](https://leetcode.com/problems/subtree-of-another-tree/)
 
 **Examples:**
 ```

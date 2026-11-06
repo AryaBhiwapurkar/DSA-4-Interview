@@ -18,7 +18,7 @@ related: ["1049 Last Stone Weight II", "0215 Kth Largest Element in an Array"]
 **Go-to:** Max-heap, O(n log n) time, O(n) space
 
 ## Problem
-Each turn, smash the two heaviest stones x ≤ y: if equal, both are destroyed; otherwise a stone of weight y - x remains. Return the weight of the last stone, or 0 if none remain.
+Each turn, smash the two heaviest stones x ≤ y: if equal, both are destroyed; otherwise a stone of weight y - x remains. Return the weight of the last stone, or 0 if none remain. [LeetCode](https://leetcode.com/problems/last-stone-weight/)
 
 **Examples:**
 ```

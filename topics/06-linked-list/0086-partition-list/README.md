@@ -18,7 +18,7 @@ related: ["0328 Odd Even Linked List", "0075 Sort Colors", "2161 Partition Array
 **Go-to:** Two dummy lists, O(n) time, O(1) extra space
 
 ## Problem
-Given a linked list and a value x, rearrange it so all nodes with value < x come before nodes with value ≥ x, preserving the original relative order inside each group.
+Given a linked list and a value x, rearrange it so all nodes with value < x come before nodes with value ≥ x, preserving the original relative order inside each group. [LeetCode](https://leetcode.com/problems/partition-list/)
 
 **Examples:**
 ```

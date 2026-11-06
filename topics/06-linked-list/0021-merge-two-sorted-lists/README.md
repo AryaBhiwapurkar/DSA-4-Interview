@@ -18,7 +18,7 @@ related: ["0023 Merge k Sorted Lists", "0088 Merge Sorted Array", "0148 Sort Lis
 **Go-to:** Iterative merge with a dummy node, O(m + n) time, O(1) space
 
 ## Problem
-Merge two sorted linked lists into one sorted list by splicing their nodes together, and return its head.
+Merge two sorted linked lists into one sorted list by splicing their nodes together, and return its head. [LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/)
 
 **Examples:**
 ```

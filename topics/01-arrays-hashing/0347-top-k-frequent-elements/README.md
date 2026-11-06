@@ -18,7 +18,7 @@ related: ["0692 Top K Frequent Words", "0215 Kth Largest Element in an Array", "
 **Go-to:** Hashmap + bucket sort, O(n) time, O(n) space
 
 ## Problem
-Given an integer array and k, return the k values that occur most often, in any order. The answer is guaranteed to be unique.
+Given an integer array and k, return the k values that occur most often, in any order. The answer is guaranteed to be unique. [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0205 Isomorphic Strings", "0291 Word Pattern II"]
 **Go-to:** Split + two hashmaps, O(n + m) time, O(k) space
 
 ## Problem
-Given a `pattern` of letters and a string `s` of space-separated words, return true if `s` follows the pattern: each letter maps to exactly one word, each word maps to exactly one letter, and the sequence matches position by position.
+Given a `pattern` of letters and a string `s` of space-separated words, return true if `s` follows the pattern: each letter maps to exactly one word, each word maps to exactly one letter, and the sequence matches position by position. [LeetCode](https://leetcode.com/problems/word-pattern/)
 
 **Examples:**
 ```

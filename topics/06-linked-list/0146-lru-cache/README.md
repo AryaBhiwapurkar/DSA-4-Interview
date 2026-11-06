@@ -18,7 +18,7 @@ related: ["0460 LFU Cache", "0380 Insert Delete GetRandom O(1)", "0155 Min Stack
 **Go-to:** Hashmap of key → node + DLL with sentinels, O(1) per operation, O(capacity) space
 
 ## Problem
-Design a cache with a fixed capacity. `get(key)` returns the value or -1. `put(key, value)` inserts or updates; if that pushes the size over capacity, evict the least recently used key. Both operations count as a "use" and must run in O(1) on average.
+Design a cache with a fixed capacity. `get(key)` returns the value or -1. `put(key, value)` inserts or updates; if that pushes the size over capacity, evict the least recently used key. Both operations count as a "use" and must run in O(1) on average. [LeetCode](https://leetcode.com/problems/lru-cache/)
 
 **Examples:**
 ```

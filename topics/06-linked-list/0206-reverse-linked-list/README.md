@@ -18,7 +18,7 @@ related: ["0092 Reverse Linked List II", "0025 Reverse Nodes in k-Group", "0234 
 **Go-to:** Iterative three-pointer reversal, O(n) time, O(1) space
 
 ## Problem
-Given the head of a singly linked list, reverse it and return the new head.
+Given the head of a singly linked list, reverse it and return the new head. [LeetCode](https://leetcode.com/problems/reverse-linked-list/)
 
 **Examples:**
 ```

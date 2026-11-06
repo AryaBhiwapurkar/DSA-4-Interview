@@ -18,7 +18,7 @@ related: ["0239 Sliding Window Maximum", "0716 Max Stack", "0232 Implement Queue
 **Go-to:** Stack of pairs, O(1) for every operation, O(n) space
 
 ## Problem
-Design a stack that supports `push`, `pop`, `top` and `getMin`, all in O(1) time. `pop`, `top` and `getMin` are only called on a non-empty stack.
+Design a stack that supports `push`, `pop`, `top` and `getMin`, all in O(1) time. `pop`, `top` and `getMin` are only called on a non-empty stack. [LeetCode](https://leetcode.com/problems/min-stack/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0011 Container With Most Water", "0238 Product of Array Except Self",
 **Go-to:** Two pointers, O(n) time, O(1) space
 
 ## Problem
-Given non-negative bar heights of width 1, return how many units of rain water are trapped between the bars after it rains.
+Given non-negative bar heights of width 1, return how many units of rain water are trapped between the bars after it rains. [LeetCode](https://leetcode.com/problems/trapping-rain-water/)
 
 **Examples:**
 ```

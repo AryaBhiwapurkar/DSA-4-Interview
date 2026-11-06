@@ -18,7 +18,7 @@ related: ["0186 Reverse Words in a String II", "0557 Reverse Words in a String I
 **Go-to:** Split + reverse + join, O(n) time, O(n) space
 
 ## Problem
-Given a string, return its words in reverse order joined by single spaces. The input may have leading, trailing, or repeated spaces, which must not appear in the output.
+Given a string, return its words in reverse order joined by single spaces. The input may have leading, trailing, or repeated spaces, which must not appear in the output. [LeetCode](https://leetcode.com/problems/reverse-words-in-a-string/)
 
 **Examples:**
 ```

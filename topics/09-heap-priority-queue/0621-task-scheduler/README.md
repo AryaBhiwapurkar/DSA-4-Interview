@@ -18,7 +18,7 @@ related: ["0358 Rearrange String k Distance Apart", "0767 Reorganize String", "1
 **Go-to:** Counting formula, O(T) time, O(1) space (26 letters)
 
 ## Problem
-Tasks are letters A-Z, each taking one time unit. The same task must be at least `n` units apart; the CPU can idle. Return the minimum number of units to finish all tasks.
+Tasks are letters A-Z, each taking one time unit. The same task must be at least `n` units apart; the CPU can idle. Return the minimum number of units to finish all tasks. [LeetCode](https://leetcode.com/problems/task-scheduler/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0079 Word Search", "0208 Implement Trie (Prefix Tree)", "0211 Design 
 **Go-to:** Trie + DFS with pruning, O(m·n·4·3^(L-1)) worst case, O(total word chars) space
 
 ## Problem
-Given an m × n board of letters and a list of words, return every word that can be traced on the board by moving horizontally or vertically between adjacent cells, using each cell at most once per word. Any order.
+Given an m × n board of letters and a list of words, return every word that can be traced on the board by moving horizontally or vertically between adjacent cells, using each cell at most once per word. Any order. [LeetCode](https://leetcode.com/problems/word-search-ii/)
 
 **Examples:**
 ```

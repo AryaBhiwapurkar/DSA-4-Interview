@@ -18,7 +18,7 @@ related: ["0430 Flatten a Multilevel Doubly Linked List", "0897 Increasing Order
 **Go-to:** In-place splicing, O(n) time, O(1) space
 
 ## Problem
-Flatten a binary tree in place into a "linked list" using the `right` pointers, in preorder order, with every `left` pointer set to null.
+Flatten a binary tree in place into a "linked list" using the `right` pointers, in preorder order, with every `left` pointer set to null. [LeetCode](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
 
 **Examples:**
 ```

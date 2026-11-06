@@ -18,7 +18,7 @@ related: ["0076 Minimum Window Substring", "0862 Shortest Subarray with Sum at L
 **Go-to:** Sliding window, O(n) time, O(1) space
 
 ## Problem
-Given positive integers and a target, return the length of the shortest contiguous subarray whose sum is at least target, or 0 if there is none.
+Given positive integers and a target, return the length of the shortest contiguous subarray whose sum is at least target, or 0 if there is none. [LeetCode](https://leetcode.com/problems/minimum-size-subarray-sum/)
 
 **Examples:**
 ```

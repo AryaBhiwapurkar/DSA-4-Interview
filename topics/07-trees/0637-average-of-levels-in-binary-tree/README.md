@@ -18,7 +18,7 @@ related: ["0102 Binary Tree Level Order Traversal", "0515 Find Largest Value in 
 **Go-to:** BFS with level size, O(n) time, O(w) space
 
 ## Problem
-Return the average value of the nodes on each level, top to bottom (answers within 10⁻⁵ are accepted).
+Return the average value of the nodes on each level, top to bottom (answers within 10⁻⁵ are accepted). [LeetCode](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
 
 **Examples:**
 ```

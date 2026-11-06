@@ -18,7 +18,7 @@ related: ["0418 Sentence Screen Fitting", "0006 Zigzag Conversion"]
 **Go-to:** Greedy simulation, O(total characters) time, O(maxWidth) extra space per line
 
 ## Problem
-Given words and a width, lay the words out in lines of exactly `maxWidth` characters. Pack as many words per line as fit. Fully justify every line by padding the gaps between words, putting extra spaces in the left gaps when they don't divide evenly. The last line, and any line with a single word, is left-justified and padded on the right.
+Given words and a width, lay the words out in lines of exactly `maxWidth` characters. Pack as many words per line as fit. Fully justify every line by padding the gaps between words, putting extra spaces in the left gaps when they don't divide evenly. The last line, and any line with a single word, is left-justified and padded on the right. [LeetCode](https://leetcode.com/problems/text-justification/)
 
 **Examples:**
 ```

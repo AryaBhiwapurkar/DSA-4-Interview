@@ -18,7 +18,7 @@ related: ["0151 Reverse Words in a String"]
 **Go-to:** Reverse scan, O(n) time worst case, O(1) space
 
 ## Problem
-Given a string of words and spaces, return the length of the last word, where a word is a maximal run of non-space characters.
+Given a string of words and spaces, return the length of the last word, where a word is a maximal run of non-space characters. [LeetCode](https://leetcode.com/problems/length-of-last-word/)
 
 **Examples:**
 ```

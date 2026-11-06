@@ -18,7 +18,7 @@ related: ["0034 Find First and Last Position of Element in Sorted Array", "0278 
 **Go-to:** Lower-bound binary search, O(log n) time, O(1) space
 
 ## Problem
-Given a sorted array of distinct integers and a target, return the target's index if present, otherwise the index where it would be inserted to keep the array sorted. Must be O(log n).
+Given a sorted array of distinct integers and a target, return the target's index if present, otherwise the index where it would be inserted to keep the array sorted. Must be O(log n). [LeetCode](https://leetcode.com/problems/search-insert-position/)
 
 **Examples:**
 ```

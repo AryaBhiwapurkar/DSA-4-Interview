@@ -18,7 +18,7 @@ related: ["0037 Sudoku Solver", "0051 N-Queens"]
 **Go-to:** Single pass with 27 seen-arrays, O(81) = O(1) time and space
 
 ## Problem
-Given a partially filled 9×9 Sudoku board, return whether the filled cells are valid: no digit 1–9 repeats in any row, any column, or any of the nine 3×3 boxes. The board does not need to be solvable.
+Given a partially filled 9×9 Sudoku board, return whether the filled cells are valid: no digit 1–9 repeats in any row, any column, or any of the nine 3×3 boxes. The board does not need to be solvable. [LeetCode](https://leetcode.com/problems/valid-sudoku/)
 
 **Examples:**
 ```

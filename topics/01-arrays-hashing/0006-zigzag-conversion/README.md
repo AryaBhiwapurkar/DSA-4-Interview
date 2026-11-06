@@ -18,7 +18,7 @@ related: ["0054 Spiral Matrix"]
 **Go-to:** Row buckets with a bouncing index, O(n) time, O(n) space
 
 ## Problem
-Write the string in a zigzag over `numRows` rows (down the rows, then diagonally back up, repeating), then read it row by row and return the result.
+Write the string in a zigzag over `numRows` rows (down the rows, then diagonally back up, repeating), then read it row by row and return the result. [LeetCode](https://leetcode.com/problems/zigzag-conversion/)
 
 **Examples:**
 ```

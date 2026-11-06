@@ -18,7 +18,7 @@ related: ["0219 Contains Duplicate II", "0220 Contains Duplicate III", "0001 Two
 **Go-to:** Hash set, O(n) time, O(n) space
 
 ## Problem
-Given an integer array, return true if any value appears at least twice, and false if every element is distinct.
+Given an integer array, return true if any value appears at least twice, and false if every element is distinct. [LeetCode](https://leetcode.com/problems/contains-duplicate/)
 
 **Examples:**
 ```

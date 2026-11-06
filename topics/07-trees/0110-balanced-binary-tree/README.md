@@ -18,7 +18,7 @@ related: ["0104 Maximum Depth of Binary Tree", "0543 Diameter of Binary Tree", "
 **Go-to:** Bottom-up DFS returning height or -1, O(n) time, O(h) space
 
 ## Problem
-Return whether a binary tree is height-balanced: for every node, the heights of its left and right subtrees differ by no more than one.
+Return whether a binary tree is height-balanced: for every node, the heights of its left and right subtrees differ by no more than one. [LeetCode](https://leetcode.com/problems/balanced-binary-tree/)
 
 **Examples:**
 ```

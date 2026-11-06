@@ -18,7 +18,7 @@ related: ["0085 Maximal Rectangle", "0739 Daily Temperatures", "0042 Trapping Ra
 **Go-to:** One-pass increasing stack with a 0-height sentinel, O(n) time, O(n) space
 
 ## Problem
-Given bar heights of a histogram (each bar width 1), return the area of the largest rectangle that fits entirely inside the bars.
+Given bar heights of a histogram (each bar width 1), return the area of the largest rectangle that fits entirely inside the bars. [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
 **Examples:**
 ```

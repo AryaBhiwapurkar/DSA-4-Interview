@@ -18,7 +18,7 @@ related: ["0155 Min Stack", "0862 Shortest Subarray with Sum at Least K", "1438 
 **Go-to:** Monotonic deque, O(n) time, O(k) space
 
 ## Problem
-Given an array and a window size k, slide the window from left to right one step at a time and return the maximum of each window.
+Given an array and a window size k, slide the window from left to right one step at a time and return the maximum of each window. [LeetCode](https://leetcode.com/problems/sliding-window-maximum/)
 
 **Examples:**
 ```

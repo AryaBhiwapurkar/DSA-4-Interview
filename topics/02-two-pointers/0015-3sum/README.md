@@ -18,7 +18,7 @@ related: ["0001 Two Sum", "0167 Two Sum II - Input Array Is Sorted", "0016 3Sum 
 **Go-to:** Sort + two pointers, O(n²) time, O(1) extra space (besides sort/output)
 
 ## Problem
-Given an integer array, return all unique triplets `[a, b, c]` of values at three different indices with `a + b + c = 0`. No duplicate triplets in the output; order doesn't matter.
+Given an integer array, return all unique triplets `[a, b, c]` of values at three different indices with `a + b + c = 0`. No duplicate triplets in the output; order doesn't matter. [LeetCode](https://leetcode.com/problems/3sum/)
 
 **Examples:**
 ```

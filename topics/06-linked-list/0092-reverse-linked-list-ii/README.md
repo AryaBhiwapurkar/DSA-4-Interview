@@ -18,7 +18,7 @@ related: ["0206 Reverse Linked List", "0025 Reverse Nodes in k-Group"]
 **Go-to:** One pass with a dummy and head insertion, O(n) time, O(1) space
 
 ## Problem
-Given a list and positions left ≤ right (1-indexed), reverse the nodes from position left to position right and return the head. One pass is the follow-up.
+Given a list and positions left ≤ right (1-indexed), reverse the nodes from position left to position right and return the head. One pass is the follow-up. [LeetCode](https://leetcode.com/problems/reverse-linked-list-ii/)
 
 **Examples:**
 ```

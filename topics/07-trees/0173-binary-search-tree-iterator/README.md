@@ -18,7 +18,7 @@ related: ["0230 Kth Smallest Element in a BST", "0094 Binary Tree Inorder Traver
 **Go-to:** Stack of the pending left spine, O(1) amortized next, O(h) space
 
 ## Problem
-Implement an iterator over a BST that returns values in ascending order: `next()` returns the next smallest value, `hasNext()` says whether any remain. Target O(1) average time and O(h) memory.
+Implement an iterator over a BST that returns values in ascending order: `next()` returns the next smallest value, `hasNext()` says whether any remain. Target O(1) average time and O(h) memory. [LeetCode](https://leetcode.com/problems/binary-search-tree-iterator/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0159 Longest Substring with At Most Two Distinct Characters", "0340 L
 **Go-to:** Window + set, O(n) time, O(min(n, alphabet)) space
 
 ## Problem
-Given a string, return the length of the longest substring (contiguous) that contains no repeated characters.
+Given a string, return the length of the longest substring (contiguous) that contains no repeated characters. [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 **Examples:**
 ```

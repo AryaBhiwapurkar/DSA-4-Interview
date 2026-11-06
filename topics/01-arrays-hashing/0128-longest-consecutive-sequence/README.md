@@ -18,7 +18,7 @@ related: ["0217 Contains Duplicate", "0298 Binary Tree Longest Consecutive Seque
 **Go-to:** Hash set + start-of-run, O(n) time, O(n) space
 
 ## Problem
-Given an unsorted integer array, return the length of the longest run of consecutive integers (values x, x+1, x+2, ...) that can be formed from its elements. Must run in O(n).
+Given an unsorted integer array, return the length of the longest run of consecutive integers (values x, x+1, x+2, ...) that can be formed from its elements. Must run in O(n). [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0111 Minimum Depth of Binary Tree", "0110 Balanced Binary Tree", "054
 **Go-to:** Recursive DFS, O(n) time, O(h) space
 
 ## Problem
-Return the number of nodes on the longest root-to-leaf path.
+Return the number of nodes on the longest root-to-leaf path. [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
 **Examples:**
 ```

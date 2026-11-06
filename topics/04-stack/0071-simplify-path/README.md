@@ -18,7 +18,7 @@ related: ["0020 Valid Parentheses", "0150 Evaluate Reverse Polish Notation", "15
 **Go-to:** Split + stack, O(n) time, O(n) space
 
 ## Problem
-Given an absolute Unix-style path, return its canonical form: one leading `/`, single slashes between names, no trailing slash, and `.`/`..` resolved. Any other name made of dots (like `...`) is a regular directory name.
+Given an absolute Unix-style path, return its canonical form: one leading `/`, single slashes between names, no trailing slash, and `.`/`..` resolved. Any other name made of dots (like `...`) is a regular directory name. [LeetCode](https://leetcode.com/problems/simplify-path/)
 
 **Examples:**
 ```

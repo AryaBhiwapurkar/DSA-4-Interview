@@ -18,7 +18,7 @@ related: ["0080 Remove Duplicates from Sorted Array II", "0027 Remove Element", 
 **Go-to:** Read/write pointers, O(n) time, O(1) space
 
 ## Problem
-Given an array sorted in non-decreasing order, remove duplicates in place so each value appears once, keeping the original order. Return k, the number of unique values; the first k slots must hold them (anything after k doesn't matter).
+Given an array sorted in non-decreasing order, remove duplicates in place so each value appears once, keeping the original order. Return k, the number of unique values; the first k slots must hold them (anything after k doesn't matter). [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 **Examples:**
 ```

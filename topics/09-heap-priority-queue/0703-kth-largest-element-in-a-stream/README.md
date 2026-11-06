@@ -18,7 +18,7 @@ related: ["0215 Kth Largest Element in an Array", "0295 Find Median from Data St
 **Go-to:** Min-heap of size k, O(log k) per add, O(k) space
 
 ## Problem
-Design a class built from k and an initial array; `add(val)` inserts a value into the stream and returns the current k-th largest value.
+Design a class built from k and an initial array; `add(val)` inserts a value into the stream and returns the current k-th largest value. [LeetCode](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
 
 **Examples:**
 ```

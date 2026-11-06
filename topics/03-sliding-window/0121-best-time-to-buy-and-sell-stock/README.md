@@ -18,7 +18,7 @@ related: ["0122 Best Time to Buy and Sell Stock II", "0123 Best Time to Buy and 
 **Go-to:** One pass with running min, O(n) time, O(1) space
 
 ## Problem
-Given daily prices, choose one day to buy and a later day to sell to maximize profit. Return the maximum profit, or 0 if no profit is possible.
+Given daily prices, choose one day to buy and a later day to sell to maximize profit. Return the maximum profit, or 0 if no profit is possible. [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 **Examples:**
 ```

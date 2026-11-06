@@ -18,7 +18,7 @@ related: ["0042 Trapping Rain Water", "0152 Maximum Product Subarray", "0303 Ran
 **Go-to:** Output array + running suffix, O(n) time, O(1) extra space
 
 ## Problem
-Given an integer array, return an array where each position holds the product of all other elements. Division is not allowed, and the solution must be O(n).
+Given an integer array, return an array where each position holds the product of all other elements. Division is not allowed, and the solution must be O(n). [LeetCode](https://leetcode.com/problems/product-of-array-except-self/)
 
 **Examples:**
 ```

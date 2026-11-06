@@ -18,7 +18,7 @@ related: ["0680 Valid Palindrome II", "0009 Palindrome Number", "0005 Longest Pa
 **Go-to:** Two pointers with skipping, O(n) time, O(1) space
 
 ## Problem
-Given a string, return true if it reads the same forwards and backwards after lowercasing it and removing every character that isn't a letter or a digit.
+Given a string, return true if it reads the same forwards and backwards after lowercasing it and removing every character that isn't a letter or a digit. [LeetCode](https://leetcode.com/problems/valid-palindrome/)
 
 **Examples:**
 ```

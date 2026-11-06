@@ -18,7 +18,7 @@ related: ["0438 Find All Anagrams in a String", "0242 Valid Anagram", "0076 Mini
 **Go-to:** Fixed window + count arrays, O(26·n) time, O(1) space
 
 ## Problem
-Given strings s1 and s2, return true if some permutation of s1 appears as a contiguous substring of s2.
+Given strings s1 and s2, return true if some permutation of s1 appears as a contiguous substring of s2. [LeetCode](https://leetcode.com/problems/permutation-in-string/)
 
 **Examples:**
 ```

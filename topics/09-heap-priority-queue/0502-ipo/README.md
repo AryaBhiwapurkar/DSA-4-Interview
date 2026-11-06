@@ -18,7 +18,7 @@ related: ["0630 Course Schedule III", "0857 Minimum Cost to Hire K Workers", "18
 **Go-to:** Sort + max-heap, O(n log n + k log n) time, O(n) space
 
 ## Problem
-You start with capital w and may complete at most k distinct projects. Project i needs capital[i] to start and adds profits[i] to your capital when done (capital isn't spent). Return the maximum final capital.
+You start with capital w and may complete at most k distinct projects. Project i needs capital[i] to start and adds profits[i] to your capital when done (capital isn't spent). Return the maximum final capital. [LeetCode](https://leetcode.com/problems/ipo/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0088 Merge Sorted Array", "0295 Find Median from Data Stream", "0215 
 **Go-to:** Partition binary search on the shorter array, O(log min(m, n)) time, O(1) space
 
 ## Problem
-Given two sorted arrays of sizes m and n, return the median of all m + n numbers combined. Required: O(log(m + n)).
+Given two sorted arrays of sizes m and n, return the median of all m + n numbers combined. Required: O(log(m + n)). [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
 **Examples:**
 ```

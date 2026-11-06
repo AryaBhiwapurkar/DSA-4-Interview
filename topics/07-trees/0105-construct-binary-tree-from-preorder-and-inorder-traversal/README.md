@@ -18,7 +18,7 @@ related: ["0106 Construct Binary Tree from Inorder and Postorder Traversal", "08
 **Go-to:** Recursion with a preorder pointer and inorder index map, O(n) time, O(n) space
 
 ## Problem
-Given the preorder and inorder traversals of a binary tree with unique values, rebuild and return the tree.
+Given the preorder and inorder traversals of a binary tree with unique values, rebuild and return the tree. [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
 **Examples:**
 ```

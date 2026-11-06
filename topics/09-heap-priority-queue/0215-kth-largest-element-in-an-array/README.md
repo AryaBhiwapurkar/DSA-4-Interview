@@ -18,7 +18,7 @@ related: ["0703 Kth Largest Element in a Stream", "0973 K Closest Points to Orig
 **Go-to:** Min-heap of size k, O(n log k) time, O(k) space; quickselect as the follow-up
 
 ## Problem
-Return the k-th largest element of an unsorted array (k-th in sorted order, not k-th distinct). Can you do it without sorting?
+Return the k-th largest element of an unsorted array (k-th in sorted order, not k-th distinct). Can you do it without sorting? [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 **Examples:**
 ```

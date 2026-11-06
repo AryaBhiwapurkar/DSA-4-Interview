@@ -18,7 +18,7 @@ related: ["0035 Search Insert Position", "0034 Find First and Last Position of E
 **Go-to:** Iterative binary search, O(log n) time, O(1) space
 
 ## Problem
-Given a sorted array of distinct integers and a target, return the target's index or -1. The solution must be O(log n).
+Given a sorted array of distinct integers and a target, return the target's index or -1. The solution must be O(log n). [LeetCode](https://leetcode.com/problems/binary-search/)
 
 **Examples:**
 ```

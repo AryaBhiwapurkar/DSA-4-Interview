@@ -18,7 +18,7 @@ related: ["0783 Minimum Distance Between BST Nodes", "0098 Validate Binary Searc
 **Go-to:** Inorder with a `prev` variable, O(n) time, O(h) space
 
 ## Problem
-Return the minimum absolute difference between the values of any two different nodes in a BST.
+Return the minimum absolute difference between the values of any two different nodes in a BST. [LeetCode](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0230 Kth Smallest Element in a BST", "0530 Minimum Absolute Differenc
 **Go-to:** DFS with bounds (or inorder strictly increasing), O(n) time, O(h) space
 
 ## Problem
-Return whether a binary tree is a valid BST: for every node, all values in its left subtree are strictly less, and all values in its right subtree are strictly greater.
+Return whether a binary tree is a valid BST: for every node, all values in its left subtree are strictly less, and all values in its right subtree are strictly greater. [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/)
 
 **Examples:**
 ```

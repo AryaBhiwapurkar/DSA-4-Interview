@@ -18,7 +18,7 @@ related: ["0112 Path Sum", "0129 Sum Root to Leaf Numbers", "0098 Validate Binar
 **Go-to:** Preorder DFS with path max, O(n) time, O(h) space
 
 ## Problem
-A node X is good if, on the path from the root to X, no node has a value greater than X. Count the good nodes.
+A node X is good if, on the path from the root to X, no node has a value greater than X. Count the good nodes. [LeetCode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
 
 **Examples:**
 ```

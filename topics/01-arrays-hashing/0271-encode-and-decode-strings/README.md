@@ -18,7 +18,7 @@ related: ["0297 Serialize and Deserialize Binary Tree", "0443 String Compression
 **Go-to:** Length + '#' + string, O(total chars) time and space
 
 ## Problem
-Design `encode(list of strings) -> string` and `decode(string) -> list of strings` so that `decode(encode(strs))` returns the original list. Strings may contain any of the 256 ASCII characters. (LeetCode Premium; also on LintCode 659.)
+Design `encode(list of strings) -> string` and `decode(string) -> list of strings` so that `decode(encode(strs))` returns the original list. Strings may contain any of the 256 ASCII characters. (LeetCode Premium; also on LintCode 659.) [LeetCode](https://leetcode.com/problems/encode-and-decode-strings/)
 
 **Examples:**
 ```

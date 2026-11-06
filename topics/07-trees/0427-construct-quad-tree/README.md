@@ -18,7 +18,7 @@ related: ["0558 Logical OR of Two Binary Grids Represented as Quad-Trees", "0108
 **Go-to:** Check-then-split recursion, O(n² log n) time, O(log n) stack
 
 ## Problem
-Given an n × n grid of 0s and 1s (n a power of 2), build its quad tree. Each node has `val`, `isLeaf` and four children (topLeft, topRight, bottomLeft, bottomRight). A uniform region is a leaf with that value; a mixed region is an internal node with four children. The output is a level order of [isLeaf, val] pairs with null for absent children.
+Given an n × n grid of 0s and 1s (n a power of 2), build its quad tree. Each node has `val`, `isLeaf` and four children (topLeft, topRight, bottomLeft, bottomRight). A uniform region is a leaf with that value; a mixed region is an internal node with four children. The output is a level order of [isLeaf, val] pairs with null for absent children. [LeetCode](https://leetcode.com/problems/construct-quad-tree/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0449 Serialize and Deserialize BST", "0105 Construct Binary Tree from
 **Go-to:** Preorder + `#` markers, O(n) time, O(n) space
 
 ## Problem
-Design `serialize(root) → string` and `deserialize(string) → root` so that deserializing a serialized tree gives back an identical tree. The format is up to you.
+Design `serialize(root) → string` and `deserialize(string) → root` so that deserializing a serialized tree gives back an identical tree. The format is up to you. [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 
 **Examples:**
 ```

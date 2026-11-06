@@ -18,7 +18,7 @@ related: ["0459 Repeated Substring Pattern", "0214 Shortest Palindrome"]
 **Go-to:** Brute-force window, O(n·m) time, O(1) space (KMP if asked for linear)
 
 ## Problem
-Given strings `haystack` and `needle`, return the index of the first place `needle` occurs in `haystack`, or -1 if it doesn't occur.
+Given strings `haystack` and `needle`, return the index of the first place `needle` occurs in `haystack`, or -1 if it doesn't occur. [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
 
 **Examples:**
 ```

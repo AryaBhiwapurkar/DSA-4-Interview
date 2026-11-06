@@ -18,7 +18,7 @@ related: ["0480 Sliding Window Median", "0703 Kth Largest Element in a Stream", 
 **Go-to:** Max-heap (low) + min-heap (high), O(log n) add, O(1) median
 
 ## Problem
-Design `addNum(num)` and `findMedian()` over a stream of integers. The median of an even count is the mean of the two middle values.
+Design `addNum(num)` and `findMedian()` over a stream of integers. The median of an even count is the mean of the two middle values. [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/)
 
 **Examples:**
 ```

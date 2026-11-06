@@ -18,7 +18,7 @@ related: ["0001 Two Sum", "0015 3Sum", "0653 Two Sum IV - Input is a BST"]
 **Go-to:** Two pointers, O(n) time, O(1) space
 
 ## Problem
-Given a 1-indexed array sorted in non-decreasing order and a target, return the 1-based indices `[i, j]` (i < j) of the two numbers that add up to the target. Exactly one solution exists; use only constant extra space.
+Given a 1-indexed array sorted in non-decreasing order and a target, return the 1-based indices `[i, j]` (i < j) of the two numbers that add up to the target. Exactly one solution exists; use only constant extra space. [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 
 **Examples:**
 ```

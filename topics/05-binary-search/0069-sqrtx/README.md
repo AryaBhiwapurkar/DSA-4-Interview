@@ -18,7 +18,7 @@ related: ["0367 Valid Perfect Square", "0050 Pow(x, n)", "0875 Koko Eating Banan
 **Go-to:** Binary search on k with 64-bit squares, O(log x) time, O(1) space
 
 ## Problem
-Given a non-negative integer x, return ⌊√x⌋ without using any built-in power or square-root function.
+Given a non-negative integer x, return ⌊√x⌋ without using any built-in power or square-root function. [LeetCode](https://leetcode.com/problems/sqrtx/)
 
 **Examples:**
 ```

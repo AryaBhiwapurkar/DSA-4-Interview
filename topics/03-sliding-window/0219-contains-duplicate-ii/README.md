@@ -18,7 +18,7 @@ related: ["0217 Contains Duplicate", "0220 Contains Duplicate III"]
 **Go-to:** Window set of size k, O(n) time, O(min(n, k)) space
 
 ## Problem
-Given an integer array and k, return true if there are two different indices i and j with `nums[i] == nums[j]` and `|i - j| ≤ k`.
+Given an integer array and k, return true if there are two different indices i and j with `nums[i] == nums[j]` and `|i - j| ≤ k`. [LeetCode](https://leetcode.com/problems/contains-duplicate-ii/)
 
 **Examples:**
 ```

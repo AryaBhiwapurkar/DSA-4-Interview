@@ -18,7 +18,7 @@ related: ["0229 Majority Element II", "0287 Find the Duplicate Number"]
 **Go-to:** Boyer-Moore, O(n) time, O(1) space
 
 ## Problem
-Given an array of size n, return the element that appears more than ⌊n/2⌋ times. Such an element is guaranteed to exist.
+Given an array of size n, return the element that appears more than ⌊n/2⌋ times. Such an element is guaranteed to exist. [LeetCode](https://leetcode.com/problems/majority-element/)
 
 **Examples:**
 ```

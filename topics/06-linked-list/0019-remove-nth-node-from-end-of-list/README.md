@@ -18,7 +18,7 @@ related: ["0876 Middle of the Linked List", "0061 Rotate List", "1721 Swapping N
 **Go-to:** One pass with an n-gap and a dummy, O(L) time, O(1) space
 
 ## Problem
-Remove the n-th node from the end of a linked list and return the head. n is always valid (1 ≤ n ≤ length).
+Remove the n-th node from the end of a linked list and return the head. n is always valid (1 ≤ n ≤ length). [LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0012 Integer to Roman"]
 **Go-to:** Single pass comparing each symbol with the next, O(n) time, O(1) space
 
 ## Problem
-Convert a valid Roman numeral string to an integer. Symbols are I=1, V=5, X=10, L=50, C=100, D=500, M=1000, and the six subtractive pairs IV, IX, XL, XC, CD, CM stand for 4, 9, 40, 90, 400, 900.
+Convert a valid Roman numeral string to an integer. Symbols are I=1, V=5, X=10, L=50, C=100, D=500, M=1000, and the six subtractive pairs IV, IX, XL, XC, CD, CM stand for 4, 9, 40, 90, 400, 900. [LeetCode](https://leetcode.com/problems/roman-to-integer/)
 
 **Examples:**
 ```

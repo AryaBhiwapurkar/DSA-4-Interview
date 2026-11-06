@@ -18,7 +18,7 @@ related: ["0235 Lowest Common Ancestor of a Binary Search Tree", "1650 Lowest Co
 **Go-to:** Recursive postorder, O(n) time, O(h) space
 
 ## Problem
-Given a binary tree (not a BST) and two distinct nodes p and q in it, return their lowest common ancestor (a node may be its own ancestor).
+Given a binary tree (not a BST) and two distinct nodes p and q in it, return their lowest common ancestor (a node may be its own ancestor). [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
 **Examples:**
 ```

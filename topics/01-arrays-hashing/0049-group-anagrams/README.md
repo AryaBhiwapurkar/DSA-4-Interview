@@ -18,7 +18,7 @@ related: ["0242 Valid Anagram", "0249 Group Shifted Strings"]
 **Go-to:** Sorted-string key, O(n·k log k) time, O(n·k) space
 
 ## Problem
-Given an array of strings, group the strings that are anagrams of each other. Groups and the words inside them may be returned in any order.
+Given an array of strings, group the strings that are anagrams of each other. Groups and the words inside them may be returned in any order. [LeetCode](https://leetcode.com/problems/group-anagrams/)
 
 **Examples:**
 ```

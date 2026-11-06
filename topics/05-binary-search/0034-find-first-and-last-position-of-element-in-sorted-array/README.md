@@ -18,7 +18,7 @@ related: ["0704 Binary Search", "0035 Search Insert Position", "2089 Find Target
 **Go-to:** Two lower-bound searches, O(log n) time, O(1) space
 
 ## Problem
-Given a sorted array (with possible duplicates) and a target, return the first and last index of the target, or `[-1, -1]` if it's absent. Must be O(log n).
+Given a sorted array (with possible duplicates) and a target, return the first and last index of the target, or `[-1, -1]` if it's absent. Must be O(log n). [LeetCode](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0378 Kth Smallest Element in a Sorted Matrix", "0023 Merge k Sorted L
 **Go-to:** Heap of k row heads, O(k log k) time, O(k) space
 
 ## Problem
-Given two ascending arrays and k, return the k pairs (u from nums1, v from nums2) with the smallest sums u + v.
+Given two ascending arrays and k, return the k pairs (u from nums1, v from nums2) with the smallest sums u + v. [LeetCode](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
 
 **Examples:**
 ```

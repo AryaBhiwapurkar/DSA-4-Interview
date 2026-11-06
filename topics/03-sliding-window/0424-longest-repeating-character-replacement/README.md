@@ -18,7 +18,7 @@ related: ["0003 Longest Substring Without Repeating Characters", "1004 Max Conse
 **Go-to:** Window + counts + non-decreasing maxFreq, O(n) time, O(26) space
 
 ## Problem
-Given an uppercase string and an integer k, you may change at most k characters to any other uppercase letter. Return the length of the longest substring that can be made of a single repeated letter.
+Given an uppercase string and an integer k, you may change at most k characters to any other uppercase letter. Return the length of the longest substring that can be made of a single repeated letter. [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
 **Examples:**
 ```

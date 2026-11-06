@@ -18,7 +18,7 @@ related: ["0275 H-Index II"]
 **Go-to:** Counting buckets, O(n) time, O(n) space
 
 ## Problem
-Given each paper's citation count, return the researcher's h-index: the largest h such that at least h papers have at least h citations each.
+Given each paper's citation count, return the researcher's h-index: the largest h such that at least h papers have at least h citations each. [LeetCode](https://leetcode.com/problems/h-index/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["1776 Car Fleet II", "0739 Daily Temperatures"]
 **Go-to:** Sort descending by position + track the slowest fleet time, O(n log n) time, O(n) space
 
 ## Problem
-Cars on a one-lane road drive toward `target`, each with a start position and speed. A faster car can't pass: when it catches up it joins that car and they move at the slower speed as one fleet. Count how many fleets reach the target (catching up exactly at the target counts as one fleet).
+Cars on a one-lane road drive toward `target`, each with a start position and speed. A faster car can't pass: when it catches up it joins that car and they move at the slower speed as one fleet. Count how many fleets reach the target (catching up exactly at the target counts as one fleet). [LeetCode](https://leetcode.com/problems/car-fleet/)
 
 **Examples:**
 ```

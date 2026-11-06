@@ -18,7 +18,7 @@ related: ["0206 Reverse Linked List", "0092 Reverse Linked List II", "0024 Swap 
 **Go-to:** Iterative group reversal, O(n) time, O(1) space
 
 ## Problem
-Reverse the nodes of a linked list k at a time. If the number of nodes left at the end is less than k, leave them as they are. Only relink nodes; don't change values.
+Reverse the nodes of a linked list k at a time. If the number of nodes left at the end is less than k, leave them as they are. Only relink nodes; don't change values. [LeetCode](https://leetcode.com/problems/reverse-nodes-in-k-group/)
 
 **Examples:**
 ```

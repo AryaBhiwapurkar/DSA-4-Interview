@@ -18,7 +18,7 @@ related: ["0567 Permutation in String", "0209 Minimum Size Subarray Sum", "0438 
 **Go-to:** Sliding window with counts, O(|s| + |t|) time, O(alphabet) space
 
 ## Problem
-Given strings s and t, return the shortest substring of s that contains every character of t (with multiplicity). Return "" if none exists; the answer is unique when it exists.
+Given strings s and t, return the shortest substring of s that contains every character of t (with multiplicity). Return "" if none exists; the answer is unique when it exists. [LeetCode](https://leetcode.com/problems/minimum-window-substring/)
 
 **Examples:**
 ```

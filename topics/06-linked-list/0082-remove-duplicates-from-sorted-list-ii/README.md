@@ -18,7 +18,7 @@ related: ["0083 Remove Duplicates from Sorted List", "0026 Remove Duplicates fro
 **Go-to:** One pass with a dummy, O(n) time, O(1) space
 
 ## Problem
-Given a sorted linked list, delete every node whose value appears more than once, keeping only values that are unique in the original list. Return the sorted result.
+Given a sorted linked list, delete every node whose value appears more than once, keeping only values that are unique in the original list. Return the sorted result. [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
 
 **Examples:**
 ```

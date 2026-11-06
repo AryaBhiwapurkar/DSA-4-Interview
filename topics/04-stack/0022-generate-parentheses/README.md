@@ -18,7 +18,7 @@ related: ["0020 Valid Parentheses", "0301 Remove Invalid Parentheses", "0078 Sub
 **Go-to:** Backtracking with counts, O(4ⁿ/√n) time (the Catalan number of answers × length n each), O(n) recursion depth
 
 ## Problem
-Given n, return every string of n pairs of parentheses that is well-formed. Any order is accepted.
+Given n, return every string of n pairs of parentheses that is well-formed. Any order is accepted. [LeetCode](https://leetcode.com/problems/generate-parentheses/)
 
 **Examples:**
 ```

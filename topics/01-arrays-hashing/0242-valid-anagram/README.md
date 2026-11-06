@@ -18,7 +18,7 @@ related: ["0049 Group Anagrams", "0383 Ransom Note", "0438 Find All Anagrams in 
 **Go-to:** 26-slot count array, O(n) time, O(1) space
 
 ## Problem
-Given two strings `s` and `t`, return true if `t` is a rearrangement of the letters of `s` (same letters, same counts), otherwise false.
+Given two strings `s` and `t`, return true if `t` is a rearrangement of the letters of `s` (same letters, same counts), otherwise false. [LeetCode](https://leetcode.com/problems/valid-anagram/)
 
 **Examples:**
 ```

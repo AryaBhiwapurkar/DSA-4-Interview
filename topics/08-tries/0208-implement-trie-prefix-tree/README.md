@@ -18,7 +18,7 @@ related: ["0211 Design Add and Search Words Data Structure", "0212 Word Search I
 **Go-to:** Array-of-26 children + end flag, O(L) per operation, O(total chars · 26) space
 
 ## Problem
-Implement a trie with `insert(word)`, `search(word)` (was this exact word inserted?) and `startsWith(prefix)` (was any inserted word starting with this prefix?). Lowercase letters only.
+Implement a trie with `insert(word)`, `search(word)` (was this exact word inserted?) and `startsWith(prefix)` (was any inserted word starting with this prefix?). Lowercase letters only. [LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree/)
 
 **Examples:**
 ```

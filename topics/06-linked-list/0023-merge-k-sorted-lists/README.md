@@ -18,7 +18,7 @@ related: ["0021 Merge Two Sorted Lists", "0378 Kth Smallest Element in a Sorted 
 **Go-to:** Min-heap of heads, O(N log k) time, O(k) space (N = total nodes)
 
 ## Problem
-Given k sorted linked lists, merge them into one sorted linked list and return its head.
+Given k sorted linked lists, merge them into one sorted linked list and return its head. [LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/)
 
 **Examples:**
 ```

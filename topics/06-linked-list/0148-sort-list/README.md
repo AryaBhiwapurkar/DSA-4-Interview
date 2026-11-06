@@ -18,7 +18,7 @@ related: ["0021 Merge Two Sorted Lists", "0147 Insertion Sort List", "0023 Merge
 **Go-to:** Top-down merge sort, O(n log n) time, O(log n) stack
 
 ## Problem
-Sort a linked list in ascending order and return its head. Follow-up: O(n log n) time with O(1) memory.
+Sort a linked list in ascending order and return its head. Follow-up: O(n log n) time with O(1) memory. [LeetCode](https://leetcode.com/problems/sort-list/)
 
 **Examples:**
 ```

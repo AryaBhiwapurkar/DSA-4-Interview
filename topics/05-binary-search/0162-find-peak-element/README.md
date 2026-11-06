@@ -18,7 +18,7 @@ related: ["0852 Peak Index in a Mountain Array", "1901 Find a Peak Element II", 
 **Go-to:** Binary search comparing mid with mid+1, O(log n) time, O(1) space
 
 ## Problem
-Return the index of any peak: an element strictly greater than its neighbours. Imagine nums[-1] = nums[n] = -∞, and adjacent elements are never equal. Must be O(log n).
+Return the index of any peak: an element strictly greater than its neighbours. Imagine nums[-1] = nums[n] = -∞, and adjacent elements are never equal. Must be O(log n). [LeetCode](https://leetcode.com/problems/find-peak-element/)
 
 **Examples:**
 ```

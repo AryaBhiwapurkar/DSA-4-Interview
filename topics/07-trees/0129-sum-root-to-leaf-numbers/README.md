@@ -18,7 +18,7 @@ related: ["0112 Path Sum", "0257 Binary Tree Paths", "1022 Sum of Root To Leaf B
 **Go-to:** Recursive DFS, O(n) time, O(h) space
 
 ## Problem
-Each node holds a digit 0-9. Every root-to-leaf path spells a number (root digit first). Return the sum of all those numbers.
+Each node holds a digit 0-9. Every root-to-leaf path spells a number (root digit first). Return the sum of all those numbers. [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 
 **Examples:**
 ```

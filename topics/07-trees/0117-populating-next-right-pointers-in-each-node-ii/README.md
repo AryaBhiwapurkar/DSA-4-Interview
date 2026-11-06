@@ -18,7 +18,7 @@ related: ["0116 Populating Next Right Pointers in Each Node", "0199 Binary Tree 
 **Go-to:** Dummy-node level linking, O(n) time, O(1) extra space
 
 ## Problem
-Each node has a `next` pointer, initially null. Point every node's `next` to the node immediately to its right on the same level (null for the last node). The tree is any binary tree (not necessarily perfect).
+Each node has a `next` pointer, initially null. Point every node's `next` to the node immediately to its right on the same level (null for the last node). The tree is any binary tree (not necessarily perfect). [LeetCode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
 
 **Examples:**
 ```

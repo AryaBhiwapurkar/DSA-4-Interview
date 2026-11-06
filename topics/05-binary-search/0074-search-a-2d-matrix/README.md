@@ -18,7 +18,7 @@ related: ["0240 Search a 2D Matrix II", "0704 Binary Search", "0378 Kth Smallest
 **Go-to:** One binary search over [0, m·n), O(log(m·n)) time, O(1) space
 
 ## Problem
-Each row of an m × n matrix is sorted, and each row's first value is greater than the previous row's last value. Return whether the target is in the matrix, in O(log(m·n)).
+Each row of an m × n matrix is sorted, and each row's first value is greater than the previous row's last value. Return whether the target is in the matrix, in O(log(m·n)). [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/)
 
 **Examples:**
 ```

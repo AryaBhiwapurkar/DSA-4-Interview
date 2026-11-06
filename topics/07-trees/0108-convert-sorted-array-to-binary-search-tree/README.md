@@ -18,7 +18,7 @@ related: ["0109 Convert Sorted List to Binary Search Tree", "1382 Balance a Bina
 **Go-to:** Recursive middle split, O(n) time, O(log n) stack
 
 ## Problem
-Convert a sorted array (ascending, distinct) into a height-balanced BST. Any balanced BST is accepted.
+Convert a sorted array (ascending, distinct) into a height-balanced BST. Any balanced BST is accepted. [LeetCode](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
 **Examples:**
 ```

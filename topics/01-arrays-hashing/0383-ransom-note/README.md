@@ -18,7 +18,7 @@ related: ["0242 Valid Anagram", "0049 Group Anagrams"]
 **Go-to:** 26-slot count array, O(m + n) time, O(1) space
 
 ## Problem
-Given two strings `ransomNote` and `magazine`, return true if the note can be written using letters cut from the magazine, where each magazine letter can be used at most once.
+Given two strings `ransomNote` and `magazine`, return true if the note can be written using letters cut from the magazine, where each magazine letter can be used at most once. [LeetCode](https://leetcode.com/problems/ransom-note/)
 
 **Examples:**
 ```

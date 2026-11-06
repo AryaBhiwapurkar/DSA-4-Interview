@@ -18,7 +18,7 @@ related: ["0026 Remove Duplicates from Sorted Array", "0027 Remove Element"]
 **Go-to:** Read/write with `nums[k-2]` check, O(n) time, O(1) space
 
 ## Problem
-Given a sorted array, remove extra duplicates in place so each value appears at most twice, keeping order. Return k; the first k slots must hold the result.
+Given a sorted array, remove extra duplicates in place so each value appears at most twice, keeping order. Return k; the first k slots must hold the result. [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 
 **Examples:**
 ```

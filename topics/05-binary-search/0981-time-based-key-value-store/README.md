@@ -18,7 +18,7 @@ related: ["0035 Search Insert Position", "0146 LRU Cache", "2034 Stock Price Flu
 **Go-to:** Hashmap → list + upper-bound search, O(1) set, O(log n) get, O(n) space
 
 ## Problem
-Design a store with `set(key, value, timestamp)` and `get(key, timestamp)`. `get` returns the value set for that key at the largest timestamp ≤ the given one, or "" if there is none.
+Design a store with `set(key, value, timestamp)` and `get(key, timestamp)`. `get` returns the value set for that key at the largest timestamp ≤ the given one, or "" if there is none. [LeetCode](https://leetcode.com/problems/time-based-key-value-store/)
 
 **Examples:**
 ```

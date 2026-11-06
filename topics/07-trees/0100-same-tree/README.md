@@ -18,7 +18,7 @@ related: ["0101 Symmetric Tree", "0572 Subtree of Another Tree", "0226 Invert Bi
 **Go-to:** Recursive parallel DFS, O(n) time, O(h) space
 
 ## Problem
-Return whether two binary trees have the same structure and the same values at every position.
+Return whether two binary trees have the same structure and the same values at every position. [LeetCode](https://leetcode.com/problems/same-tree/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0033 Search in Rotated Sorted Array", "0154 Find Minimum in Rotated S
 **Go-to:** Binary search with `nums[mid] > nums[hi]`, O(log n) time, O(1) space
 
 ## Problem
-A sorted array of distinct integers was rotated some number of times (possibly 0 or n). Return its minimum element in O(log n).
+A sorted array of distinct integers was rotated some number of times (possibly 0 or n). Return its minimum element in O(log n). [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
 **Examples:**
 ```

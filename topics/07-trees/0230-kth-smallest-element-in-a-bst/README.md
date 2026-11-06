@@ -18,7 +18,7 @@ related: ["0098 Validate Binary Search Tree", "0173 Binary Search Tree Iterator"
 **Go-to:** Iterative inorder with early stop, O(h + k) time, O(h) space
 
 ## Problem
-Given a BST and an integer k (1-indexed), return the k-th smallest value.
+Given a BST and an integer k (1-indexed), return the k-th smallest value. [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0076 Minimum Window Substring", "0438 Find All Anagrams in a String",
 **Go-to:** Per-offset token window, O(n·w) time, O(m·w) space
 
 ## Problem
-Given a string s and an array of equal-length words, return every start index in s where a substring is exactly some concatenation of all the words, each used once (in any order). Return the indices in any order.
+Given a string s and an array of equal-length words, return every start index in s where a substring is exactly some concatenation of all the words, each used once (in any order). Return the indices in any order. [LeetCode](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0153 Find Minimum in Rotated Sorted Array", "0081 Search in Rotated S
 **Go-to:** One-pass binary search on the sorted half, O(log n) time, O(1) space
 
 ## Problem
-A sorted array of distinct integers was rotated at an unknown pivot. Return the index of a target, or -1, in O(log n).
+A sorted array of distinct integers was rotated at an unknown pivot. Return the index of a target, or -1, in O(log n). [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 **Examples:**
 ```

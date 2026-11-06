@@ -18,7 +18,7 @@ related: ["0142 Linked List Cycle II", "0287 Find the Duplicate Number", "0202 H
 **Go-to:** Fast/slow pointers, O(n) time, O(1) space
 
 ## Problem
-Given the head of a linked list, return whether some node can be reached again by following `next` pointers (i.e., the list has a cycle). The `pos` in the examples only describes where the tail links back; it isn't passed to the function.
+Given the head of a linked list, return whether some node can be reached again by following `next` pointers (i.e., the list has a cycle). The `pos` in the examples only describes where the tail links back; it isn't passed to the function. [LeetCode](https://leetcode.com/problems/linked-list-cycle/)
 
 **Examples:**
 ```

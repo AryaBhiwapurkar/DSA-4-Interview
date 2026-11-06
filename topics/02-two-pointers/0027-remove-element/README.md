@@ -18,7 +18,7 @@ related: ["0026 Remove Duplicates from Sorted Array", "0283 Move Zeroes"]
 **Go-to:** Read/write pointers, O(n) time, O(1) space
 
 ## Problem
-Remove all occurrences of `val` from the array in place. Return k, the number of remaining elements; the first k slots must hold them in any order.
+Remove all occurrences of `val` from the array in place. Return k, the number of remaining elements; the first k slots must hold them in any order. [LeetCode](https://leetcode.com/problems/remove-element/)
 
 **Examples:**
 ```

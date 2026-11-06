@@ -18,7 +18,7 @@ related: ["0445 Add Two Numbers II", "0066 Plus One", "0067 Add Binary", "0415 A
 **Go-to:** Iterative with a dummy head, O(max(m, n)) time, O(1) extra space
 
 ## Problem
-Two non-negative integers are stored as linked lists of digits in reverse order (ones digit first). Return their sum as a linked list in the same format. No leading zeros except the number 0 itself.
+Two non-negative integers are stored as linked lists of digits in reverse order (ones digit first). Return their sum as a linked list in the same format. No leading zeros except the number 0 itself. [LeetCode](https://leetcode.com/problems/add-two-numbers/)
 
 **Examples:**
 ```

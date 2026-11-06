@@ -18,7 +18,7 @@ related: ["0208 Implement Trie (Prefix Tree)", "0212 Word Search II", "0010 Regu
 **Go-to:** Trie with recursive wildcard search, O(L) add, O(26^dots · L) worst-case search
 
 ## Problem
-Design `addWord(word)` and `search(word)`, where the search pattern may contain '.' matching any single letter. search returns whether any added word matches the whole pattern.
+Design `addWord(word)` and `search(word)`, where the search pattern may contain '.' matching any single letter. search returns whether any added word matches the whole pattern. [LeetCode](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
 
 **Examples:**
 ```

@@ -18,7 +18,7 @@ related: ["0021 Merge Two Sorted Lists", "0977 Squares of a Sorted Array", "0023
 **Go-to:** Backward merge, O(m + n) time, O(1) space
 
 ## Problem
-`nums1` has m sorted values followed by n empty slots (zeros); `nums2` has n sorted values. Merge nums2 into nums1 in place so nums1 becomes one sorted array of length m + n.
+`nums1` has m sorted values followed by n empty slots (zeros); `nums2` has n sorted values. Merge nums2 into nums1 in place so nums1 becomes one sorted array of length m + n. [LeetCode](https://leetcode.com/problems/merge-sorted-array/)
 
 **Examples:**
 ```

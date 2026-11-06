@@ -18,7 +18,7 @@ related: ["0496 Next Greater Element I", "0503 Next Greater Element II", "0084 L
 **Go-to:** Monotonic stack of indices, O(n) time, O(n) space
 
 ## Problem
-For each day, return how many days you must wait for a strictly warmer temperature, or 0 if none comes.
+For each day, return how many days you must wait for a strictly warmer temperature, or 0 if none comes. [LeetCode](https://leetcode.com/problems/daily-temperatures/)
 
 **Examples:**
 ```

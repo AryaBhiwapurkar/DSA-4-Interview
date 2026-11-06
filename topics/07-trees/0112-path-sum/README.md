@@ -18,7 +18,7 @@ related: ["0113 Path Sum II", "0437 Path Sum III", "0129 Sum Root to Leaf Number
 **Go-to:** Recursive DFS, O(n) time, O(h) space
 
 ## Problem
-Return whether the tree has a root-to-leaf path whose values add up to `targetSum`.
+Return whether the tree has a root-to-leaf path whose values add up to `targetSum`. [LeetCode](https://leetcode.com/problems/path-sum/)
 
 **Examples:**
 ```

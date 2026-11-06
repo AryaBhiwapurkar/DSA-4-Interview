@@ -18,7 +18,7 @@ related: ["0023 Merge k Sorted Lists", "0146 LRU Cache", "0373 Find K Pairs with
 **Go-to:** Per-user tweet lists + max-heap merge, O(F + 10 log F) per feed (F = followees)
 
 ## Problem
-Design `postTweet(userId, tweetId)`, `getNewsFeed(userId)` (10 most recent tweet ids from the user and the people they follow, newest first), `follow(followerId, followeeId)` and `unfollow(followerId, followeeId)`.
+Design `postTweet(userId, tweetId)`, `getNewsFeed(userId)` (10 most recent tweet ids from the user and the people they follow, newest first), `follow(followerId, followeeId)` and `unfollow(followerId, followeeId)`. [LeetCode](https://leetcode.com/problems/design-twitter/)
 
 **Examples:**
 ```

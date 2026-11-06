@@ -18,7 +18,7 @@ related: ["0102 Binary Tree Level Order Traversal", "0199 Binary Tree Right Side
 **Go-to:** BFS + write each level forward or backward, O(n) time, O(w) space
 
 ## Problem
-Return the level order traversal, but alternate direction: left to right on the first level, right to left on the next, and so on.
+Return the level order traversal, but alternate direction: left to right on the first level, right to left on the next, and so on. [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 
 **Examples:**
 ```
