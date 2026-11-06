@@ -197,8 +197,16 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Sorted distinct ints into ranges** -> Scan while next == cur + 1 (watch INT_MAX + 1) (0228)
 
 ## Math & Geometry
-- **Matrix rotation / spiral** -> Transpose + reverse / shrinking bounds (0048, 0054)
-- **x^n fast** -> Exponentiation by squaring (0050)
+- **Integer palindrome, no strings** -> Reverse half; reject negatives and trailing zeros (0009)
+- **Number stored as digits/strings (+1, multiply)** -> Right-to-left carry; product digit i*j lands at i+j, i+j+1 (0066, 0043)
+- **Repeated digit transform, does it end?** -> Cycle detection: seen-set or Floyd (0202)
+- **x^n, huge n** -> Exponentiation by squaring; widen n before negating (0050)
+- **Trailing zeros of n!** -> Sum n/5 + n/25 + ... (0172)
+- **Rotate matrix in place** -> Transpose + reverse each row (0048)
+- **Spiral traversal** -> Four shrinking bounds, guard the last two sides (0054)
+- **In-place matrix update needing old values** -> Flags in row 0 / col 0, or next state in bit 1 (0073, 0289)
+- **Count axis-aligned squares with a query point** -> Point counts, iterate diagonal corners (2013)
+- **Most collinear points** -> Anchor + gcd-reduced, sign-normalised slope map (0149)
 
 ## Bit Manipulation
 - **Every element twice except one** -> XOR all (0136)

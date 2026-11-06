@@ -97,5 +97,5 @@ Fast moves 2, slow moves 1; meeting means a cycle, null means none.
 - **Return the cycle's start node:** after meeting, restart one pointer at head and move both 1 step; they meet at the entry: LC 0142 Linked List Cycle II (not added yet)
 - **Array values as next pointers:** [LC 0287 Find the Duplicate Number](../0287-find-the-duplicate-number/)
 - **Middle node:** stop when fast hits the end: LC 0876 Middle of the Linked List (not added yet)
-- **Cycle in a number sequence:** LC 0202 Happy Number (not added yet)
+- **Cycle in a number sequence:** [LC 0202 Happy Number](../../17-math-geometry/0202-happy-number/)
 - **Cycle length:** after meeting, keep one still and count steps until the other comes back.

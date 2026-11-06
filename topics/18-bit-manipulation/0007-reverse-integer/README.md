@@ -95,5 +95,5 @@ x = 1534236469 (INT_MAX / 10 = 214748364)
 
 ## Follow-ups
 - **Parse a string with overflow clamping:** LC 0008 String to Integer (atoi) (not added yet). Same pre-check, clamp instead of 0.
-- **Is the number a palindrome?** LC 0009 Palindrome Number (not added yet). Reverse half the digits.
+- **Is the number a palindrome?** [LC 0009 Palindrome Number](../../17-math-geometry/0009-palindrome-number/). Reverse half the digits.
 - **Reverse binary digits:** [LC 0190 Reverse Bits](../0190-reverse-bits/)

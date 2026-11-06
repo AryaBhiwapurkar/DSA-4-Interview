@@ -99,5 +99,5 @@ One loop over both lists plus the carry, building the result after a dummy node.
 
 ## Follow-ups
 - **Digits stored most-significant first:** reverse both, or use two stacks: LC 0445 Add Two Numbers II (not added yet)
-- **Strings or arrays instead of lists:** LC 0415 Add Strings (not added yet), [LC 0067 Add Binary](../../18-bit-manipulation/0067-add-binary/), LC 0066 Plus One (not added yet)
+- **Strings or arrays instead of lists:** LC 0415 Add Strings (not added yet), [LC 0067 Add Binary](../../18-bit-manipulation/0067-add-binary/), [LC 0066 Plus One](../../17-math-geometry/0066-plus-one/)
 - **Multiply two numbers:** grade-school multiplication into an array of digits.

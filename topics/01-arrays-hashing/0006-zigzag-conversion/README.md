@@ -108,4 +108,4 @@ Result: "PA" + "APL" + "YI" = "PAAPLYI".
 ## Follow-ups
 - **O(1) extra space besides the output:** index-math approach (Approach 1).
 - **Decode: given the zigzag string, recover s:** compute each row's length from the cycle, then read back in zigzag order.
-- **Another traversal-order simulation:** LC 0054 Spiral Matrix (not added yet)
+- **Another traversal-order simulation:** [LC 0054 Spiral Matrix](../../17-math-geometry/0054-spiral-matrix/)

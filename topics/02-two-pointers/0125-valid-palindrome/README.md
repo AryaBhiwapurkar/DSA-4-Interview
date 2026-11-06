@@ -97,5 +97,5 @@ Filter to lowercase alphanumerics, compare with its reverse. One line in Python.
 
 ## Follow-ups
 - **Allowed to delete at most one character:** on the first mismatch, try skipping either side: LC 0680 Valid Palindrome II (not added yet)
-- **Integer palindrome without string conversion:** LC 0009 Palindrome Number (not added yet)
+- **Integer palindrome without string conversion:** [LC 0009 Palindrome Number](../../17-math-geometry/0009-palindrome-number/)
 - **Longest palindromic substring:** expand around centers: [LC 0005 Longest Palindromic Substring](../../13-1d-dp/0005-longest-palindromic-substring/)

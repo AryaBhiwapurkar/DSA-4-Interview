@@ -103,4 +103,4 @@ At x = 2147395599 the very first mid is ~1.07·10⁹, whose square overflows 32 
 - **Is x a perfect square?** same search, check equality: LC 0367 Valid Perfect Square (not added yet)
 - **Real-valued root to 1e-6:** binary search on doubles for a fixed number of iterations.
 - **Binary search on the answer, harder:** [LC 0875 Koko Eating Bananas](../0875-koko-eating-bananas/)
-- **Fast exponent:** LC 0050 Pow(x, n) (not added yet)
+- **Fast exponent:** [LC 0050 Pow(x, n)](../../17-math-geometry/0050-powx-n/)

@@ -98,4 +98,4 @@ Move the last element to the front, k times. Up to 10¹⁰ steps: too slow.
 ## Follow-ups
 - **Rotate a linked list:** [LC 0061 Rotate List](../../06-linked-list/0061-rotate-list/)
 - **Reverse word order in place:** same reverse-all-then-each trick: [LC 0151 Reverse Words in a String](../0151-reverse-words-in-a-string/)
-- **Rotate a matrix 90°:** LC 0048 Rotate Image (not added yet)
+- **Rotate a matrix 90°:** [LC 0048 Rotate Image](../../17-math-geometry/0048-rotate-image/)

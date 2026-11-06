@@ -6,10 +6,10 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 
 | List | Problems | Done |
 |------|---------:|-----:|
-| NeetCode 150 (NC150) | 150 | 142 |
-| LeetCode Top Interview 150 (TI150) | 150 | 140 |
-| In both lists | 77 | 71 |
-| **Unique total** | **223** | **211** |
+| NeetCode 150 (NC150) | 150 | 150 |
+| LeetCode Top Interview 150 (TI150) | 150 | 150 |
+| In both lists | 77 | 77 |
+| **Unique total** | **223** | **223** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
@@ -33,7 +33,7 @@ Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.
 | [14. 2-D Dynamic Programming](topics/14-2d-dp/) | 17 | 17 |
 | [15. Greedy](topics/15-greedy/) | 11 | 11 |
 | [16. Intervals](topics/16-intervals/) | 8 | 8 |
-| [17. Math & Geometry](topics/17-math-geometry/) | 12 | 0 |
+| [17. Math & Geometry](topics/17-math-geometry/) | 12 | 12 |
 | [18. Bit Manipulation](topics/18-bit-manipulation/) | 10 | 10 |
 
 Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Easy → Hard, then by number.
@@ -323,18 +323,18 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0009 | Palindrome Number | Easy | Reverse half the number | TI150 | ⬜ |
-| 0066 | Plus One | Easy | Carry from the end | NC150, TI150 | ⬜ |
-| 0202 | Happy Number | Easy | Cycle detection (fast/slow) | NC150, TI150 | ⬜ |
-| 0043 | Multiply Strings | Medium | Grade-school multiplication | NC150 | ⬜ |
-| 0048 | Rotate Image | Medium | Transpose + reverse rows | NC150, TI150 | ⬜ |
-| 0050 | Pow(x, n) | Medium | Fast exponentiation | NC150, TI150 | ⬜ |
-| 0054 | Spiral Matrix | Medium | Shrinking boundaries | NC150, TI150 | ⬜ |
-| 0073 | Set Matrix Zeroes | Medium | First row/col as markers | NC150, TI150 | ⬜ |
-| 0172 | Factorial Trailing Zeroes | Medium | Count factors of 5 | TI150 | ⬜ |
-| 0289 | Game of Life | Medium | In-place state encoding | TI150 | ⬜ |
-| 2013 | Detect Squares | Medium | Point counts + diagonal | NC150 | ⬜ |
-| 0149 | Max Points on a Line | Hard | Slope hashmap (gcd) | TI150 | ⬜ |
+| 0009 | [Palindrome Number](topics/17-math-geometry/0009-palindrome-number/) | Easy | Reverse half the number | TI150 | ✅ |
+| 0066 | [Plus One](topics/17-math-geometry/0066-plus-one/) | Easy | Carry from the end | NC150, TI150 | ✅ |
+| 0202 | [Happy Number](topics/17-math-geometry/0202-happy-number/) | Easy | Cycle detection (fast/slow) | NC150, TI150 | ✅ |
+| 0043 | [Multiply Strings](topics/17-math-geometry/0043-multiply-strings/) | Medium | Grade-school multiplication | NC150 | ✅ |
+| 0048 | [Rotate Image](topics/17-math-geometry/0048-rotate-image/) | Medium | Transpose + reverse rows | NC150, TI150 | ✅ |
+| 0050 | [Pow(x, n)](topics/17-math-geometry/0050-powx-n/) | Medium | Fast exponentiation | NC150, TI150 | ✅ |
+| 0054 | [Spiral Matrix](topics/17-math-geometry/0054-spiral-matrix/) | Medium | Shrinking boundaries | NC150, TI150 | ✅ |
+| 0073 | [Set Matrix Zeroes](topics/17-math-geometry/0073-set-matrix-zeroes/) | Medium | First row/col as markers | NC150, TI150 | ✅ |
+| 0172 | [Factorial Trailing Zeroes](topics/17-math-geometry/0172-factorial-trailing-zeroes/) | Medium | Count factors of 5 | TI150 | ✅ |
+| 0289 | [Game of Life](topics/17-math-geometry/0289-game-of-life/) | Medium | In-place state encoding | TI150 | ✅ |
+| 2013 | [Detect Squares](topics/17-math-geometry/2013-detect-squares/) | Medium | Point counts + diagonal | NC150 | ✅ |
+| 0149 | [Max Points on a Line](topics/17-math-geometry/0149-max-points-on-a-line/) | Hard | Slope hashmap (gcd) | TI150 | ✅ |
 
 ## 18. Bit Manipulation
 

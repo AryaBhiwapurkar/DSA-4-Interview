@@ -25,6 +25,8 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Replace contents in place | `a = b;` (by-ref param) | `a[:] = b` (not `a = b`) | `copy(a, b)` |
 | Consecutive pairs | `for (i = 1; i < n; i++)` use `a[i-1], a[i]` | `for x, y in zip(a, a[1:]):` | `for i := 1; i < len(a); i++` |
 | Any / all match | `any_of(a.begin(), a.end(), pred)` / `all_of` | `any(p(x) for x in a)` / `all(...)` | `slices.ContainsFunc(a, pred)` / loop |
+| Transpose / rotate a matrix | `swap(m[r][c], m[c][r])` for `c > r`, then `reverse` each row | `m[:] = [list(r) for r in zip(*m[::-1])]` (clockwise) | swap loop, then `slices.Reverse(row)` |
+| 8 neighbours | nested `dr, dc` in `-1..1`, skip `(0, 0)` | `[(dr, dc) for dr in (-1,0,1) for dc in (-1,0,1) if (dr, dc) != (0, 0)]` | nested loops, skip `0, 0` |
 
 ## Hashmap
 
@@ -40,6 +42,7 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Composite / array key | build a `string` key | `tuple(counts)` key | `map[[26]int][]string` (arrays are comparable) |
 | Most common | sort pairs by count | `Counter(a).most_common(k)` | sort keys by count |
 | Pointer / identity key | `unordered_map<Node*, Node*>` | objects hash by identity; or `id(obj)` | `map[*Node]*Node` |
+| Point / pair key | `map<pair<int,int>, int>` (no hash needed) or key `x * K + y` | `Counter[(x, y)]` (reads don't insert) | `map[[2]int]int` |
 | Clear | `m.clear();` | `m.clear()` | `clear(m)` (Go 1.21+) |
 
 ## Set
@@ -220,6 +223,9 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 | "Not found" sentinel | `INT_MAX`, convert to 0/-1 at the end | `math.inf` (float!) → `int()` | `math.MaxInt` |
 | Counting DP whose intermediates overflow | `unsigned long long` (wraps, defined) when the final answer is guaranteed small | not needed | `uint64` (wraps) |
 | Binomial C(n, k) | loop `r = r * (n - k + i) / i` in `long long` | `math.comb(n, k)` | same loop with `int` |
+| GCD | `gcd(a, b)` (`<numeric>`, non-negative) | `math.gcd(a, b)` (non-negative) | write Euclid: `for b != 0 { a, b = b, a%b }` |
+| Modular / fast power | squaring loop with `% MOD` in `long long` | `pow(b, e, MOD)` | squaring loop |
+| Negate a possibly-INT_MIN int | `long long N = n; N = -N;` | not needed | `int64(n)` first |
 
 ## Recursion / Loops
 
