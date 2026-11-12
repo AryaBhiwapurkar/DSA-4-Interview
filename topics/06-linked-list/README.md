@@ -99,10 +99,16 @@ for fast != nil && fast.Next != nil {
 - **Floyd phase 2:** after meeting, restart one pointer at the head; stepping both by 1 meets at the cycle entry (0287).
 - **Head insertion:** reverse a sub-range by moving `curr.next` to just after `prev`, `right - left` times (0092).
 - **Group reversal:** check k nodes exist, reverse with `prev = groupNext`, reconnect, advance (0025).
-- **Two chains, then join:** stable partition (0086), odd/even, split and weave (0143).
+- **Two chains, then join:** stable partition (0086), odd/even (0328), split and weave (0143).
 - **Ring trick:** connect tail → head, then cut at the new tail (0061).
 - **Hashmap + DLL with sentinels:** O(1) reorder and eviction (0146).
 - **Old → new map / interleaving** for deep copies (0138).
+- **Middle + reverse the back half:** palindrome check in O(1) space, then restore (0234); the middle alone (0876).
+- **Floyd phase 2 on a real list:** the cycle entry (0142).
+- **Head switching:** walk A then B, and B then A; they meet at the intersection or at null together (0160).
+- **Pairwise rewiring with a dummy:** three assignments per pair (0024).
+- **Most-significant-digit-first numbers:** stacks to read from the back, prepend the result (0445).
+- **Splicing:** insert into a dummy-headed sorted list (0147); splice child lists in place (0430).
 
 ## ⚠️ Pitfalls
 - **Overwriting `next` before saving it:** the rest of the list is lost.
@@ -118,18 +124,28 @@ for fast != nil && fast.Next != nil {
 | # | Problem | Difficulty | Pattern | Status |
 |---|---------|------------|---------|--------|
 | 0021 | [Merge Two Sorted Lists](0021-merge-two-sorted-lists/) | Easy | Dummy head merge | ✅ |
+| 0083 | [Remove Duplicates from Sorted List](0083-remove-duplicates-from-sorted-list/) | Easy | Skip equal successors | ✅ |
 | 0141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Floyd fast/slow | ✅ |
+| 0160 | [Intersection of Two Linked Lists](0160-intersection-of-two-linked-lists/) | Easy | Two pointers switch heads | ✅ |
 | 0206 | [Reverse Linked List](0206-reverse-linked-list/) | Easy | Iterative reversal | ✅ |
+| 0234 | [Palindrome Linked List](0234-palindrome-linked-list/) | Easy | Middle + reverse second half | ✅ |
+| 0876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Fast/slow pointers | ✅ |
 | 0002 | [Add Two Numbers](0002-add-two-numbers/) | Medium | Digit-wise add with carry | ✅ |
 | 0019 | [Remove Nth Node From End of List](0019-remove-nth-node-from-end-of-list/) | Medium | Fast/slow with n gap | ✅ |
+| 0024 | [Swap Nodes in Pairs](0024-swap-nodes-in-pairs/) | Medium | Dummy + pairwise rewiring | ✅ |
 | 0061 | [Rotate List](0061-rotate-list/) | Medium | Close ring, cut at n-k | ✅ |
 | 0082 | [Remove Duplicates from Sorted List II](0082-remove-duplicates-from-sorted-list-ii/) | Medium | Dummy + skip duplicate runs | ✅ |
 | 0086 | [Partition List](0086-partition-list/) | Medium | Two dummy lists | ✅ |
 | 0092 | [Reverse Linked List II](0092-reverse-linked-list-ii/) | Medium | Sublist reversal | ✅ |
 | 0138 | [Copy List with Random Pointer](0138-copy-list-with-random-pointer/) | Medium | Hashmap old→new / interleave | ✅ |
+| 0142 | [Linked List Cycle II](0142-linked-list-cycle-ii/) | Medium | Floyd phase 2 (cycle entry) | ✅ |
 | 0143 | [Reorder List](0143-reorder-list/) | Medium | Find mid + reverse + merge | ✅ |
 | 0146 | [LRU Cache](0146-lru-cache/) | Medium | Hashmap + doubly linked list | ✅ |
+| 0147 | [Insertion Sort List](0147-insertion-sort-list/) | Medium | Splice into dummy-headed sorted list | ✅ |
 | 0148 | [Sort List](0148-sort-list/) | Medium | Merge sort on list | ✅ |
 | 0287 | [Find the Duplicate Number](0287-find-the-duplicate-number/) | Medium | Floyd cycle on indices | ✅ |
+| 0328 | [Odd Even Linked List](0328-odd-even-linked-list/) | Medium | Two chains in place, then join | ✅ |
+| 0430 | [Flatten a Multilevel Doubly Linked List](0430-flatten-a-multilevel-doubly-linked-list/) | Medium | Splice child list in place | ✅ |
+| 0445 | [Add Two Numbers II](0445-add-two-numbers-ii/) | Medium | Two stacks + prepend | ✅ |
 | 0023 | [Merge k Sorted Lists](0023-merge-k-sorted-lists/) | Hard | Min-heap / divide & conquer | ✅ |
 | 0025 | [Reverse Nodes in k-Group](0025-reverse-nodes-in-k-group/) | Hard | Group reversal with dummy | ✅ |
