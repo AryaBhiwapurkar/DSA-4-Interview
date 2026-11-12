@@ -101,6 +101,6 @@ w passes; each pass moves left and right in steps of w, so each token is added a
 - Handle duplicates and resets correctly.
 
 ## Follow-ups
-- **Single characters instead of words:** [LC 0567 Permutation in String](../0567-permutation-in-string/) / LC 0438 (not added yet)
+- **Single characters instead of words:** [LC 0567 Permutation in String](../0567-permutation-in-string/) / [LC 0438 Find All Anagrams in a String](../0438-find-all-anagrams-in-a-string/)
 - **Variable-size window covering a multiset:** [LC 0076 Minimum Window Substring](../0076-minimum-window-substring/)
 - **Words of different lengths:** tokenizing no longer works; needs a trie/DP over positions.

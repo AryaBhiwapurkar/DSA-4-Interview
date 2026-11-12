@@ -1,6 +1,6 @@
 # Wave 2 Plan: Interview Problems Beyond NC150 / TI150
 
-Status: **in progress.** 185 problems in 9 batches, worked topic by topic. Batch 1 done (2026-11-12).
+Status: **in progress.** 185 problems in 9 batches, worked topic by topic. Batches 1-2 done (2026-11-12).
 
 ## Decisions
 - One list: the old Tier 1 and Tier 2 are merged. Rare and near-duplicate problems (old Tier 3) are **left out** and stay as "(not added yet)" mentions.
@@ -15,7 +15,7 @@ Status: **in progress.** 185 problems in 9 batches, worked topic by topic. Batch
 | Batch | Topics | Problems |
 |-------|--------|----------|
 | 1 ✅ | 01 Arrays & Hashing, 02 Two Pointers | 23 |
-| 2 | 03 Sliding Window, 04 Stack | 21 |
+| 2 ✅ | 03 Sliding Window, 04 Stack | 21 |
 | 3 | 05 Binary Search, 06 Linked List | 22 |
 | 4 | 07 Trees | 24 |
 | 5 | 08 Tries, 09 Heap, 10 Backtracking | 21 |
@@ -61,29 +61,29 @@ Each batch gets one commit per topic, then one "index, cheatsheets, backfill" co
 ## Batch 2
 
 ### 03 Sliding Window (9)
-- [ ] 0438 Find All Anagrams in a String
-- [ ] 1004 Max Consecutive Ones III
-- [ ] 0713 Subarray Product Less Than K
-- [ ] 0340 Longest Substring with At Most K Distinct Characters (P)
-- [ ] 0904 Fruit Into Baskets *
-- [ ] 0992 Subarrays with K Different Integers *
-- [ ] 0862 Shortest Subarray with Sum at Least K
-- [ ] 0220 Contains Duplicate III
-- [ ] 0727 Minimum Window Subsequence (P)
+- [x] 0438 Find All Anagrams in a String
+- [x] 1004 Max Consecutive Ones III
+- [x] 0713 Subarray Product Less Than K
+- [x] 0340 Longest Substring with At Most K Distinct Characters (P)
+- [x] 0904 Fruit Into Baskets *
+- [x] 0992 Subarrays with K Different Integers *
+- [x] 0862 Shortest Subarray with Sum at Least K
+- [x] 0220 Contains Duplicate III
+- [x] 0727 Minimum Window Subsequence (P)
 
 ### 04 Stack (12)
-- [ ] 0496 Next Greater Element I
-- [ ] 0503 Next Greater Element II
-- [ ] 0901 Online Stock Span
-- [ ] 0907 Sum of Subarray Minimums *
-- [ ] 0227 Basic Calculator II
-- [ ] 0772 Basic Calculator III (P)
-- [ ] 0032 Longest Valid Parentheses
-- [ ] 1249 Minimum Remove to Make Valid Parentheses
-- [ ] 0921 Minimum Add to Make Parentheses Valid
-- [ ] 0402 Remove K Digits *
-- [ ] 0316 Remove Duplicate Letters *
-- [ ] 0085 Maximal Rectangle
+- [x] 0496 Next Greater Element I
+- [x] 0503 Next Greater Element II
+- [x] 0901 Online Stock Span
+- [x] 0907 Sum of Subarray Minimums *
+- [x] 0227 Basic Calculator II
+- [x] 0772 Basic Calculator III (P)
+- [x] 0032 Longest Valid Parentheses
+- [x] 1249 Minimum Remove to Make Valid Parentheses
+- [x] 0921 Minimum Add to Make Parentheses Valid
+- [x] 0402 Remove K Digits *
+- [x] 0316 Remove Duplicate Letters *
+- [x] 0085 Maximal Rectangle
 
 ## Batch 3
 

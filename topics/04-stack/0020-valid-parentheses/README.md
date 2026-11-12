@@ -106,7 +106,7 @@ Push openers; on a closer, check and pop the top. Valid iff no mismatch and the 
 
 ## Follow-ups
 - **Generate all valid strings of n pairs:** [LC 0022 Generate Parentheses](../0022-generate-parentheses/)
-- **Longest valid substring:** stack of indices: LC 0032 Longest Valid Parentheses (not added yet)
-- **Min insertions to make it valid (one type):** a counter instead of a stack: LC 0921 Minimum Add to Make Parentheses Valid (not added yet)
-- **Min removals to make it valid, with letters present:** LC 1249 Minimum Remove to Make Valid Parentheses (not added yet)
+- **Longest valid substring:** stack of indices: [LC 0032 Longest Valid Parentheses](../0032-longest-valid-parentheses/)
+- **Min insertions to make it valid (one type):** a counter instead of a stack: [LC 0921 Minimum Add to Make Parentheses Valid](../0921-minimum-add-to-make-parentheses-valid/)
+- **Min removals to make it valid, with letters present:** [LC 1249 Minimum Remove to Make Valid Parentheses](../1249-minimum-remove-to-make-valid-parentheses/)
 - **Only one bracket type?** A single counter that must never go negative replaces the stack, O(1) space.

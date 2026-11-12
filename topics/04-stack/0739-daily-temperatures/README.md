@@ -103,8 +103,8 @@ Each index is pushed and popped once; the answer is filled at pop time.
 - Optional: the O(1)-space backward pass that jumps using already-computed answers.
 
 ## Follow-ups
-- **Next greater in a second array:** LC 0496 Next Greater Element I (not added yet)
-- **Circular array:** loop twice (i mod n): LC 0503 Next Greater Element II (not added yet)
+- **Next greater in a second array:** [LC 0496 Next Greater Element I](../0496-next-greater-element-i/)
+- **Circular array:** loop twice (i mod n): [LC 0503 Next Greater Element II](../0503-next-greater-element-ii/)
 - **Previous smaller on both sides:** [LC 0084 Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/)
-- **Streaming version (span of past days):** LC 0901 Online Stock Span (not added yet)
+- **Streaming version (span of past days):** [LC 0901 Online Stock Span](../0901-online-stock-span/)
 - **O(1) extra space:** go right to left; from day i jump j = i+1, then j += ans[j] until temp[j] > temp[i].

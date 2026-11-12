@@ -97,7 +97,7 @@ One pass; each bar's area is computed when it's popped. A two-pass version (comp
 - Amortized O(n) argument.
 
 ## Follow-ups
-- **Largest rectangle of 1s in a binary matrix:** run this on each row's histogram: LC 0085 Maximal Rectangle (not added yet)
+- **Largest rectangle of 1s in a binary matrix:** run this on each row's histogram: [LC 0085 Maximal Rectangle](../0085-maximal-rectangle/)
 - **Next greater/smaller template:** [LC 0739 Daily Temperatures](../0739-daily-temperatures/)
 - **Water between bars (a different combination of left/right info):** [LC 0042 Trapping Rain Water](../../02-two-pointers/0042-trapping-rain-water/)
 - **Rectangle must contain index k:** two pointers expanding greedily: LC 1793 Maximum Score of a Good Subarray (not added yet)

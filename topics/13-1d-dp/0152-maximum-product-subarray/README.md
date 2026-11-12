@@ -97,4 +97,4 @@ The 24 comes from [-2,-4,3]: hi at -4 was 8 = (-2)(-4).
 ## Follow-ups
 - **Max sum instead of product:** [LC 0053 Maximum Subarray](../../15-greedy/0053-maximum-subarray/). Plain Kadane.
 - **Products of everything except i:** [LC 0238 Product of Array Except Self](../../01-arrays-hashing/0238-product-of-array-except-self/)
-- **Count subarrays with product < k:** LC 0713 Subarray Product Less Than K (not added yet). Sliding window, positives only.
+- **Count subarrays with product < k:** [LC 0713 Subarray Product Less Than K](../../03-sliding-window/0713-subarray-product-less-than-k/). Sliding window, positives only.

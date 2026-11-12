@@ -9,37 +9,41 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 | NeetCode 150 (NC150) | 150 | 150 |
 | LeetCode Top Interview 150 (TI150) | 150 | 150 |
 | In both lists | 77 | 77 |
-| Interview Extras (wave 2: 185 planned, see [PLAN-wave2.md](PLAN-wave2.md)) | 23 | 23 |
-| **Unique total** | **246** | **246** |
+| Wave 2: Interview Extras ([plan](PLAN-wave2.md)) | 185 | 44 |
+| **Unique total** | **408** | **267** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
 ## Topics
 
-| Topic | Problems | Done |
-|-------|---------:|-----:|
-| [01. Arrays & Hashing](topics/01-arrays-hashing/) | 40 | 40 |
-| [02. Two Pointers](topics/02-two-pointers/) | 17 | 17 |
-| [03. Sliding Window](topics/03-sliding-window/) | 9 | 9 |
-| [04. Stack](topics/04-stack/) | 9 | 9 |
-| [05. Binary Search](topics/05-binary-search/) | 11 | 11 |
-| [06. Linked List](topics/06-linked-list/) | 16 | 16 |
-| [07. Trees](topics/07-trees/) | 29 | 29 |
-| [08. Tries](topics/08-tries/) | 3 | 3 |
-| [09. Heap / Priority Queue](topics/09-heap-priority-queue/) | 9 | 9 |
-| [10. Backtracking](topics/10-backtracking/) | 11 | 11 |
-| [11. Graphs](topics/11-graphs/) | 16 | 16 |
-| [12. Advanced Graphs](topics/12-advanced-graphs/) | 6 | 6 |
-| [13. 1-D Dynamic Programming](topics/13-1d-dp/) | 12 | 12 |
-| [14. 2-D Dynamic Programming](topics/14-2d-dp/) | 17 | 17 |
-| [15. Greedy](topics/15-greedy/) | 11 | 11 |
-| [16. Intervals](topics/16-intervals/) | 8 | 8 |
-| [17. Math & Geometry](topics/17-math-geometry/) | 12 | 12 |
-| [18. Bit Manipulation](topics/18-bit-manipulation/) | 10 | 10 |
+| Topic | Core (NC150/TI150) | Core done | Wave 2 | Wave 2 done |
+|-------|---------:|-----:|---------:|-----:|
+| [01. Arrays & Hashing](topics/01-arrays-hashing/) | 24 | 24 | 16 | 16 |
+| [02. Two Pointers](topics/02-two-pointers/) | 10 | 10 | 7 | 7 |
+| [03. Sliding Window](topics/03-sliding-window/) | 9 | 9 | 9 | 9 |
+| [04. Stack](topics/04-stack/) | 9 | 9 | 12 | 12 |
+| [05. Binary Search](topics/05-binary-search/) | 11 | 11 | 12 | 0 |
+| [06. Linked List](topics/06-linked-list/) | 16 | 16 | 10 | 0 |
+| [07. Trees](topics/07-trees/) | 29 | 29 | 24 | 0 |
+| [08. Tries](topics/08-tries/) | 3 | 3 | 3 | 0 |
+| [09. Heap / Priority Queue](topics/09-heap-priority-queue/) | 9 | 9 | 10 | 0 |
+| [10. Backtracking](topics/10-backtracking/) | 11 | 11 | 8 | 0 |
+| [11. Graphs](topics/11-graphs/) | 16 | 16 | 13 | 0 |
+| [12. Advanced Graphs](topics/12-advanced-graphs/) | 6 | 6 | 4 | 0 |
+| [13. 1-D Dynamic Programming](topics/13-1d-dp/) | 12 | 12 | 11 | 0 |
+| [14. 2-D Dynamic Programming](topics/14-2d-dp/) | 17 | 17 | 13 | 0 |
+| [15. Greedy](topics/15-greedy/) | 11 | 11 | 4 | 0 |
+| [16. Intervals](topics/16-intervals/) | 8 | 8 | 6 | 0 |
+| [17. Math & Geometry](topics/17-math-geometry/) | 12 | 12 | 8 | 0 |
+| [18. Bit Manipulation](topics/18-bit-manipulation/) | 10 | 10 | 4 | 0 |
+| 19. Design | – | – | 6 | 0 |
+| 20. Advanced Data Structures | – | – | 5 | 0 |
 
-Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Easy → Hard, then by number.
+Status: ✅ done · ⬜ not added yet. Within each table, problems are sorted Easy → Hard, then by number.
 
 ## 01. Arrays & Hashing
+
+**Core (NC150 / TI150):** 24/24 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -53,38 +57,45 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0217 | [Contains Duplicate](topics/01-arrays-hashing/0217-contains-duplicate/) | Easy | Hash set | NC150 | ✅ |
 | 0242 | [Valid Anagram](topics/01-arrays-hashing/0242-valid-anagram/) | Easy | Frequency count | NC150, TI150 | ✅ |
 | 0290 | [Word Pattern](topics/01-arrays-hashing/0290-word-pattern/) | Easy | Two-way mapping | TI150 | ✅ |
-| 0303 | [Range Sum Query - Immutable](topics/01-arrays-hashing/0303-range-sum-query-immutable/) | Easy | Prefix sums | Extra | ✅ |
 | 0383 | [Ransom Note](topics/01-arrays-hashing/0383-ransom-note/) | Easy | Frequency count | TI150 | ✅ |
-| 0448 | [Find All Numbers Disappeared in an Array](topics/01-arrays-hashing/0448-find-all-numbers-disappeared-in-an-array/) | Easy | Sign marking (index as hash) | Extra | ✅ |
-| 0459 | [Repeated Substring Pattern](topics/01-arrays-hashing/0459-repeated-substring-pattern/) | Easy | Divisor check / KMP period | Extra | ✅ |
-| 0557 | [Reverse Words in a String III](topics/01-arrays-hashing/0557-reverse-words-in-a-string-iii/) | Easy | Reverse each word in place | Extra | ✅ |
 | 0006 | [Zigzag Conversion](topics/01-arrays-hashing/0006-zigzag-conversion/) | Medium | Row simulation | TI150 | ✅ |
 | 0012 | [Integer to Roman](topics/01-arrays-hashing/0012-integer-to-roman/) | Medium | Greedy over value table | TI150 | ✅ |
-| 0031 | [Next Permutation](topics/01-arrays-hashing/0031-next-permutation/) | Medium | Pivot, swap, reverse suffix | Extra | ✅ |
 | 0036 | [Valid Sudoku](topics/01-arrays-hashing/0036-valid-sudoku/) | Medium | Hash sets per row/col/box | NC150, TI150 | ✅ |
 | 0049 | [Group Anagrams](topics/01-arrays-hashing/0049-group-anagrams/) | Medium | Hashmap with canonical key | NC150, TI150 | ✅ |
 | 0128 | [Longest Consecutive Sequence](topics/01-arrays-hashing/0128-longest-consecutive-sequence/) | Medium | Hash set, start-of-run | NC150, TI150 | ✅ |
 | 0151 | [Reverse Words in a String](topics/01-arrays-hashing/0151-reverse-words-in-a-string/) | Medium | Split + reverse | TI150 | ✅ |
-| 0187 | [Repeated DNA Sequences](topics/01-arrays-hashing/0187-repeated-dna-sequences/) | Medium | Fixed window + set / 2-bit rolling | Extra | ✅ |
 | 0189 | [Rotate Array](topics/01-arrays-hashing/0189-rotate-array/) | Medium | Reverse in place | TI150 | ✅ |
-| 0229 | [Majority Element II](topics/01-arrays-hashing/0229-majority-element-ii/) | Medium | Boyer-Moore, two candidates | Extra | ✅ |
 | 0238 | [Product of Array Except Self](topics/01-arrays-hashing/0238-product-of-array-except-self/) | Medium | Prefix & suffix products | NC150, TI150 | ✅ |
-| 0249 | [Group Shifted Strings](topics/01-arrays-hashing/0249-group-shifted-strings/) | Medium | Canonical gap key | Extra | ✅ |
 | 0271 | [Encode and Decode Strings](topics/01-arrays-hashing/0271-encode-and-decode-strings/) | Medium | Length-prefix encoding | NC150 | ✅ |
 | 0274 | [H-Index](topics/01-arrays-hashing/0274-h-index/) | Medium | Sort / counting | TI150 | ✅ |
-| 0304 | [Range Sum Query 2D - Immutable](topics/01-arrays-hashing/0304-range-sum-query-2d-immutable/) | Medium | 2-D prefix sums | Extra | ✅ |
 | 0347 | [Top K Frequent Elements](topics/01-arrays-hashing/0347-top-k-frequent-elements/) | Medium | Bucket sort / heap | NC150 | ✅ |
 | 0380 | [Insert Delete GetRandom O(1)](topics/01-arrays-hashing/0380-insert-delete-getrandom-o1/) | Medium | Hashmap + array, swap-delete | TI150 | ✅ |
+| 0068 | [Text Justification](topics/01-arrays-hashing/0068-text-justification/) | Hard | Greedy line packing | TI150 | ✅ |
+
+**Wave 2 extras:** 16/16 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0303 | [Range Sum Query - Immutable](topics/01-arrays-hashing/0303-range-sum-query-immutable/) | Easy | Prefix sums | Extra | ✅ |
+| 0448 | [Find All Numbers Disappeared in an Array](topics/01-arrays-hashing/0448-find-all-numbers-disappeared-in-an-array/) | Easy | Sign marking (index as hash) | Extra | ✅ |
+| 0459 | [Repeated Substring Pattern](topics/01-arrays-hashing/0459-repeated-substring-pattern/) | Easy | Divisor check / KMP period | Extra | ✅ |
+| 0557 | [Reverse Words in a String III](topics/01-arrays-hashing/0557-reverse-words-in-a-string-iii/) | Easy | Reverse each word in place | Extra | ✅ |
+| 0031 | [Next Permutation](topics/01-arrays-hashing/0031-next-permutation/) | Medium | Pivot, swap, reverse suffix | Extra | ✅ |
+| 0187 | [Repeated DNA Sequences](topics/01-arrays-hashing/0187-repeated-dna-sequences/) | Medium | Fixed window + set / 2-bit rolling | Extra | ✅ |
+| 0229 | [Majority Element II](topics/01-arrays-hashing/0229-majority-element-ii/) | Medium | Boyer-Moore, two candidates | Extra | ✅ |
+| 0249 | [Group Shifted Strings](topics/01-arrays-hashing/0249-group-shifted-strings/) | Medium | Canonical gap key | Extra | ✅ |
+| 0304 | [Range Sum Query 2D - Immutable](topics/01-arrays-hashing/0304-range-sum-query-2d-immutable/) | Medium | 2-D prefix sums | Extra | ✅ |
 | 0418 | [Sentence Screen Fitting](topics/01-arrays-hashing/0418-sentence-screen-fitting/) | Medium | Joined-sentence pointer | Extra | ✅ |
 | 0525 | [Contiguous Array](topics/01-arrays-hashing/0525-contiguous-array/) | Medium | Prefix balance + first-index map | Extra | ✅ |
 | 0560 | [Subarray Sum Equals K](topics/01-arrays-hashing/0560-subarray-sum-equals-k/) | Medium | Prefix sum + count map | Extra | ✅ |
 | 0890 | [Find and Replace Pattern](topics/01-arrays-hashing/0890-find-and-replace-pattern/) | Medium | Bijection, two maps | Extra | ✅ |
 | 0974 | [Subarray Sums Divisible by K](topics/01-arrays-hashing/0974-subarray-sums-divisible-by-k/) | Medium | Prefix remainder counts | Extra | ✅ |
 | 0041 | [First Missing Positive](topics/01-arrays-hashing/0041-first-missing-positive/) | Hard | Cyclic placement (index as hash) | Extra | ✅ |
-| 0068 | [Text Justification](topics/01-arrays-hashing/0068-text-justification/) | Hard | Greedy line packing | TI150 | ✅ |
 | 0214 | [Shortest Palindrome](topics/01-arrays-hashing/0214-shortest-palindrome/) | Hard | KMP on s + # + reverse(s) | Extra | ✅ |
 
 ## 02. Two Pointers
+
+**Core (NC150 / TI150):** 10/10 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -92,21 +103,28 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0027 | [Remove Element](topics/02-two-pointers/0027-remove-element/) | Easy | Read/write pointers | TI150 | ✅ |
 | 0088 | [Merge Sorted Array](topics/02-two-pointers/0088-merge-sorted-array/) | Easy | Merge from the back | TI150 | ✅ |
 | 0125 | [Valid Palindrome](topics/02-two-pointers/0125-valid-palindrome/) | Easy | Converging pointers | NC150, TI150 | ✅ |
-| 0283 | [Move Zeroes](topics/02-two-pointers/0283-move-zeroes/) | Easy | Read/write pointers | Extra | ✅ |
 | 0392 | [Is Subsequence](topics/02-two-pointers/0392-is-subsequence/) | Easy | Two pointers on two strings | TI150 | ✅ |
-| 0680 | [Valid Palindrome II](topics/02-two-pointers/0680-valid-palindrome-ii/) | Easy | Converging, one skip | Extra | ✅ |
-| 0977 | [Squares of a Sorted Array](topics/02-two-pointers/0977-squares-of-a-sorted-array/) | Easy | Converging, fill from back | Extra | ✅ |
 | 0011 | [Container With Most Water](topics/02-two-pointers/0011-container-with-most-water/) | Medium | Converging, move shorter side | NC150, TI150 | ✅ |
 | 0015 | [3Sum](topics/02-two-pointers/0015-3sum/) | Medium | Sort + fix one + two pointers | NC150, TI150 | ✅ |
+| 0080 | [Remove Duplicates from Sorted Array II](topics/02-two-pointers/0080-remove-duplicates-from-sorted-array-ii/) | Medium | Read/write, compare k back | TI150 | ✅ |
+| 0167 | [Two Sum II - Input Array Is Sorted](topics/02-two-pointers/0167-two-sum-ii-input-array-is-sorted/) | Medium | Converging pointers on sorted | NC150, TI150 | ✅ |
+| 0042 | [Trapping Rain Water](topics/02-two-pointers/0042-trapping-rain-water/) | Hard | Two pointers with running max | NC150, TI150 | ✅ |
+
+**Wave 2 extras:** 7/7 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0283 | [Move Zeroes](topics/02-two-pointers/0283-move-zeroes/) | Easy | Read/write pointers | Extra | ✅ |
+| 0680 | [Valid Palindrome II](topics/02-two-pointers/0680-valid-palindrome-ii/) | Easy | Converging, one skip | Extra | ✅ |
+| 0977 | [Squares of a Sorted Array](topics/02-two-pointers/0977-squares-of-a-sorted-array/) | Easy | Converging, fill from back | Extra | ✅ |
 | 0016 | [3Sum Closest](topics/02-two-pointers/0016-3sum-closest/) | Medium | Sort + fix one + two pointers | Extra | ✅ |
 | 0018 | [4Sum](topics/02-two-pointers/0018-4sum/) | Medium | Sort + fix two + two pointers | Extra | ✅ |
 | 0075 | [Sort Colors](topics/02-two-pointers/0075-sort-colors/) | Medium | Dutch national flag | Extra | ✅ |
-| 0080 | [Remove Duplicates from Sorted Array II](topics/02-two-pointers/0080-remove-duplicates-from-sorted-array-ii/) | Medium | Read/write, compare k back | TI150 | ✅ |
-| 0167 | [Two Sum II - Input Array Is Sorted](topics/02-two-pointers/0167-two-sum-ii-input-array-is-sorted/) | Medium | Converging pointers on sorted | NC150, TI150 | ✅ |
 | 0792 | [Number of Matching Subsequences](topics/02-two-pointers/0792-number-of-matching-subsequences/) | Medium | Waiting buckets per next char | Extra | ✅ |
-| 0042 | [Trapping Rain Water](topics/02-two-pointers/0042-trapping-rain-water/) | Hard | Two pointers with running max | NC150, TI150 | ✅ |
 
 ## 03. Sliding Window
+
+**Core (NC150 / TI150):** 9/9 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -120,7 +138,23 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0076 | [Minimum Window Substring](topics/03-sliding-window/0076-minimum-window-substring/) | Hard | Variable window + need/have | NC150, TI150 | ✅ |
 | 0239 | [Sliding Window Maximum](topics/03-sliding-window/0239-sliding-window-maximum/) | Hard | Monotonic deque | NC150 | ✅ |
 
+**Wave 2 extras:** 9/9 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0340 | [Longest Substring with At Most K Distinct Characters](topics/03-sliding-window/0340-longest-substring-with-at-most-k-distinct-characters/) | Medium | Window + char counts | Extra | ✅ |
+| 0438 | [Find All Anagrams in a String](topics/03-sliding-window/0438-find-all-anagrams-in-a-string/) | Medium | Fixed window + count match | Extra | ✅ |
+| 0713 | [Subarray Product Less Than K](topics/03-sliding-window/0713-subarray-product-less-than-k/) | Medium | Window, count ending at r | Extra | ✅ |
+| 0904 | [Fruit Into Baskets](topics/03-sliding-window/0904-fruit-into-baskets/) | Medium | Window, at most 2 distinct | Extra | ✅ |
+| 1004 | [Max Consecutive Ones III](topics/03-sliding-window/1004-max-consecutive-ones-iii/) | Medium | Window with at most k zeros | Extra | ✅ |
+| 0220 | [Contains Duplicate III](topics/03-sliding-window/0220-contains-duplicate-iii/) | Hard | Window + buckets / ordered set | Extra | ✅ |
+| 0727 | [Minimum Window Subsequence](topics/03-sliding-window/0727-minimum-window-subsequence/) | Hard | Forward scan + backward shrink | Extra | ✅ |
+| 0862 | [Shortest Subarray with Sum at Least K](topics/03-sliding-window/0862-shortest-subarray-with-sum-at-least-k/) | Hard | Prefix sums + monotonic deque | Extra | ✅ |
+| 0992 | [Subarrays with K Different Integers](topics/03-sliding-window/0992-subarrays-with-k-different-integers/) | Hard | atMost(k) - atMost(k-1) | Extra | ✅ |
+
 ## 04. Stack
+
+**Core (NC150 / TI150):** 9/9 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -134,7 +168,26 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0084 | [Largest Rectangle in Histogram](topics/04-stack/0084-largest-rectangle-in-histogram/) | Hard | Monotonic increasing stack | NC150 | ✅ |
 | 0224 | [Basic Calculator](topics/04-stack/0224-basic-calculator/) | Hard | Stack for sign/paren context | TI150 | ✅ |
 
+**Wave 2 extras:** 12/12 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0496 | [Next Greater Element I](topics/04-stack/0496-next-greater-element-i/) | Easy | Monotonic stack + map | Extra | ✅ |
+| 0227 | [Basic Calculator II](topics/04-stack/0227-basic-calculator-ii/) | Medium | Stack of terms, apply * / immediately | Extra | ✅ |
+| 0316 | [Remove Duplicate Letters](topics/04-stack/0316-remove-duplicate-letters/) | Medium | Monotonic stack + last occurrence | Extra | ✅ |
+| 0402 | [Remove K Digits](topics/04-stack/0402-remove-k-digits/) | Medium | Monotonic increasing stack | Extra | ✅ |
+| 0503 | [Next Greater Element II](topics/04-stack/0503-next-greater-element-ii/) | Medium | Monotonic stack, two passes (circular) | Extra | ✅ |
+| 0901 | [Online Stock Span](topics/04-stack/0901-online-stock-span/) | Medium | Monotonic stack with spans | Extra | ✅ |
+| 0907 | [Sum of Subarray Minimums](topics/04-stack/0907-sum-of-subarray-minimums/) | Medium | Monotonic stack, contribution counting | Extra | ✅ |
+| 0921 | [Minimum Add to Make Parentheses Valid](topics/04-stack/0921-minimum-add-to-make-parentheses-valid/) | Medium | Balance counter | Extra | ✅ |
+| 1249 | [Minimum Remove to Make Valid Parentheses](topics/04-stack/1249-minimum-remove-to-make-valid-parentheses/) | Medium | Stack of unmatched indices | Extra | ✅ |
+| 0032 | [Longest Valid Parentheses](topics/04-stack/0032-longest-valid-parentheses/) | Hard | Stack of indices / two counters | Extra | ✅ |
+| 0085 | [Maximal Rectangle](topics/04-stack/0085-maximal-rectangle/) | Hard | Histogram per row + largest rectangle | Extra | ✅ |
+| 0772 | [Basic Calculator III](topics/04-stack/0772-basic-calculator-iii/) | Hard | Recursive descent / stack per paren | Extra | ✅ |
+
 ## 05. Binary Search
+
+**Core (NC150 / TI150):** 11/11 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -150,7 +203,26 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0981 | [Time Based Key-Value Store](topics/05-binary-search/0981-time-based-key-value-store/) | Medium | Hashmap + binary search on time | NC150 | ✅ |
 | 0004 | [Median of Two Sorted Arrays](topics/05-binary-search/0004-median-of-two-sorted-arrays/) | Hard | Binary search on partition | NC150, TI150 | ✅ |
 
+**Wave 2 extras:** 0/12 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0278 | First Bad Version | Easy | Binary search for first true | Extra | ⬜ |
+| 0367 | Valid Perfect Square | Easy | Binary search on answer | Extra | ⬜ |
+| 0081 | Search in Rotated Sorted Array II | Medium | Rotated binary search with duplicates | Extra | ⬜ |
+| 0240 | Search a 2D Matrix II | Medium | Staircase search from a corner | Extra | ⬜ |
+| 0275 | H-Index II | Medium | Binary search on sorted citations | Extra | ⬜ |
+| 0702 | Search in a Sorted Array of Unknown Size | Medium | Exponential search + binary search | Extra | ⬜ |
+| 0852 | Peak Index in a Mountain Array | Medium | Binary search on slope | Extra | ⬜ |
+| 1011 | Capacity To Ship Packages Within D Days | Medium | Binary search on answer + greedy check | Extra | ⬜ |
+| 1283 | Find the Smallest Divisor Given a Threshold | Medium | Binary search on answer | Extra | ⬜ |
+| 0154 | Find Minimum in Rotated Sorted Array II | Hard | Rotated min with duplicates (hi--) | Extra | ⬜ |
+| 0410 | Split Array Largest Sum | Hard | Binary search on answer + greedy check | Extra | ⬜ |
+| 0719 | Find K-th Smallest Pair Distance | Hard | Binary search on answer + two pointers | Extra | ⬜ |
+
 ## 06. Linked List
+
+**Core (NC150 / TI150):** 16/16 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -171,7 +243,24 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0023 | [Merge k Sorted Lists](topics/06-linked-list/0023-merge-k-sorted-lists/) | Hard | Min-heap / divide & conquer | NC150, TI150 | ✅ |
 | 0025 | [Reverse Nodes in k-Group](topics/06-linked-list/0025-reverse-nodes-in-k-group/) | Hard | Group reversal with dummy | NC150, TI150 | ✅ |
 
+**Wave 2 extras:** 0/10 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0083 | Remove Duplicates from Sorted List | Easy | Skip equal next nodes | Extra | ⬜ |
+| 0160 | Intersection of Two Linked Lists | Easy | Two pointers switch heads | Extra | ⬜ |
+| 0234 | Palindrome Linked List | Easy | Find middle, reverse second half | Extra | ⬜ |
+| 0876 | Middle of the Linked List | Easy | Slow/fast pointers | Extra | ⬜ |
+| 0024 | Swap Nodes in Pairs | Medium | Dummy node + pointer rewiring | Extra | ⬜ |
+| 0142 | Linked List Cycle II | Medium | Floyd, then reset one pointer | Extra | ⬜ |
+| 0147 | Insertion Sort List | Medium | Dummy head + insertion | Extra | ⬜ |
+| 0328 | Odd Even Linked List | Medium | Two chains, then join | Extra | ⬜ |
+| 0430 | Flatten a Multilevel Doubly Linked List | Medium | DFS / stack splice | Extra | ⬜ |
+| 0445 | Add Two Numbers II | Medium | Stacks / reverse, add with carry | Extra | ⬜ |
+
 ## 07. Trees
+
+**Core (NC150 / TI150):** 29/29 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -205,7 +294,38 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0124 | [Binary Tree Maximum Path Sum](topics/07-trees/0124-binary-tree-maximum-path-sum/) | Hard | DFS gain, update global | NC150, TI150 | ✅ |
 | 0297 | [Serialize and Deserialize Binary Tree](topics/07-trees/0297-serialize-and-deserialize-binary-tree/) | Hard | Preorder with null markers | NC150 | ✅ |
 
+**Wave 2 extras:** 0/24 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0111 | Minimum Depth of Binary Tree | Easy | BFS to first leaf | Extra | ⬜ |
+| 0257 | Binary Tree Paths | Easy | DFS building paths | Extra | ⬜ |
+| 0783 | Minimum Distance Between BST Nodes | Easy | Inorder, adjacent difference | Extra | ⬜ |
+| 0897 | Increasing Order Search Tree | Easy | Inorder relink | Extra | ⬜ |
+| 1022 | Sum of Root To Leaf Binary Numbers | Easy | DFS carrying value | Extra | ⬜ |
+| 0107 | Binary Tree Level Order Traversal II | Medium | BFS, reverse levels | Extra | ⬜ |
+| 0109 | Convert Sorted List to Binary Search Tree | Medium | Inorder simulation / middle split | Extra | ⬜ |
+| 0113 | Path Sum II | Medium | DFS with path backtracking | Extra | ⬜ |
+| 0116 | Populating Next Right Pointers in Each Node | Medium | Level links using next pointers | Extra | ⬜ |
+| 0298 | Binary Tree Longest Consecutive Sequence | Medium | DFS carrying run length | Extra | ⬜ |
+| 0437 | Path Sum III | Medium | Prefix sums on root paths | Extra | ⬜ |
+| 0449 | Serialize and Deserialize BST | Medium | Preorder + bounds | Extra | ⬜ |
+| 0450 | Delete Node in a BST | Medium | BST delete with successor | Extra | ⬜ |
+| 0515 | Find Largest Value in Each Tree Row | Medium | BFS level max | Extra | ⬜ |
+| 0652 | Find Duplicate Subtrees | Medium | Subtree serialization + map | Extra | ⬜ |
+| 0662 | Maximum Width of Binary Tree | Medium | BFS with position indices | Extra | ⬜ |
+| 0687 | Longest Univalue Path | Medium | Post-order arm lengths | Extra | ⬜ |
+| 0863 | All Nodes Distance K in Binary Tree | Medium | Parent map + BFS | Extra | ⬜ |
+| 0889 | Construct Binary Tree from Preorder and Postorder Traversal | Medium | Recursive split by root's left child | Extra | ⬜ |
+| 0958 | Check Completeness of a Binary Tree | Medium | BFS, no node after a gap | Extra | ⬜ |
+| 1123 | Lowest Common Ancestor of Deepest Leaves | Medium | Post-order (depth, node) | Extra | ⬜ |
+| 1382 | Balance a Binary Search Tree | Medium | Inorder to array, rebuild | Extra | ⬜ |
+| 1650 | Lowest Common Ancestor of a Binary Tree III | Medium | Parent pointers, two-pointer switch | Extra | ⬜ |
+| 0987 | Vertical Order Traversal of a Binary Tree | Hard | DFS with (col, row, val) sort | Extra | ⬜ |
+
 ## 08. Tries
+
+**Core (NC150 / TI150):** 3/3 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -213,7 +333,17 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0211 | [Design Add and Search Words Data Structure](topics/08-tries/0211-design-add-and-search-words-data-structure/) | Medium | Trie + DFS on wildcard | NC150, TI150 | ✅ |
 | 0212 | [Word Search II](topics/08-tries/0212-word-search-ii/) | Hard | Trie + grid backtracking | NC150, TI150 | ✅ |
 
+**Wave 2 extras:** 0/3 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0421 | Maximum XOR of Two Numbers in an Array | Medium | Binary trie, greedy opposite bit | Extra | ⬜ |
+| 0648 | Replace Words | Medium | Trie of roots, shortest prefix | Extra | ⬜ |
+| 1268 | Search Suggestions System | Medium | Trie / sort + binary search | Extra | ⬜ |
+
 ## 09. Heap / Priority Queue
+
+**Core (NC150 / TI150):** 9/9 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -227,7 +357,24 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0295 | [Find Median from Data Stream](topics/09-heap-priority-queue/0295-find-median-from-data-stream/) | Hard | Two heaps | NC150, TI150 | ✅ |
 | 0502 | [IPO](topics/09-heap-priority-queue/0502-ipo/) | Hard | Sort by capital + max-heap | TI150 | ✅ |
 
+**Wave 2 extras:** 0/10 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0378 | Kth Smallest Element in a Sorted Matrix | Medium | Min-heap of rows / binary search on value | Extra | ⬜ |
+| 0658 | Find K Closest Elements | Medium | Binary search window / heap | Extra | ⬜ |
+| 0692 | Top K Frequent Words | Medium | Count + heap with custom order | Extra | ⬜ |
+| 0767 | Reorganize String | Medium | Max-heap, place most frequent | Extra | ⬜ |
+| 1834 | Single-Threaded CPU | Medium | Sort by time + min-heap | Extra | ⬜ |
+| 0358 | Rearrange String k Distance Apart | Hard | Max-heap + cooldown queue | Extra | ⬜ |
+| 0407 | Trapping Rain Water II | Hard | Min-heap from the border (Dijkstra-like) | Extra | ⬜ |
+| 0480 | Sliding Window Median | Hard | Two heaps + lazy deletion | Extra | ⬜ |
+| 0632 | Smallest Range Covering Elements from K Lists | Hard | K-way merge heap + running max | Extra | ⬜ |
+| 0857 | Minimum Cost to Hire K Workers | Hard | Sort by ratio + max-heap of quality | Extra | ⬜ |
+
 ## 10. Backtracking
+
+**Core (NC150 / TI150):** 11/11 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -243,7 +390,22 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0051 | [N-Queens](topics/10-backtracking/0051-n-queens/) | Hard | Backtrack with col/diag sets | NC150 | ✅ |
 | 0052 | [N-Queens II](topics/10-backtracking/0052-n-queens-ii/) | Hard | Backtrack with col/diag sets (count) | TI150 | ✅ |
 
+**Wave 2 extras:** 0/8 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0047 | Permutations II | Medium | Backtracking, skip equal siblings | Extra | ⬜ |
+| 0093 | Restore IP Addresses | Medium | Backtracking over 4 segments | Extra | ⬜ |
+| 0216 | Combination Sum III | Medium | Backtracking with count and sum | Extra | ⬜ |
+| 0291 | Word Pattern II | Medium | Backtracking with bijection maps | Extra | ⬜ |
+| 0698 | Partition to K Equal Sum Subsets | Medium | Backtracking buckets / bitmask DP | Extra | ⬜ |
+| 0037 | Sudoku Solver | Hard | Backtracking with row/col/box sets | Extra | ⬜ |
+| 0301 | Remove Invalid Parentheses | Hard | BFS by removals / DFS with counts | Extra | ⬜ |
+| 0980 | Unique Paths III | Hard | DFS covering every cell | Extra | ⬜ |
+
 ## 11. Graphs
+
+**Core (NC150 / TI150):** 16/16 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -264,7 +426,27 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0994 | [Rotting Oranges](topics/11-graphs/0994-rotting-oranges/) | Medium | Multi-source BFS | NC150 | ✅ |
 | 0127 | [Word Ladder](topics/11-graphs/0127-word-ladder/) | Hard | BFS with wildcard buckets | NC150, TI150 | ✅ |
 
+**Wave 2 extras:** 0/13 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0463 | Island Perimeter | Easy | Count edges per land cell | Extra | ⬜ |
+| 0310 | Minimum Height Trees | Medium | Peel leaves (topological trim) | Extra | ⬜ |
+| 0542 | 01 Matrix | Medium | Multi-source BFS from zeros | Extra | ⬜ |
+| 0547 | Number of Provinces | Medium | DFS / union-find components | Extra | ⬜ |
+| 0752 | Open the Lock | Medium | BFS over states | Extra | ⬜ |
+| 0785 | Is Graph Bipartite? | Medium | 2-coloring BFS/DFS | Extra | ⬜ |
+| 0990 | Satisfiability of Equality Equations | Medium | Union-find, then check != | Extra | ⬜ |
+| 1020 | Number of Enclaves | Medium | Flood fill from the border | Extra | ⬜ |
+| 1306 | Jump Game III | Medium | BFS/DFS over indices | Extra | ⬜ |
+| 1462 | Course Schedule IV | Medium | Topological order + reachability sets | Extra | ⬜ |
+| 0305 | Number of Islands II | Hard | Online union-find | Extra | ⬜ |
+| 0317 | Shortest Distance from All Buildings | Hard | BFS from each building, sum distances | Extra | ⬜ |
+| 0827 | Making A Large Island | Hard | Label islands, try each zero | Extra | ⬜ |
+
 ## 12. Advanced Graphs
+
+**Core (NC150 / TI150):** 6/6 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -275,7 +457,18 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0332 | [Reconstruct Itinerary](topics/12-advanced-graphs/0332-reconstruct-itinerary/) | Hard | Hierholzer (Eulerian path) | NC150 | ✅ |
 | 0778 | [Swim in Rising Water](topics/12-advanced-graphs/0778-swim-in-rising-water/) | Hard | Dijkstra on max edge | NC150 | ✅ |
 
+**Wave 2 extras:** 0/4 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0953 | Verifying an Alien Dictionary | Easy | Rank map, compare neighbours | Extra | ⬜ |
+| 1514 | Path with Maximum Probability | Medium | Dijkstra with max-heap of probability | Extra | ⬜ |
+| 1631 | Path With Minimum Effort | Medium | Dijkstra on max edge / binary search | Extra | ⬜ |
+| 1192 | Critical Connections in a Network | Hard | Tarjan bridges (low-link) | Extra | ⬜ |
+
 ## 13. 1-D Dynamic Programming
+
+**Core (NC150 / TI150):** 12/12 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -292,7 +485,25 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0416 | [Partition Equal Subset Sum](topics/13-1d-dp/0416-partition-equal-subset-sum/) | Medium | 0/1 knapsack subset sum | NC150 | ✅ |
 | 0647 | [Palindromic Substrings](topics/13-1d-dp/0647-palindromic-substrings/) | Medium | Expand around center | NC150 | ✅ |
 
+**Wave 2 extras:** 0/11 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0279 | Perfect Squares | Medium | Unbounded knapsack DP / BFS | Extra | ⬜ |
+| 0337 | House Robber III | Medium | Tree DP (rob, skip) pairs | Extra | ⬜ |
+| 0377 | Combination Sum IV | Medium | Ordered count DP (amount outer) | Extra | ⬜ |
+| 0673 | Number of Longest Increasing Subsequence | Medium | LIS DP with counts | Extra | ⬜ |
+| 0740 | Delete and Earn | Medium | Bucket sums, then House Robber | Extra | ⬜ |
+| 1049 | Last Stone Weight II | Medium | Subset sum closest to half | Extra | ⬜ |
+| 0132 | Palindrome Partitioning II | Hard | Palindrome table + min cuts DP | Extra | ⬜ |
+| 0140 | Word Break II | Hard | Memoized DFS returning sentences | Extra | ⬜ |
+| 0354 | Russian Doll Envelopes | Hard | Sort (w asc, h desc) + LIS | Extra | ⬜ |
+| 0472 | Concatenated Words | Hard | Word Break per word (shorter words) | Extra | ⬜ |
+| 0639 | Decode Ways II | Hard | Decode Ways DP with * cases | Extra | ⬜ |
+
 ## 14. 2-D Dynamic Programming
+
+**Core (NC150 / TI150):** 17/17 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -314,7 +525,27 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0312 | [Burst Balloons](topics/14-2d-dp/0312-burst-balloons/) | Hard | Interval DP (last to burst) | NC150 | ✅ |
 | 0329 | [Longest Increasing Path in a Matrix](topics/14-2d-dp/0329-longest-increasing-path-in-a-matrix/) | Hard | DFS + memo | NC150 | ✅ |
 
+**Wave 2 extras:** 0/13 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0516 | Longest Palindromic Subsequence | Medium | Interval DP / LCS with reverse | Extra | ⬜ |
+| 0583 | Delete Operation for Two Strings | Medium | LCS-based DP | Extra | ⬜ |
+| 0714 | Best Time to Buy and Sell Stock with Transaction Fee | Medium | Hold/cash state machine | Extra | ⬜ |
+| 0931 | Minimum Falling Path Sum | Medium | Grid DP from the row above | Extra | ⬜ |
+| 1039 | Minimum Score Triangulation of Polygon | Medium | Interval DP | Extra | ⬜ |
+| 1277 | Count Square Submatrices with All Ones | Medium | Maximal-square DP, sum of values | Extra | ⬜ |
+| 0044 | Wildcard Matching | Hard | Two-string DP with * | Extra | ⬜ |
+| 0174 | Dungeon Game | Hard | Grid DP from the bottom-right | Extra | ⬜ |
+| 0664 | Strange Printer | Hard | Interval DP, merge equal ends | Extra | ⬜ |
+| 0940 | Distinct Subsequences II | Hard | DP with last-occurrence subtraction | Extra | ⬜ |
+| 1092 | Shortest Common Supersequence | Hard | LCS table + reconstruction | Extra | ⬜ |
+| 1547 | Minimum Cost to Cut a Stick | Hard | Interval DP over cut positions | Extra | ⬜ |
+| 2328 | Number of Increasing Paths in a Grid | Hard | DFS + memo on a DAG | Extra | ⬜ |
+
 ## 15. Greedy
+
+**Core (NC150 / TI150):** 11/11 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -330,7 +561,18 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 1899 | [Merge Triplets to Form Target Triplet](topics/15-greedy/1899-merge-triplets-to-form-target-triplet/) | Medium | Filter valid triplets | NC150 | ✅ |
 | 0135 | [Candy](topics/15-greedy/0135-candy/) | Hard | Two passes L→R, R→L | TI150 | ✅ |
 
+**Wave 2 extras:** 0/4 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0659 | Split Array into Consecutive Subsequences | Medium | Greedy with count + "ends at" maps | Extra | ⬜ |
+| 1024 | Video Stitching | Medium | Greedy farthest reach (jump game) | Extra | ⬜ |
+| 1296 | Divide Array in Sets of K Consecutive Numbers | Medium | Sorted counts, build from min | Extra | ⬜ |
+| 1326 | Minimum Number of Taps to Open to Water a Garden | Hard | Intervals to jumps, greedy reach | Extra | ⬜ |
+
 ## 16. Intervals
+
+**Core (NC150 / TI150):** 8/8 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -343,7 +585,20 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0452 | [Minimum Number of Arrows to Burst Balloons](topics/16-intervals/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium | Sort by end, greedy | TI150 | ✅ |
 | 1851 | [Minimum Interval to Include Each Query](topics/16-intervals/1851-minimum-interval-to-include-each-query/) | Hard | Sort queries + min-heap | NC150 | ✅ |
 
+**Wave 2 extras:** 0/6 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0646 | Maximum Length of Pair Chain | Medium | Sort by end, greedy | Extra | ⬜ |
+| 0729 | My Calendar I | Medium | Ordered map, check neighbours | Extra | ⬜ |
+| 0986 | Interval List Intersections | Medium | Two pointers over sorted lists | Extra | ⬜ |
+| 1094 | Car Pooling | Medium | Difference array / sweep | Extra | ⬜ |
+| 0218 | The Skyline Problem | Hard | Sweep line + max-heap | Extra | ⬜ |
+| 0352 | Data Stream as Disjoint Intervals | Hard | Ordered map merge on insert | Extra | ⬜ |
+
 ## 17. Math & Geometry
+
+**Core (NC150 / TI150):** 12/12 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -360,7 +615,22 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 2013 | [Detect Squares](topics/17-math-geometry/2013-detect-squares/) | Medium | Point counts + diagonal | NC150 | ✅ |
 | 0149 | [Max Points on a Line](topics/17-math-geometry/0149-max-points-on-a-line/) | Hard | Slope hashmap (gcd) | TI150 | ✅ |
 
+**Wave 2 extras:** 0/8 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0168 | Excel Sheet Column Title | Easy | Base-26 with no zero digit | Extra | ⬜ |
+| 0415 | Add Strings | Easy | Right-to-left carry | Extra | ⬜ |
+| 0867 | Transpose Matrix | Easy | Index swap into a new matrix | Extra | ⬜ |
+| 0029 | Divide Two Integers | Medium | Doubling subtraction, overflow care | Extra | ⬜ |
+| 0059 | Spiral Matrix II | Medium | Shrinking boundaries (write) | Extra | ⬜ |
+| 0204 | Count Primes | Medium | Sieve of Eratosthenes | Extra | ⬜ |
+| 0372 | Super Pow | Medium | Modular exponent digit by digit | Extra | ⬜ |
+| 0939 | Minimum Area Rectangle | Medium | Point set, fix the diagonal | Extra | ⬜ |
+
 ## 18. Bit Manipulation
+
+**Core (NC150 / TI150):** 10/10 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
@@ -374,3 +644,37 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0137 | [Single Number II](topics/18-bit-manipulation/0137-single-number-ii/) | Medium | Bit counting mod 3 | TI150 | ✅ |
 | 0201 | [Bitwise AND of Numbers Range](topics/18-bit-manipulation/0201-bitwise-and-of-numbers-range/) | Medium | Common prefix | TI150 | ✅ |
 | 0371 | [Sum of Two Integers](topics/18-bit-manipulation/0371-sum-of-two-integers/) | Medium | XOR + carry | NC150 | ✅ |
+
+**Wave 2 extras:** 0/4 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0231 | Power of Two | Easy | n & (n - 1) == 0 | Extra | ⬜ |
+| 0461 | Hamming Distance | Easy | popcount(x ^ y) | Extra | ⬜ |
+| 0260 | Single Number III | Medium | XOR all, split by lowest set bit | Extra | ⬜ |
+| 0477 | Total Hamming Distance | Medium | Per-bit ones x zeros | Extra | ⬜ |
+
+## 19. Design
+
+**Wave 2 extras:** 0/6 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0706 | Design HashMap | Easy | Buckets with chaining | Extra | ⬜ |
+| 0348 | Design Tic-Tac-Toe | Medium | Row/col/diagonal counters | Extra | ⬜ |
+| 0362 | Design Hit Counter | Medium | Queue / circular buckets | Extra | ⬜ |
+| 0622 | Design Circular Queue | Medium | Array ring buffer | Extra | ⬜ |
+| 0460 | LFU Cache | Hard | Key map + frequency lists | Extra | ⬜ |
+| 0716 | Max Stack | Hard | Two stacks / list + ordered map | Extra | ⬜ |
+
+## 20. Advanced Data Structures
+
+**Wave 2 extras:** 0/5 done
+
+| # | Problem | Difficulty | Pattern | Lists | Status |
+|---|---------|------------|---------|-------|--------|
+| 0307 | Range Sum Query - Mutable | Medium | Fenwick tree / segment tree | Extra | ⬜ |
+| 0315 | Count of Smaller Numbers After Self | Hard | Fenwick over ranks / merge sort | Extra | ⬜ |
+| 0493 | Reverse Pairs | Hard | Merge sort count / Fenwick | Extra | ⬜ |
+| 0715 | Range Module | Hard | Ordered map of disjoint intervals | Extra | ⬜ |
+| 0732 | My Calendar III | Hard | Sweep with ordered map / segment tree | Extra | ⬜ |

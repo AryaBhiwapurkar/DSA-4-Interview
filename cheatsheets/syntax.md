@@ -218,6 +218,8 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 | Integer division toward | zero (`-7/2 == -3`) | floor (`-7//2 == -4`) | zero (`-7/2 == -3`) |
 | Modulo of negative | `-7 % 3 == -1` | `-7 % 3 == 2` | `-7 % 3 == -1` |
 | Non-negative remainder | `(a % k + k) % k` | `a % k` (already 0..k-1 for k > 0) | `(a%k + k) % k` |
+| Division truncating toward zero | `a / b` (already truncates) | `int(a / b)` (`//` floors: `-3 // 2 == -2`) | `a / b` (truncates) |
+| Floor division of negatives | `a >= 0 ? a / w : (a + 1) / w - 1` | `a // w` | `a/w`, minus 1 if `a%w != 0 && a < 0` |
 | Overflow pre-check for r*10 + d | `r > INT_MAX / 10 \|\| (r == INT_MAX / 10 && d > 7)` | not needed (check range at the end) | same as C++ with `math.MaxInt32` |
 | Min / max | `min(a, b)`, `max({a, b, c})` | `min(a, b, c)` | `min(a, b, c)` (built-in, Go 1.21+) |
 | Quotient + remainder | `a / b`, `a % b` | `q, r = divmod(a, b)` | `a / b`, `a % b` |

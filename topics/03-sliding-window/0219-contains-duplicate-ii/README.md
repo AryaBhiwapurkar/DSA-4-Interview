@@ -99,4 +99,4 @@ Check `nums[i]` in the set; insert it; if the set size exceeds k, remove `nums[i
 
 ## Follow-ups
 - **No distance limit:** [LC 0217 Contains Duplicate](../../01-arrays-hashing/0217-contains-duplicate/)
-- **Values within t, indices within k:** buckets of width t+1 or an ordered set in the window: LC 0220 Contains Duplicate III (not added yet)
+- **Values within t, indices within k:** buckets of width t+1 or an ordered set in the window: [LC 0220 Contains Duplicate III](../0220-contains-duplicate-iii/)

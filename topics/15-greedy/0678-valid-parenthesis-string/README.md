@@ -98,5 +98,5 @@ hi never went negative and the final lo = 0 → **true**. For `"(((*)"` the end 
 
 ## Follow-ups
 - **No wildcards:** [LC 0020 Valid Parentheses](../../04-stack/0020-valid-parentheses/)
-- **Longest valid substring:** LC 0032 Longest Valid Parentheses (not added yet). Stack of indices or DP.
-- **Fewest removals to make it valid:** LC 1249 Minimum Remove to Make Valid Parentheses (not added yet)
+- **Longest valid substring:** [LC 0032 Longest Valid Parentheses](../../04-stack/0032-longest-valid-parentheses/). Stack of indices or DP.
+- **Fewest removals to make it valid:** [LC 1249 Minimum Remove to Make Valid Parentheses](../../04-stack/1249-minimum-remove-to-make-valid-parentheses/)

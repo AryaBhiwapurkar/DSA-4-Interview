@@ -29,6 +29,8 @@ TOPICS = [
     ("16-intervals", "Intervals"),
     ("17-math-geometry", "Math & Geometry"),
     ("18-bit-manipulation", "Bit Manipulation"),
+    ("19-design", "Design"),
+    ("20-advanced-data-structures", "Advanced Data Structures"),
 ]
 
 
@@ -36,7 +38,7 @@ def find_done() -> dict[int, str]:
     """LC number -> relative folder path, for every problem folder on disk."""
     done: dict[int, str] = {}
     for d in sorted((ROOT / "topics").glob("*/[0-9][0-9][0-9][0-9]-*")):
-        if d.is_dir():
+        if (d / "README.md").is_file():  # empty placeholder folders don't count
             done[int(d.name[:4])] = d.relative_to(ROOT).as_posix() + "/"
     return done
 
@@ -291,6 +293,168 @@ DATA = """
 2|75|Sort Colors|M|Dutch national flag|X
 2|680|Valid Palindrome II|E|Converging, one skip|X
 2|792|Number of Matching Subsequences|M|Waiting buckets per next char|X
+3|438|Find All Anagrams in a String|M|Fixed window + count match|X
+3|1004|Max Consecutive Ones III|M|Window with at most k zeros|X
+3|713|Subarray Product Less Than K|M|Window, count ending at r|X
+3|340|Longest Substring with At Most K Distinct Characters|M|Window + char counts|X
+3|904|Fruit Into Baskets|M|Window, at most 2 distinct|X
+3|992|Subarrays with K Different Integers|H|atMost(k) - atMost(k-1)|X
+3|862|Shortest Subarray with Sum at Least K|H|Prefix sums + monotonic deque|X
+3|220|Contains Duplicate III|H|Window + buckets / ordered set|X
+3|727|Minimum Window Subsequence|H|Forward scan + backward shrink|X
+4|496|Next Greater Element I|E|Monotonic stack + map|X
+4|503|Next Greater Element II|M|Monotonic stack, two passes (circular)|X
+4|901|Online Stock Span|M|Monotonic stack with spans|X
+4|907|Sum of Subarray Minimums|M|Monotonic stack, contribution counting|X
+4|227|Basic Calculator II|M|Stack of terms, apply * / immediately|X
+4|772|Basic Calculator III|H|Recursive descent / stack per paren|X
+4|32|Longest Valid Parentheses|H|Stack of indices / two counters|X
+4|1249|Minimum Remove to Make Valid Parentheses|M|Stack of unmatched indices|X
+4|921|Minimum Add to Make Parentheses Valid|M|Balance counter|X
+4|402|Remove K Digits|M|Monotonic increasing stack|X
+4|316|Remove Duplicate Letters|M|Monotonic stack + last occurrence|X
+4|85|Maximal Rectangle|H|Histogram per row + largest rectangle|X
+5|278|First Bad Version|E|Binary search for first true|X
+5|852|Peak Index in a Mountain Array|M|Binary search on slope|X
+5|367|Valid Perfect Square|E|Binary search on answer|X
+5|410|Split Array Largest Sum|H|Binary search on answer + greedy check|X
+5|1011|Capacity To Ship Packages Within D Days|M|Binary search on answer + greedy check|X
+5|1283|Find the Smallest Divisor Given a Threshold|M|Binary search on answer|X
+5|240|Search a 2D Matrix II|M|Staircase search from a corner|X
+5|81|Search in Rotated Sorted Array II|M|Rotated binary search with duplicates|X
+5|154|Find Minimum in Rotated Sorted Array II|H|Rotated min with duplicates (hi--)|X
+5|275|H-Index II|M|Binary search on sorted citations|X
+5|702|Search in a Sorted Array of Unknown Size|M|Exponential search + binary search|X
+5|719|Find K-th Smallest Pair Distance|H|Binary search on answer + two pointers|X
+6|142|Linked List Cycle II|M|Floyd, then reset one pointer|X
+6|234|Palindrome Linked List|E|Find middle, reverse second half|X
+6|876|Middle of the Linked List|E|Slow/fast pointers|X
+6|160|Intersection of Two Linked Lists|E|Two pointers switch heads|X
+6|24|Swap Nodes in Pairs|M|Dummy node + pointer rewiring|X
+6|328|Odd Even Linked List|M|Two chains, then join|X
+6|445|Add Two Numbers II|M|Stacks / reverse, add with carry|X
+6|83|Remove Duplicates from Sorted List|E|Skip equal next nodes|X
+6|147|Insertion Sort List|M|Dummy head + insertion|X
+6|430|Flatten a Multilevel Doubly Linked List|M|DFS / stack splice|X
+7|863|All Nodes Distance K in Binary Tree|M|Parent map + BFS|X
+7|113|Path Sum II|M|DFS with path backtracking|X
+7|437|Path Sum III|M|Prefix sums on root paths|X
+7|111|Minimum Depth of Binary Tree|E|BFS to first leaf|X
+7|257|Binary Tree Paths|E|DFS building paths|X
+7|116|Populating Next Right Pointers in Each Node|M|Level links using next pointers|X
+7|450|Delete Node in a BST|M|BST delete with successor|X
+7|662|Maximum Width of Binary Tree|M|BFS with position indices|X
+7|987|Vertical Order Traversal of a Binary Tree|H|DFS with (col, row, val) sort|X
+7|958|Check Completeness of a Binary Tree|M|BFS, no node after a gap|X
+7|652|Find Duplicate Subtrees|M|Subtree serialization + map|X
+7|449|Serialize and Deserialize BST|M|Preorder + bounds|X
+7|107|Binary Tree Level Order Traversal II|M|BFS, reverse levels|X
+7|109|Convert Sorted List to Binary Search Tree|M|Inorder simulation / middle split|X
+7|515|Find Largest Value in Each Tree Row|M|BFS level max|X
+7|687|Longest Univalue Path|M|Post-order arm lengths|X
+7|783|Minimum Distance Between BST Nodes|E|Inorder, adjacent difference|X
+7|889|Construct Binary Tree from Preorder and Postorder Traversal|M|Recursive split by root's left child|X
+7|897|Increasing Order Search Tree|E|Inorder relink|X
+7|1022|Sum of Root To Leaf Binary Numbers|E|DFS carrying value|X
+7|1123|Lowest Common Ancestor of Deepest Leaves|M|Post-order (depth, node)|X
+7|1382|Balance a Binary Search Tree|M|Inorder to array, rebuild|X
+7|298|Binary Tree Longest Consecutive Sequence|M|DFS carrying run length|X
+7|1650|Lowest Common Ancestor of a Binary Tree III|M|Parent pointers, two-pointer switch|X
+8|1268|Search Suggestions System|M|Trie / sort + binary search|X
+8|421|Maximum XOR of Two Numbers in an Array|M|Binary trie, greedy opposite bit|X
+8|648|Replace Words|M|Trie of roots, shortest prefix|X
+9|767|Reorganize String|M|Max-heap, place most frequent|X
+9|658|Find K Closest Elements|M|Binary search window / heap|X
+9|378|Kth Smallest Element in a Sorted Matrix|M|Min-heap of rows / binary search on value|X
+9|480|Sliding Window Median|H|Two heaps + lazy deletion|X
+9|1834|Single-Threaded CPU|M|Sort by time + min-heap|X
+9|632|Smallest Range Covering Elements from K Lists|H|K-way merge heap + running max|X
+9|692|Top K Frequent Words|M|Count + heap with custom order|X
+9|407|Trapping Rain Water II|H|Min-heap from the border (Dijkstra-like)|X
+9|857|Minimum Cost to Hire K Workers|H|Sort by ratio + max-heap of quality|X
+9|358|Rearrange String k Distance Apart|H|Max-heap + cooldown queue|X
+10|47|Permutations II|M|Backtracking, skip equal siblings|X
+10|216|Combination Sum III|M|Backtracking with count and sum|X
+10|37|Sudoku Solver|H|Backtracking with row/col/box sets|X
+10|93|Restore IP Addresses|M|Backtracking over 4 segments|X
+10|301|Remove Invalid Parentheses|H|BFS by removals / DFS with counts|X
+10|698|Partition to K Equal Sum Subsets|M|Backtracking buckets / bitmask DP|X
+10|980|Unique Paths III|H|DFS covering every cell|X
+10|291|Word Pattern II|M|Backtracking with bijection maps|X
+11|547|Number of Provinces|M|DFS / union-find components|X
+11|542|01 Matrix|M|Multi-source BFS from zeros|X
+11|752|Open the Lock|M|BFS over states|X
+11|785|Is Graph Bipartite?|M|2-coloring BFS/DFS|X
+11|310|Minimum Height Trees|M|Peel leaves (topological trim)|X
+11|827|Making A Large Island|H|Label islands, try each zero|X
+11|463|Island Perimeter|E|Count edges per land cell|X
+11|1462|Course Schedule IV|M|Topological order + reachability sets|X
+11|1020|Number of Enclaves|M|Flood fill from the border|X
+11|1306|Jump Game III|M|BFS/DFS over indices|X
+11|990|Satisfiability of Equality Equations|M|Union-find, then check !=|X
+11|305|Number of Islands II|H|Online union-find|X
+11|317|Shortest Distance from All Buildings|H|BFS from each building, sum distances|X
+12|1631|Path With Minimum Effort|M|Dijkstra on max edge / binary search|X
+12|1514|Path with Maximum Probability|M|Dijkstra with max-heap of probability|X
+12|1192|Critical Connections in a Network|H|Tarjan bridges (low-link)|X
+12|953|Verifying an Alien Dictionary|E|Rank map, compare neighbours|X
+13|279|Perfect Squares|M|Unbounded knapsack DP / BFS|X
+13|337|House Robber III|M|Tree DP (rob, skip) pairs|X
+13|740|Delete and Earn|M|Bucket sums, then House Robber|X
+13|377|Combination Sum IV|M|Ordered count DP (amount outer)|X
+13|673|Number of Longest Increasing Subsequence|M|LIS DP with counts|X
+13|354|Russian Doll Envelopes|H|Sort (w asc, h desc) + LIS|X
+13|140|Word Break II|H|Memoized DFS returning sentences|X
+13|132|Palindrome Partitioning II|H|Palindrome table + min cuts DP|X
+13|472|Concatenated Words|H|Word Break per word (shorter words)|X
+13|639|Decode Ways II|H|Decode Ways DP with * cases|X
+13|1049|Last Stone Weight II|M|Subset sum closest to half|X
+14|516|Longest Palindromic Subsequence|M|Interval DP / LCS with reverse|X
+14|583|Delete Operation for Two Strings|M|LCS-based DP|X
+14|714|Best Time to Buy and Sell Stock with Transaction Fee|M|Hold/cash state machine|X
+14|931|Minimum Falling Path Sum|M|Grid DP from the row above|X
+14|174|Dungeon Game|H|Grid DP from the bottom-right|X
+14|1277|Count Square Submatrices with All Ones|M|Maximal-square DP, sum of values|X
+14|44|Wildcard Matching|H|Two-string DP with *|X
+14|1092|Shortest Common Supersequence|H|LCS table + reconstruction|X
+14|940|Distinct Subsequences II|H|DP with last-occurrence subtraction|X
+14|1039|Minimum Score Triangulation of Polygon|M|Interval DP|X
+14|1547|Minimum Cost to Cut a Stick|H|Interval DP over cut positions|X
+14|664|Strange Printer|H|Interval DP, merge equal ends|X
+14|2328|Number of Increasing Paths in a Grid|H|DFS + memo on a DAG|X
+15|659|Split Array into Consecutive Subsequences|M|Greedy with count + "ends at" maps|X
+15|1024|Video Stitching|M|Greedy farthest reach (jump game)|X
+15|1326|Minimum Number of Taps to Open to Water a Garden|H|Intervals to jumps, greedy reach|X
+15|1296|Divide Array in Sets of K Consecutive Numbers|M|Sorted counts, build from min|X
+16|986|Interval List Intersections|M|Two pointers over sorted lists|X
+16|1094|Car Pooling|M|Difference array / sweep|X
+16|646|Maximum Length of Pair Chain|M|Sort by end, greedy|X
+16|729|My Calendar I|M|Ordered map, check neighbours|X
+16|352|Data Stream as Disjoint Intervals|H|Ordered map merge on insert|X
+16|218|The Skyline Problem|H|Sweep line + max-heap|X
+17|59|Spiral Matrix II|M|Shrinking boundaries (write)|X
+17|415|Add Strings|E|Right-to-left carry|X
+17|29|Divide Two Integers|M|Doubling subtraction, overflow care|X
+17|204|Count Primes|M|Sieve of Eratosthenes|X
+17|168|Excel Sheet Column Title|E|Base-26 with no zero digit|X
+17|372|Super Pow|M|Modular exponent digit by digit|X
+17|867|Transpose Matrix|E|Index swap into a new matrix|X
+17|939|Minimum Area Rectangle|M|Point set, fix the diagonal|X
+18|231|Power of Two|E|n & (n - 1) == 0|X
+18|260|Single Number III|M|XOR all, split by lowest set bit|X
+18|461|Hamming Distance|E|popcount(x ^ y)|X
+18|477|Total Hamming Distance|M|Per-bit ones x zeros|X
+19|460|LFU Cache|H|Key map + frequency lists|X
+19|716|Max Stack|H|Two stacks / list + ordered map|X
+19|362|Design Hit Counter|M|Queue / circular buckets|X
+19|348|Design Tic-Tac-Toe|M|Row/col/diagonal counters|X
+19|622|Design Circular Queue|M|Array ring buffer|X
+19|706|Design HashMap|E|Buckets with chaining|X
+20|307|Range Sum Query - Mutable|M|Fenwick tree / segment tree|X
+20|315|Count of Smaller Numbers After Self|H|Fenwick over ranks / merge sort|X
+20|493|Reverse Pairs|H|Merge sort count / Fenwick|X
+20|732|My Calendar III|H|Sweep with ordered map / segment tree|X
+20|715|Range Module|H|Ordered map of disjoint intervals|X
 """
 
 DIFF = {"E": "Easy", "M": "Medium", "H": "Hard"}
@@ -330,29 +494,56 @@ out.append("|------|---------:|-----:|")
 out.append(f"| NeetCode 150 (NC150) | {nc} | {sum(1 for r in rows if 'N' in r[5] and r[1] in DONE)} |")
 out.append(f"| LeetCode Top Interview 150 (TI150) | {ti} | {sum(1 for r in rows if 'T' in r[5] and r[1] in DONE)} |")
 out.append(f"| In both lists | {both} | {sum(1 for r in rows if r[5] == 'NT' and r[1] in DONE)} |")
-out.append(f"| Interview Extras (wave 2: 185 planned, see [PLAN-wave2.md](PLAN-wave2.md)) | {xx} | {sum(1 for r in rows if 'X' in r[5] and r[1] in DONE)} |")
+out.append(f"| Wave 2: Interview Extras ([plan](PLAN-wave2.md)) | {xx} | {sum(1 for r in rows if 'X' in r[5] and r[1] in DONE)} |")
 out.append(f"| **Unique total** | **{total}** | **{done}** |")
 out.append("")
 out.append("Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)\n")
 out.append("## Topics\n")
-out.append("| Topic | Problems | Done |")
-out.append("|-------|---------:|-----:|")
-for i, (folder, name) in enumerate(TOPICS, 1):
-    tr = [r for r in rows if r[0] == i]
-    out.append(f"| [{folder[:2]}. {name}](topics/{folder}/) | {len(tr)} | {sum(r[1] in DONE for r in tr)} |")
-out.append("")
-out.append("Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Easy → Hard, then by number.\n")
+out.append("| Topic | Core (NC150/TI150) | Core done | Wave 2 | Wave 2 done |")
+out.append("|-------|---------:|-----:|---------:|-----:|")
+
+
+def is_x(r):
+    return r[5] == "X"
+
+
+def topic_link(folder, name):
+    label = f"{folder[:2]}. {name}"
+    return f"[{label}](topics/{folder}/)" if (ROOT / "topics" / folder).is_dir() else label
+
 
 for i, (folder, name) in enumerate(TOPICS, 1):
-    tr = sorted((r for r in rows if r[0] == i), key=lambda r: (DORDER[r[3]], r[1]))
-    out.append(f"## {folder[:2]}. {name}\n")
-    out.append("| # | Problem | Difficulty | Pattern | Lists | Status |")
-    out.append("|---|---------|------------|---------|-------|--------|")
-    for _, num, title, d, pat, lists in tr:
+    core = [r for r in rows if r[0] == i and not is_x(r)]
+    ext = [r for r in rows if r[0] == i and is_x(r)]
+    core_done = sum(r[1] in DONE for r in core)
+    ext_done = sum(r[1] in DONE for r in ext)
+    out.append(f"| {topic_link(folder, name)} | {len(core) or '–'} | {core_done if core else '–'} | {len(ext)} | {ext_done} |")
+out.append("")
+out.append("Status: ✅ done · ⬜ not added yet. Within each table, problems are sorted Easy → Hard, then by number.\n")
+
+
+def table(tr):
+    lines = ["| # | Problem | Difficulty | Pattern | Lists | Status |",
+             "|---|---------|------------|---------|-------|--------|"]
+    for _, num, title, d, pat, lists in sorted(tr, key=lambda r: (DORDER[r[3]], r[1])):
         prob = f"[{title}]({DONE[num]})" if num in DONE else title
         status = "✅" if num in DONE else "⬜"
-        out.append(f"| {num:04d} | {prob} | {DIFF[d]} | {pat} | {lists_str(lists)} | {status} |")
-    out.append("")
+        lines.append(f"| {num:04d} | {prob} | {DIFF[d]} | {pat} | {lists_str(lists)} | {status} |")
+    return lines
+
+
+for i, (folder, name) in enumerate(TOPICS, 1):
+    core = [r for r in rows if r[0] == i and not is_x(r)]
+    ext = [r for r in rows if r[0] == i and is_x(r)]
+    out.append(f"## {folder[:2]}. {name}\n")
+    if core:
+        out.append(f"**Core (NC150 / TI150):** {sum(r[1] in DONE for r in core)}/{len(core)} done\n")
+        out += table(core)
+        out.append("")
+    if ext:
+        out.append(f"**Wave 2 extras:** {sum(r[1] in DONE for r in ext)}/{len(ext)} done\n")
+        out += table(ext)
+        out.append("")
 
 (ROOT / "README.md").write_text("\n".join(out))
 print(f"README.md: nc={nc} ti={ti} both={both} extras={xx} total={total} done={done}")

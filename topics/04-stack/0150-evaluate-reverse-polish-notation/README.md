@@ -104,6 +104,6 @@ One pass with an operand stack.
 
 ## Follow-ups
 - **Infix with +, -, parentheses:** [LC 0224 Basic Calculator](../0224-basic-calculator/)
-- **Infix with + - * / (precedence, no parens):** LC 0227 Basic Calculator II (not added yet)
+- **Infix with + - * / (precedence, no parens):** [LC 0227 Basic Calculator II](../0227-basic-calculator-ii/)
 - **Prefix (Polish) notation:** scan right to left with the same stack.
 - **Build the expression tree:** the same stack, but push nodes instead of values.

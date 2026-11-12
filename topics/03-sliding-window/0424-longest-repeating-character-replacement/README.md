@@ -98,6 +98,6 @@ For each target letter c, find the longest window with at most k non-c character
 - Per-letter approach as a safe fallback if you can't justify the trick.
 
 ## Follow-ups
-- **Binary array, flip at most k zeros:** same window: LC 1004 Max Consecutive Ones III (not added yet)
+- **Binary array, flip at most k zeros:** same window: [LC 1004 Max Consecutive Ones III](../1004-max-consecutive-ones-iii/)
 - **Two letters (T/F), at most k flips:** LC 2024 Maximize the Confusion of an Exam (not added yet)
 - **No replacements, all distinct:** [LC 0003](../0003-longest-substring-without-repeating-characters/)

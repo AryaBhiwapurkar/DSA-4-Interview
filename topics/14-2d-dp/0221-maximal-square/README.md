@@ -101,6 +101,6 @@ Example 1 (unpadded view of dp):
 - Contrast with the rectangle version (histogram + stack).
 
 ## Follow-ups
-- **Largest rectangle of 1s:** LC 0085 Maximal Rectangle (not added yet). Histogram per row + monotonic stack.
+- **Largest rectangle of 1s:** [LC 0085 Maximal Rectangle](../../04-stack/0085-maximal-rectangle/). Histogram per row + monotonic stack.
 - **Count all-1 squares:** LC 1277 Count Square Submatrices with All Ones (not added yet). Sum of all dp values.
 - **Histogram building block:** [LC 0084 Largest Rectangle in Histogram](../../04-stack/0084-largest-rectangle-in-histogram/)

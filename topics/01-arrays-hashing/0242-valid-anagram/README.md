@@ -99,5 +99,5 @@ All zeros, so true.
 ## Follow-ups
 - **Unicode characters:** hashmap of counts instead of a 26-array.
 - **Group many strings by anagram:** [LC 0049 Group Anagrams](../0049-group-anagrams/)
-- **Find all anagram windows of p in s:** sliding window: LC 0438 Find All Anagrams in a String (not added yet)
+- **Find all anagram windows of p in s:** sliding window: [LC 0438 Find All Anagrams in a String](../../03-sliding-window/0438-find-all-anagrams-in-a-string/)
 - **Does s contain a permutation of p:** [LC 0567 Permutation in String](../../03-sliding-window/0567-permutation-in-string/)

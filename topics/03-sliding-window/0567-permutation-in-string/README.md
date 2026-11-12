@@ -93,6 +93,6 @@ Track how many of the 26 letters currently have equal counts; update it only for
 - Fixed-size window with O(1) updates per step.
 
 ## Follow-ups
-- **Return all start indices of anagrams:** same window, collect indices: LC 0438 Find All Anagrams in a String (not added yet)
+- **Return all start indices of anagrams:** same window, collect indices: [LC 0438 Find All Anagrams in a String](../0438-find-all-anagrams-in-a-string/)
 - **Variable-size window covering all chars of t:** [LC 0076 Minimum Window Substring](../0076-minimum-window-substring/)
 - **Unicode:** hashmap counts instead of a 26-array.

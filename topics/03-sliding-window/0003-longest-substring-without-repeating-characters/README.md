@@ -103,6 +103,6 @@ Store each char's last index; on a repeat, jump `l = max(l, last[c] + 1)` in one
 - Bonus: the last-index jump and the "abba" trap.
 
 ## Follow-ups
-- **At most two / k distinct characters:** same window, track counts per char: LC 0159 / LC 0340 (not added yet)
+- **At most two / k distinct characters:** same window, track counts per char: LC 0159 (not added yet) / [LC 0340 Longest Substring with At Most K Distinct Characters](../0340-longest-substring-with-at-most-k-distinct-characters/)
 - **Allow up to k replacements:** [LC 0424 Longest Repeating Character Replacement](../0424-longest-repeating-character-replacement/)
 - **Shortest window covering a pattern:** [LC 0076 Minimum Window Substring](../0076-minimum-window-substring/)

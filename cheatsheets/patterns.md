@@ -57,6 +57,13 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Make window one letter with <= k changes** -> Valid iff len - maxFreq <= k (0424)
 - **Smallest window containing all chars of t** -> Variable window + have/need counter (0076)
 - **Concatenation of equal-length words** -> Token window, one pass per offset (0030)
+- **All anagram positions of p in s** -> Fixed window of |p| + count match counter (0438)
+- **Longest window with at most k bad items / k distinct** -> Shrinking window + counter / map with erase-at-zero (1004, 0340, 0904)
+- **Count subarrays with product (or anything monotone) below k** -> Window; add r - l + 1 per r (0713)
+- **Count subarrays with exactly k distinct** -> atMost(k) - atMost(k - 1) (0992)
+- **Shortest subarray with sum >= k, negatives allowed** -> Prefix sums + increasing deque of start indices (0862)
+- **Two values close in value and close in index** -> Index window + buckets of width t+1 / ordered set (0220)
+- **Shortest window containing s2 as a subsequence** -> Forward match, backward tighten (0727)
 
 ## Stack
 - **Matching brackets / nested structure** -> Stack (0020)
@@ -68,6 +75,14 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Infix with + - and parens** -> Running result + sign, stack of (result, sign) per "(" (0224)
 - **Path with "." and ".."** -> Split + stack of names (0071)
 - **Things that catch up and merge (fleets)** -> Sort by position, compare arrival times to the one ahead (0853)
+- **Next greater value (subset queries / circular)** -> Monotonic decreasing stack; circular = 2n loop with i % n (0496, 0503)
+- **Online "how many previous days <= today"** -> Stack of (value, span) absorbing popped spans (0901)
+- **Sum of min (or max) over all subarrays** -> Contribution: prev-less x next-less-or-equal via stacks (0907)
+- **Smallest number after removing k digits / unique letters** -> Monotonic increasing stack greedy (0402, 0316)
+- **Evaluate + - * / (with parentheses)** -> Previous-operator stack; recurse on '(' (0227, 0772)
+- **Longest valid parentheses substring** -> Index stack seeded with -1 as base (0032)
+- **Fewest removals/insertions to balance brackets** -> Stack of unmatched indices / balance counter (1249, 0921)
+- **Largest all-ones rectangle in a grid** -> Row histograms + largest rectangle in histogram (0085)
 
 ## Binary Search
 - **Sorted input, find target/boundary** -> Binary search / lower bound (0704, 0035)

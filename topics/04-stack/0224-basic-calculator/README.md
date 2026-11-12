@@ -106,6 +106,6 @@ Same logic, but saves the outer context explicitly instead of on the call stack.
 - Explain why the iterative stack is safer than recursion for deep nesting.
 
 ## Follow-ups
-- **Add * and / (precedence, no parens):** keep the last term separate: LC 0227 Basic Calculator II (not added yet)
-- **All four operators + parens:** recursion or two stacks (shunting-yard): LC 0772 Basic Calculator III (not added yet)
+- **Add * and / (precedence, no parens):** keep the last term separate: [LC 0227 Basic Calculator II](../0227-basic-calculator-ii/)
+- **All four operators + parens:** recursion or two stacks (shunting-yard): [LC 0772 Basic Calculator III](../0772-basic-calculator-iii/)
 - **Postfix input:** [LC 0150 Evaluate Reverse Polish Notation](../0150-evaluate-reverse-polish-notation/)

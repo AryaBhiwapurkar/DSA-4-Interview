@@ -104,4 +104,4 @@ Maintain `have` (satisfied distinct chars); validity is `have == need` in O(1).
 - **Fixed-size window, exact multiset:** [LC 0567 Permutation in String](../0567-permutation-in-string/)
 - **Numeric version (sum ≥ target):** [LC 0209 Minimum Size Subarray Sum](../0209-minimum-size-subarray-sum/)
 - **Window must be made of whole words:** [LC 0030 Substring with Concatenation of All Words](../0030-substring-with-concatenation-of-all-words/)
-- **t's characters must appear in order (subsequence):** LC 0727 Minimum Window Subsequence (not added yet)
+- **t's characters must appear in order (subsequence):** [LC 0727 Minimum Window Subsequence](../0727-minimum-window-subsequence/)
