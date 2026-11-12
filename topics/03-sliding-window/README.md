@@ -150,6 +150,12 @@ for i, x := range a {
 - **Window of words:** tokenize by fixed word length and run one window per offset (0030).
 - **Running min/max as a degenerate window:** best trade so far (0121).
 - **Window + set for "within distance k"** (0219).
+- **Count subarrays, not length:** every valid window [l, r] adds r − l + 1 subarrays ending at r (0713).
+- **Exactly k = atMost(k) − atMost(k − 1):** when "exactly" isn't monotone (0992).
+- **At most k distinct / k bad elements:** count map with erase-at-zero, or a zero counter (0340, 0904, 1004).
+- **Negatives + "sum ≥ k":** prefix sums with a monotonic deque of start indices (0862).
+- **Value proximity inside an index window:** buckets of width t + 1, or an ordered set (0220).
+- **Order matters (subsequence):** forward scan to match, backward scan to tighten (0727).
 
 ## ⚠️ Pitfalls
 - **Negative numbers break sum windows:** shrinking may increase the sum; use prefix sums (+ hashmap/deque) instead.
@@ -167,8 +173,17 @@ for i, x := range a {
 | 0219 | [Contains Duplicate II](0219-contains-duplicate-ii/) | Easy | Fixed window + set | ✅ |
 | 0003 | [Longest Substring Without Repeating Characters](0003-longest-substring-without-repeating-characters/) | Medium | Variable window + last-seen map | ✅ |
 | 0209 | [Minimum Size Subarray Sum](0209-minimum-size-subarray-sum/) | Medium | Variable window, shrink while valid | ✅ |
+| 0340 | [Longest Substring with At Most K Distinct Characters](0340-longest-substring-with-at-most-k-distinct-characters/) | Medium | Window + char counts | ✅ |
 | 0424 | [Longest Repeating Character Replacement](0424-longest-repeating-character-replacement/) | Medium | Variable window + max freq | ✅ |
+| 0438 | [Find All Anagrams in a String](0438-find-all-anagrams-in-a-string/) | Medium | Fixed window + count match | ✅ |
 | 0567 | [Permutation in String](0567-permutation-in-string/) | Medium | Fixed window + counts | ✅ |
+| 0713 | [Subarray Product Less Than K](0713-subarray-product-less-than-k/) | Medium | Window, count ending at r | ✅ |
+| 0904 | [Fruit Into Baskets](0904-fruit-into-baskets/) | Medium | Window, at most 2 distinct | ✅ |
+| 1004 | [Max Consecutive Ones III](1004-max-consecutive-ones-iii/) | Medium | Window with at most k zeros | ✅ |
 | 0030 | [Substring with Concatenation of All Words](0030-substring-with-concatenation-of-all-words/) | Hard | Fixed window per offset + counts | ✅ |
 | 0076 | [Minimum Window Substring](0076-minimum-window-substring/) | Hard | Variable window + need/have | ✅ |
+| 0220 | [Contains Duplicate III](0220-contains-duplicate-iii/) | Hard | Window + buckets / ordered set | ✅ |
 | 0239 | [Sliding Window Maximum](0239-sliding-window-maximum/) | Hard | Monotonic deque | ✅ |
+| 0727 | [Minimum Window Subsequence](0727-minimum-window-subsequence/) | Hard | Forward scan + backward shrink | ✅ |
+| 0862 | [Shortest Subarray with Sum at Least K](0862-shortest-subarray-with-sum-at-least-k/) | Hard | Prefix sums + monotonic deque | ✅ |
+| 0992 | [Subarrays with K Different Integers](0992-subarrays-with-k-different-integers/) | Hard | atMost(k) - atMost(k-1) | ✅ |
