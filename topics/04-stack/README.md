@@ -109,6 +109,13 @@ if c == '(' {
 - **Stack of frames:** save (result, sign) or (string, count) per nesting level (0224).
 - **Only the top is used:** the stack collapses to a single variable (0853).
 - **Backtracking with counts** is a stack in disguise: the call stack holds the open brackets (0022).
+- **Circular arrays:** loop 2n times with `i % n`, push only in the first pass (0503).
+- **Contribution counting:** each element is the min of (left choices) × (right choices) subarrays; strict on one side, non-strict on the other (0907).
+- **Greedy smallest sequence:** pop bigger tops while removals remain (0402) or while the top recurs later (0316).
+- **Expression evaluation:** remember the previous operator; * and / act on the top; recurse on '(' (0227, 0772).
+- **Index stack with a base marker:** the bottom index marks where the current valid run starts (0032).
+- **Unmatched brackets:** stack of '(' indices plus marks for stray ')' (1249); one bracket type collapses to a counter (0921).
+- **2-D to 1-D:** per-row histograms reduce Maximal Rectangle to 0084 (0085).
 
 ## ⚠️ Pitfalls
 - **Reading the top of an empty stack:** always check empty first (`st.back()` on empty is UB in C++, a panic in Go).
@@ -123,11 +130,23 @@ if c == '(' {
 | # | Problem | Difficulty | Pattern | Status |
 |---|---------|------------|---------|--------|
 | 0020 | [Valid Parentheses](0020-valid-parentheses/) | Easy | Stack matching | ✅ |
+| 0496 | [Next Greater Element I](0496-next-greater-element-i/) | Easy | Monotonic stack + map | ✅ |
 | 0022 | [Generate Parentheses](0022-generate-parentheses/) | Medium | Backtracking on open/close counts | ✅ |
 | 0071 | [Simplify Path](0071-simplify-path/) | Medium | Stack of directory names | ✅ |
 | 0150 | [Evaluate Reverse Polish Notation](0150-evaluate-reverse-polish-notation/) | Medium | Operand stack | ✅ |
 | 0155 | [Min Stack](0155-min-stack/) | Medium | Stack of (val, min) | ✅ |
+| 0227 | [Basic Calculator II](0227-basic-calculator-ii/) | Medium | Stack of terms, apply * / immediately | ✅ |
+| 0316 | [Remove Duplicate Letters](0316-remove-duplicate-letters/) | Medium | Monotonic stack + last occurrence | ✅ |
+| 0402 | [Remove K Digits](0402-remove-k-digits/) | Medium | Monotonic increasing stack | ✅ |
+| 0503 | [Next Greater Element II](0503-next-greater-element-ii/) | Medium | Monotonic stack, two passes (circular) | ✅ |
 | 0739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Monotonic decreasing stack | ✅ |
 | 0853 | [Car Fleet](0853-car-fleet/) | Medium | Sort by position + stack of arrival times | ✅ |
+| 0901 | [Online Stock Span](0901-online-stock-span/) | Medium | Monotonic stack with spans | ✅ |
+| 0907 | [Sum of Subarray Minimums](0907-sum-of-subarray-minimums/) | Medium | Monotonic stack, contribution counting | ✅ |
+| 0921 | [Minimum Add to Make Parentheses Valid](0921-minimum-add-to-make-parentheses-valid/) | Medium | Balance counter | ✅ |
+| 1249 | [Minimum Remove to Make Valid Parentheses](1249-minimum-remove-to-make-valid-parentheses/) | Medium | Stack of unmatched indices | ✅ |
+| 0032 | [Longest Valid Parentheses](0032-longest-valid-parentheses/) | Hard | Stack of indices with base | ✅ |
 | 0084 | [Largest Rectangle in Histogram](0084-largest-rectangle-in-histogram/) | Hard | Monotonic increasing stack | ✅ |
+| 0085 | [Maximal Rectangle](0085-maximal-rectangle/) | Hard | Histogram per row + largest rectangle | ✅ |
 | 0224 | [Basic Calculator](0224-basic-calculator/) | Hard | Stack for sign/paren context | ✅ |
+| 0772 | [Basic Calculator III](0772-basic-calculator-iii/) | Hard | Recursive previous-operator stack | ✅ |
