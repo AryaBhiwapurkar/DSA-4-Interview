@@ -11,6 +11,8 @@ Trade memory for time. A hashmap/set answers "have I seen X?" or "how many X?" i
 - "Product/sum of everything except i", "range sum" → prefix/suffix arrays.
 - O(n) required on unsorted data (sorting would be O(n log n)).
 - Bijection between two sequences ("isomorphic", "pattern") → two maps.
+- "Count / longest subarray with sum k (or divisible by k)", negatives allowed → prefix sum + hashmap.
+- "Smallest missing positive", "values in 1..n", O(1) space → use the array itself as the hash (index = value − 1).
 
 ## Templates
 
@@ -112,6 +114,26 @@ for i, suf := n-1, 1; i >= 0; i-- {
 }
 ```
 
+### Prefix sum + hashmap (subarray sums)
+```cpp
+unordered_map<int, int> seen{{0, 1}};       // prefix -> count; {0: -1} as prefix -> first index for "longest"
+int prefix = 0, count = 0;
+for (int x : nums) {
+    prefix += x;
+    auto it = seen.find(prefix - k);        // earlier prefix P with prefix - P == k
+    if (it != seen.end()) count += it->second;
+    seen[prefix]++;
+}
+```
+```python
+seen = {0: 1}
+prefix = count = 0
+for x in nums:
+    prefix += x
+    count += seen.get(prefix - k, 0)
+    seen[prefix] = seen.get(prefix, 0) + 1
+```
+
 ## Common Variations
 - **Count array vs hashmap:** fixed alphabet → array (O(1) space); arbitrary values → map.
 - **Bucket by frequency:** counts are ≤ n, so `buckets[count]` gives an O(n) "sort by frequency" (0347, 0274).
@@ -119,7 +141,10 @@ for i, suf := n-1, 1; i >= 0; i-- {
 - **Two maps for a bijection:** forward and reverse mapping (0205, 0290).
 - **Swap-with-last delete:** map + array for O(1) remove and random access (0380).
 - **Voting / cancellation:** O(1)-space majority (0169).
-- **String building:** split/join or a builder; in-place reversal tricks (0151, 0189).
+- **String building:** split/join or a builder; in-place reversal tricks (0151, 0189, 0557).
+- **Prefix sums:** range queries in O(1) (0303, 0304); count with a map (0560), remainders (0974), longest with first index (0525).
+- **Index as hash:** cyclic placement (0041) or sign marking (0448) when values fit in 1..n.
+- **String periodicity:** KMP prefix function gives the period (0459) and the longest palindromic prefix (0214).
 
 ## ⚠️ Pitfalls
 - **C++ `map[key]` inserts** a default on read; use `find`/`count` for lookups.
@@ -143,17 +168,33 @@ for i, suf := n-1, 1; i >= 0; i-- {
 | 0217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Hash set | ✅ |
 | 0242 | [Valid Anagram](0242-valid-anagram/) | Easy | Frequency count | ✅ |
 | 0290 | [Word Pattern](0290-word-pattern/) | Easy | Two-way mapping | ✅ |
+| 0303 | [Range Sum Query - Immutable](0303-range-sum-query-immutable/) | Easy | Prefix sums | ✅ |
 | 0383 | [Ransom Note](0383-ransom-note/) | Easy | Frequency count | ✅ |
+| 0448 | [Find All Numbers Disappeared in an Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Sign marking (index as hash) | ✅ |
+| 0459 | [Repeated Substring Pattern](0459-repeated-substring-pattern/) | Easy | Divisor check / KMP period | ✅ |
+| 0557 | [Reverse Words in a String III](0557-reverse-words-in-a-string-iii/) | Easy | Reverse each word in place | ✅ |
 | 0006 | [Zigzag Conversion](0006-zigzag-conversion/) | Medium | Row simulation | ✅ |
 | 0012 | [Integer to Roman](0012-integer-to-roman/) | Medium | Greedy over value table | ✅ |
+| 0031 | [Next Permutation](0031-next-permutation/) | Medium | Pivot, swap, reverse suffix | ✅ |
 | 0036 | [Valid Sudoku](0036-valid-sudoku/) | Medium | Hash sets per row/col/box | ✅ |
 | 0049 | [Group Anagrams](0049-group-anagrams/) | Medium | Hashmap with canonical key | ✅ |
 | 0128 | [Longest Consecutive Sequence](0128-longest-consecutive-sequence/) | Medium | Hash set, start-of-run | ✅ |
 | 0151 | [Reverse Words in a String](0151-reverse-words-in-a-string/) | Medium | Split + reverse | ✅ |
+| 0187 | [Repeated DNA Sequences](0187-repeated-dna-sequences/) | Medium | Fixed window + set / 2-bit rolling | ✅ |
 | 0189 | [Rotate Array](0189-rotate-array/) | Medium | Reverse in place | ✅ |
+| 0229 | [Majority Element II](0229-majority-element-ii/) | Medium | Boyer-Moore, two candidates | ✅ |
 | 0238 | [Product of Array Except Self](0238-product-of-array-except-self/) | Medium | Prefix & suffix products | ✅ |
+| 0249 | [Group Shifted Strings](0249-group-shifted-strings/) | Medium | Canonical gap key | ✅ |
 | 0271 | [Encode and Decode Strings](0271-encode-and-decode-strings/) | Medium | Length-prefix encoding | ✅ |
 | 0274 | [H-Index](0274-h-index/) | Medium | Sort / counting | ✅ |
+| 0304 | [Range Sum Query 2D - Immutable](0304-range-sum-query-2d-immutable/) | Medium | 2-D prefix sums | ✅ |
 | 0347 | [Top K Frequent Elements](0347-top-k-frequent-elements/) | Medium | Bucket sort / heap | ✅ |
 | 0380 | [Insert Delete GetRandom O(1)](0380-insert-delete-getrandom-o1/) | Medium | Hashmap + array, swap-delete | ✅ |
+| 0418 | [Sentence Screen Fitting](0418-sentence-screen-fitting/) | Medium | Joined-sentence pointer | ✅ |
+| 0525 | [Contiguous Array](0525-contiguous-array/) | Medium | Prefix balance + first-index map | ✅ |
+| 0560 | [Subarray Sum Equals K](0560-subarray-sum-equals-k/) | Medium | Prefix sum + count map | ✅ |
+| 0890 | [Find and Replace Pattern](0890-find-and-replace-pattern/) | Medium | Bijection, two maps | ✅ |
+| 0974 | [Subarray Sums Divisible by K](0974-subarray-sums-divisible-by-k/) | Medium | Prefix remainder counts | ✅ |
+| 0041 | [First Missing Positive](0041-first-missing-positive/) | Hard | Cyclic placement (index as hash) | ✅ |
 | 0068 | [Text Justification](0068-text-justification/) | Hard | Greedy line packing | ✅ |
+| 0214 | [Shortest Palindrome](0214-shortest-palindrome/) | Hard | KMP on s + # + reverse(s) | ✅ |
