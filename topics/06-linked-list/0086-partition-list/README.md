@@ -91,6 +91,6 @@ Relink the existing nodes into two chains, then join them.
 - The cycle bug from not terminating the second chain.
 
 ## Follow-ups
-- **Group by odd/even position:** same two-chain idea: LC 0328 Odd Even Linked List (not added yet)
+- **Group by odd/even position:** same two-chain idea: [LC 0328 Odd Even Linked List](../0328-odd-even-linked-list/)
 - **Three-way partition (Dutch flag) on an array:** [LC 0075 Sort Colors](../../02-two-pointers/0075-sort-colors/)
 - **Array version with a pivot:** LC 2161 Partition Array According to Given Pivot (not added yet)

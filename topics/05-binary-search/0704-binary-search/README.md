@@ -95,4 +95,4 @@ Inclusive [lo, hi], `while lo <= hi`, shrink past mid on each miss.
 - **Return the insert position if missing:** [LC 0035 Search Insert Position](../0035-search-insert-position/)
 - **With duplicates, first and last index:** [LC 0034 Find First and Last Position](../0034-find-first-and-last-position-of-element-in-sorted-array/)
 - **Sorted 2-D matrix:** [LC 0074 Search a 2D Matrix](../0074-search-a-2d-matrix/)
-- **Unknown size (reader API):** double hi until reader.get(hi) ≥ target, then search: LC 0702 Search in a Sorted Array of Unknown Size (not added yet)
+- **Unknown size (reader API):** double hi until reader.get(hi) ≥ target, then search: [LC 0702 Search in a Sorted Array of Unknown Size](../0702-search-in-a-sorted-array-of-unknown-size/)

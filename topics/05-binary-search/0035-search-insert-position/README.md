@@ -96,4 +96,4 @@ Half-open [lo, hi) with hi = n; `hi = mid` keeps mid as a candidate.
 ## Follow-ups
 - **Exact match only:** [LC 0704 Binary Search](../0704-binary-search/)
 - **First and last occurrence with duplicates:** [LC 0034 Find First and Last Position](../0034-find-first-and-last-position-of-element-in-sorted-array/)
-- **Same template on a predicate:** LC 0278 First Bad Version (not added yet)
+- **Same template on a predicate:** [LC 0278 First Bad Version](../0278-first-bad-version/)

@@ -88,4 +88,4 @@ Only ever holds one candidate per row (at most k rows).
 ## Follow-ups
 - **Kth smallest in a sorted matrix:** the same frontier, or binary search on value: LC 0378 Kth Smallest Element in a Sorted Matrix (not added yet)
 - **Merge k sorted lists:** [LC 0023 Merge k Sorted Lists](../../06-linked-list/0023-merge-k-sorted-lists/)
-- **k-th smallest pair distance:** binary search on the answer + two pointers: LC 0719 Find K-th Smallest Pair Distance (not added yet)
+- **k-th smallest pair distance:** binary search on the answer + two pointers: [LC 0719 Find K-th Smallest Pair Distance](../../05-binary-search/0719-find-k-th-smallest-pair-distance/)

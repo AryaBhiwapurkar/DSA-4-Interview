@@ -101,6 +101,6 @@ For width = 1, 2, 4, …: walk the list, cut off two runs of `width`, merge them
 
 ## Follow-ups
 - **Merge step on its own:** [LC 0021 Merge Two Sorted Lists](../0021-merge-two-sorted-lists/)
-- **Simpler but O(n²):** LC 0147 Insertion Sort List (not added yet)
+- **Simpler but O(n²):** [LC 0147 Insertion Sort List](../0147-insertion-sort-list/)
 - **Merge many lists:** [LC 0023 Merge k Sorted Lists](../0023-merge-k-sorted-lists/)
 - **Quicksort on a list:** possible (partition into three lists) but worst case O(n²).

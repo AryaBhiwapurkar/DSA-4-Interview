@@ -104,5 +104,5 @@ Reverse the rest, then `head.next.next = head; head.next = null`. Elegant, but u
 ## Follow-ups
 - **Reverse only positions left..right:** [LC 0092 Reverse Linked List II](../0092-reverse-linked-list-ii/)
 - **Reverse in groups of k:** [LC 0025 Reverse Nodes in k-Group](../0025-reverse-nodes-in-k-group/)
-- **Palindrome check in O(1) space:** reverse the second half: LC 0234 Palindrome Linked List (not added yet)
+- **Palindrome check in O(1) space:** reverse the second half: [LC 0234 Palindrome Linked List](../0234-palindrome-linked-list/)
 - **Interleave first and reversed second half:** [LC 0143 Reorder List](../0143-reorder-list/)

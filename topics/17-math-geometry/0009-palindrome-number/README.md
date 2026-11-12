@@ -98,4 +98,4 @@ Even length: x == rev (12 == 12) → **true**. For `x = 10`, the trailing-zero c
 ## Follow-ups
 - **Reverse with overflow checks:** [LC 0007 Reverse Integer](../../18-bit-manipulation/0007-reverse-integer/)
 - **String palindrome, skipping non-alphanumerics:** [LC 0125 Valid Palindrome](../../02-two-pointers/0125-valid-palindrome/)
-- **Palindrome linked list:** LC 0234 Palindrome Linked List (not added yet). Reverse the second half.
+- **Palindrome linked list:** [LC 0234 Palindrome Linked List](../../06-linked-list/0234-palindrome-linked-list/). Reverse the second half.

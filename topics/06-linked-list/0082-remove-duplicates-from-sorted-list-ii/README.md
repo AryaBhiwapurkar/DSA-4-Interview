@@ -94,6 +94,6 @@ Uses sortedness: duplicates are contiguous.
 - Mention the counting approach for unsorted input.
 
 ## Follow-ups
-- **Keep one copy of each:** LC 0083 Remove Duplicates from Sorted List (not added yet)
+- **Keep one copy of each:** [LC 0083 Remove Duplicates from Sorted List](../0083-remove-duplicates-from-sorted-list/)
 - **Array version, keep one:** [LC 0026 Remove Duplicates from Sorted Array](../../02-two-pointers/0026-remove-duplicates-from-sorted-array/)
 - **Unsorted list:** count first: LC 1836 Remove Duplicates From an Unsorted Linked List (not added yet)

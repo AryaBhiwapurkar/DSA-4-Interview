@@ -92,6 +92,6 @@ Move toward the uphill side; the range always contains a peak.
 - Correct bounds so mid+1 never overflows the array.
 
 ## Follow-ups
-- **Exactly one peak (mountain array):** same code: LC 0852 Peak Index in a Mountain Array (not added yet)
+- **Exactly one peak (mountain array):** same code: [LC 0852 Peak Index in a Mountain Array](../0852-peak-index-in-a-mountain-array/)
 - **2-D grid peak:** binary search on columns, take the max of each column: LC 1901 Find a Peak Element II (not added yet)
 - **Same "compare with a neighbour/edge" trick:** [LC 0153 Find Minimum in Rotated Sorted Array](../0153-find-minimum-in-rotated-sorted-array/)

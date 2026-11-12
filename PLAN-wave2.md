@@ -1,6 +1,6 @@
 # Wave 2 Plan: Interview Problems Beyond NC150 / TI150
 
-Status: **in progress.** 185 problems in 9 batches, worked topic by topic. Batches 1-2 done (2026-11-12).
+Status: **in progress.** 185 problems in 9 batches, worked topic by topic. Batches 1-3 done (2026-11-12).
 
 ## Decisions
 - One list: the old Tier 1 and Tier 2 are merged. Rare and near-duplicate problems (old Tier 3) are **left out** and stay as "(not added yet)" mentions.
@@ -16,7 +16,7 @@ Status: **in progress.** 185 problems in 9 batches, worked topic by topic. Batch
 |-------|--------|----------|
 | 1 ✅ | 01 Arrays & Hashing, 02 Two Pointers | 23 |
 | 2 ✅ | 03 Sliding Window, 04 Stack | 21 |
-| 3 | 05 Binary Search, 06 Linked List | 22 |
+| 3 ✅ | 05 Binary Search, 06 Linked List | 22 |
 | 4 | 07 Trees | 24 |
 | 5 | 08 Tries, 09 Heap, 10 Backtracking | 21 |
 | 6 | 11 Graphs, 12 Advanced Graphs | 17 |
@@ -88,30 +88,30 @@ Each batch gets one commit per topic, then one "index, cheatsheets, backfill" co
 ## Batch 3
 
 ### 05 Binary Search (12)
-- [ ] 0278 First Bad Version
-- [ ] 0852 Peak Index in a Mountain Array
-- [ ] 0367 Valid Perfect Square
-- [ ] 0410 Split Array Largest Sum
-- [ ] 1011 Capacity To Ship Packages Within D Days
-- [ ] 1283 Find the Smallest Divisor Given a Threshold
-- [ ] 0240 Search a 2D Matrix II
-- [ ] 0081 Search in Rotated Sorted Array II
-- [ ] 0154 Find Minimum in Rotated Sorted Array II
-- [ ] 0275 H-Index II
-- [ ] 0702 Search in a Sorted Array of Unknown Size (P)
-- [ ] 0719 Find K-th Smallest Pair Distance
+- [x] 0278 First Bad Version
+- [x] 0852 Peak Index in a Mountain Array
+- [x] 0367 Valid Perfect Square
+- [x] 0410 Split Array Largest Sum
+- [x] 1011 Capacity To Ship Packages Within D Days
+- [x] 1283 Find the Smallest Divisor Given a Threshold
+- [x] 0240 Search a 2D Matrix II
+- [x] 0081 Search in Rotated Sorted Array II
+- [x] 0154 Find Minimum in Rotated Sorted Array II
+- [x] 0275 H-Index II
+- [x] 0702 Search in a Sorted Array of Unknown Size (P)
+- [x] 0719 Find K-th Smallest Pair Distance
 
 ### 06 Linked List (10)
-- [ ] 0142 Linked List Cycle II
-- [ ] 0234 Palindrome Linked List
-- [ ] 0876 Middle of the Linked List
-- [ ] 0160 Intersection of Two Linked Lists *
-- [ ] 0024 Swap Nodes in Pairs
-- [ ] 0328 Odd Even Linked List
-- [ ] 0445 Add Two Numbers II
-- [ ] 0083 Remove Duplicates from Sorted List
-- [ ] 0147 Insertion Sort List
-- [ ] 0430 Flatten a Multilevel Doubly Linked List
+- [x] 0142 Linked List Cycle II
+- [x] 0234 Palindrome Linked List
+- [x] 0876 Middle of the Linked List
+- [x] 0160 Intersection of Two Linked Lists *
+- [x] 0024 Swap Nodes in Pairs
+- [x] 0328 Odd Even Linked List
+- [x] 0445 Add Two Numbers II
+- [x] 0083 Remove Duplicates from Sorted List
+- [x] 0147 Insertion Sort List
+- [x] 0430 Flatten a Multilevel Doubly Linked List
 
 ## Batch 4
 

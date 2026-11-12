@@ -100,7 +100,7 @@ Lower-bound search for the first k with hours(k) ≤ h.
 - Generalize: "minimize the max / minimum capacity / smallest divisor" all use this template.
 
 ## Follow-ups
-- **Ship packages in D days:** search capacity in [max, sum]: LC 1011 Capacity To Ship Packages Within D Days (not added yet)
-- **Split array into k parts minimizing the largest sum:** LC 0410 Split Array Largest Sum (not added yet)
-- **Smallest divisor under a threshold:** identical structure: LC 1283 Find the Smallest Divisor Given a Threshold (not added yet)
+- **Ship packages in D days:** search capacity in [max, sum]: [LC 1011 Capacity To Ship Packages Within D Days](../1011-capacity-to-ship-packages-within-d-days/)
+- **Split array into k parts minimizing the largest sum:** [LC 0410 Split Array Largest Sum](../0410-split-array-largest-sum/)
+- **Smallest divisor under a threshold:** identical structure: [LC 1283 Find the Smallest Divisor Given a Threshold](../1283-find-the-smallest-divisor-given-a-threshold/)
 - **Simpler binary search on the answer:** [LC 0069 Sqrt(x)](../0069-sqrtx/)

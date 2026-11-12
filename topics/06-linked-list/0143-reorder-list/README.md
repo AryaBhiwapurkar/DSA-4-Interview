@@ -96,6 +96,6 @@ Three O(n) passes, constant memory.
 
 ## Follow-ups
 - **Reverse a list:** [LC 0206 Reverse Linked List](../0206-reverse-linked-list/)
-- **Find the middle:** LC 0876 Middle of the Linked List (not added yet)
-- **Palindrome check with the same split + reverse:** LC 0234 Palindrome Linked List (not added yet)
+- **Find the middle:** [LC 0876 Middle of the Linked List](../0876-middle-of-the-linked-list/)
+- **Palindrome check with the same split + reverse:** [LC 0234 Palindrome Linked List](../0234-palindrome-linked-list/)
 - **Merge two lists by value instead of alternating:** [LC 0021 Merge Two Sorted Lists](../0021-merge-two-sorted-lists/)

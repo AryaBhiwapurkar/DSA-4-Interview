@@ -93,5 +93,5 @@ Return 2.
 ## Follow-ups
 - **Allow at most two copies:** compare with nums[k-2]: [LC 0080 Remove Duplicates from Sorted Array II](../0080-remove-duplicates-from-sorted-array-ii/)
 - **Remove a given value instead:** [LC 0027 Remove Element](../0027-remove-element/)
-- **Same on a sorted linked list:** LC 0083 Remove Duplicates from Sorted List (not added yet)
+- **Same on a sorted linked list:** [LC 0083 Remove Duplicates from Sorted List](../../06-linked-list/0083-remove-duplicates-from-sorted-list/)
 - **Unsorted input:** needs a hash set to track seen values (O(n) space).

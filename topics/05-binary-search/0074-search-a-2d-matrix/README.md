@@ -95,6 +95,6 @@ One search with index mapping. (Two searches, first the row and then the column,
 - O(log(m·n)) = O(log m + log n), the same as the two-search version.
 
 ## Follow-ups
-- **Rows and columns sorted independently:** staircase O(m + n): LC 0240 Search a 2D Matrix II (not added yet)
+- **Rows and columns sorted independently:** staircase O(m + n): [LC 0240 Search a 2D Matrix II](../0240-search-a-2d-matrix-ii/)
 - **Kth smallest in a row/col-sorted matrix:** heap or binary search on value: LC 0378 Kth Smallest Element in a Sorted Matrix (not added yet)
 - **1-D version:** [LC 0704 Binary Search](../0704-binary-search/)

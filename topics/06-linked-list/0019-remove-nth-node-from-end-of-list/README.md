@@ -96,7 +96,7 @@ Fast leads by n; when fast hits the last node, slow is the predecessor.
 - Exact loop bounds explained with a tiny example.
 
 ## Follow-ups
-- **Find the middle:** fast moves 2, slow moves 1: LC 0876 Middle of the Linked List (not added yet)
+- **Find the middle:** fast moves 2, slow moves 1: [LC 0876 Middle of the Linked List](../0876-middle-of-the-linked-list/)
 - **Rotate by k (needs the k-th from the end too):** [LC 0061 Rotate List](../0061-rotate-list/)
 - **Swap the k-th from start and end:** LC 1721 Swapping Nodes in a Linked List (not added yet)
 - **n might be invalid:** check fast doesn't hit null while building the gap.

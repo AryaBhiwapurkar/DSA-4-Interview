@@ -96,6 +96,6 @@ Visit right, left, node (reverse preorder); set node.right = prev, node.left = n
 - Explain why the rightmost node of the left subtree is the predecessor of the right subtree.
 
 ## Follow-ups
-- **Doubly linked list with child pointers:** LC 0430 Flatten a Multilevel Doubly Linked List (not added yet)
+- **Doubly linked list with child pointers:** [LC 0430 Flatten a Multilevel Doubly Linked List](../../06-linked-list/0430-flatten-a-multilevel-doubly-linked-list/)
 - **Inorder version for a BST:** LC 0897 Increasing Order Search Tree (not added yet)
 - **Morris traversal in general:** O(1)-space inorder/preorder by threading rightmost pointers.

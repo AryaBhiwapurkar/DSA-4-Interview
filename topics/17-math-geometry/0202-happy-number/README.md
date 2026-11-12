@@ -92,5 +92,5 @@ The loop stopped at 4 ≠ 1 → **false**.
 
 ## Follow-ups
 - **Same cycle detection on a linked list:** [LC 0141 Linked List Cycle](../../06-linked-list/0141-linked-list-cycle/)
-- **Where does the cycle start?** LC 0142 Linked List Cycle II (not added yet)
+- **Where does the cycle start?** [LC 0142 Linked List Cycle II](../../06-linked-list/0142-linked-list-cycle-ii/)
 - **Floyd on array indices:** [LC 0287 Find the Duplicate Number](../../06-linked-list/0287-find-the-duplicate-number/)

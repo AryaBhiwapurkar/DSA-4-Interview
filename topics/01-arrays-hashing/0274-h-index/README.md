@@ -92,5 +92,5 @@ After sorting descending, h is the number of positions i (0-based) with `c[i] �
 - Notice h ≤ n and use it for a linear counting solution.
 
 ## Follow-ups
-- **Citations already sorted ascending, need O(log n):** binary search for the first i with `c[i] ≥ n - i`: LC 0275 H-Index II (not added yet)
+- **Citations already sorted ascending, need O(log n):** binary search for the first i with `c[i] ≥ n - i`: [LC 0275 H-Index II](../../05-binary-search/0275-h-index-ii/)
 - **Citations arrive as a stream:** keep counts, update h incrementally (h only increases).

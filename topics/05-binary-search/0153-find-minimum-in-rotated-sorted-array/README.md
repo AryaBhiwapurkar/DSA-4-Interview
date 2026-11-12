@@ -96,6 +96,6 @@ Compare with nums[hi], keep mid when it might be the minimum.
 
 ## Follow-ups
 - **Search a target in the rotated array:** [LC 0033 Search in Rotated Sorted Array](../0033-search-in-rotated-sorted-array/)
-- **With duplicates:** when nums[mid] == nums[hi], do hi--: LC 0154 Find Minimum in Rotated Sorted Array II (not added yet)
+- **With duplicates:** when nums[mid] == nums[hi], do hi--: [LC 0154 Find Minimum in Rotated Sorted Array II](../0154-find-minimum-in-rotated-sorted-array-ii/)
 - **How many times was it rotated?** The index of the minimum.
 - **Same "compare with a neighbour" idea:** [LC 0162 Find Peak Element](../0162-find-peak-element/)

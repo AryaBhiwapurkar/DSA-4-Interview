@@ -99,7 +99,7 @@ Two phases: meet inside the cycle, then walk from the start and the meeting poin
 - The binary-search-on-value alternative and the trade-offs of each.
 
 ## Follow-ups
-- **Cycle entry in a real linked list:** same phase 2: LC 0142 Linked List Cycle II (not added yet)
+- **Cycle entry in a real linked list:** same phase 2: [LC 0142 Linked List Cycle II](../0142-linked-list-cycle-ii/)
 - **Plain cycle detection:** [LC 0141 Linked List Cycle](../0141-linked-list-cycle/)
 - **If modification is allowed:** cyclic sort / sign marking: [LC 0448 Find All Numbers Disappeared in an Array](../../01-arrays-hashing/0448-find-all-numbers-disappeared-in-an-array/)
 - **First missing positive with the same index tricks:** [LC 0041 First Missing Positive](../../01-arrays-hashing/0041-first-missing-positive/)

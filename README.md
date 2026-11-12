@@ -9,8 +9,8 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 | NeetCode 150 (NC150) | 150 | 150 |
 | LeetCode Top Interview 150 (TI150) | 150 | 150 |
 | In both lists | 77 | 77 |
-| Wave 2: Interview Extras ([plan](PLAN-wave2.md)) | 185 | 44 |
-| **Unique total** | **408** | **267** |
+| Wave 2: Interview Extras ([plan](PLAN-wave2.md)) | 185 | 66 |
+| **Unique total** | **408** | **289** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
@@ -22,8 +22,8 @@ Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.
 | [02. Two Pointers](topics/02-two-pointers/) | 10 | 10 | 7 | 7 |
 | [03. Sliding Window](topics/03-sliding-window/) | 9 | 9 | 9 | 9 |
 | [04. Stack](topics/04-stack/) | 9 | 9 | 12 | 12 |
-| [05. Binary Search](topics/05-binary-search/) | 11 | 11 | 12 | 0 |
-| [06. Linked List](topics/06-linked-list/) | 16 | 16 | 10 | 0 |
+| [05. Binary Search](topics/05-binary-search/) | 11 | 11 | 12 | 12 |
+| [06. Linked List](topics/06-linked-list/) | 16 | 16 | 10 | 10 |
 | [07. Trees](topics/07-trees/) | 29 | 29 | 24 | 0 |
 | [08. Tries](topics/08-tries/) | 3 | 3 | 3 | 0 |
 | [09. Heap / Priority Queue](topics/09-heap-priority-queue/) | 9 | 9 | 10 | 0 |
@@ -203,22 +203,22 @@ Status: ✅ done · ⬜ not added yet. Within each table, problems are sorted Ea
 | 0981 | [Time Based Key-Value Store](topics/05-binary-search/0981-time-based-key-value-store/) | Medium | Hashmap + binary search on time | NC150 | ✅ |
 | 0004 | [Median of Two Sorted Arrays](topics/05-binary-search/0004-median-of-two-sorted-arrays/) | Hard | Binary search on partition | NC150, TI150 | ✅ |
 
-**Wave 2 extras:** 0/12 done
+**Wave 2 extras:** 12/12 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0278 | First Bad Version | Easy | Binary search for first true | Extra | ⬜ |
-| 0367 | Valid Perfect Square | Easy | Binary search on answer | Extra | ⬜ |
-| 0081 | Search in Rotated Sorted Array II | Medium | Rotated binary search with duplicates | Extra | ⬜ |
-| 0240 | Search a 2D Matrix II | Medium | Staircase search from a corner | Extra | ⬜ |
-| 0275 | H-Index II | Medium | Binary search on sorted citations | Extra | ⬜ |
-| 0702 | Search in a Sorted Array of Unknown Size | Medium | Exponential search + binary search | Extra | ⬜ |
-| 0852 | Peak Index in a Mountain Array | Medium | Binary search on slope | Extra | ⬜ |
-| 1011 | Capacity To Ship Packages Within D Days | Medium | Binary search on answer + greedy check | Extra | ⬜ |
-| 1283 | Find the Smallest Divisor Given a Threshold | Medium | Binary search on answer | Extra | ⬜ |
-| 0154 | Find Minimum in Rotated Sorted Array II | Hard | Rotated min with duplicates (hi--) | Extra | ⬜ |
-| 0410 | Split Array Largest Sum | Hard | Binary search on answer + greedy check | Extra | ⬜ |
-| 0719 | Find K-th Smallest Pair Distance | Hard | Binary search on answer + two pointers | Extra | ⬜ |
+| 0278 | [First Bad Version](topics/05-binary-search/0278-first-bad-version/) | Easy | Binary search for first true | Extra | ✅ |
+| 0367 | [Valid Perfect Square](topics/05-binary-search/0367-valid-perfect-square/) | Easy | Binary search on answer | Extra | ✅ |
+| 0081 | [Search in Rotated Sorted Array II](topics/05-binary-search/0081-search-in-rotated-sorted-array-ii/) | Medium | Rotated binary search with duplicates | Extra | ✅ |
+| 0240 | [Search a 2D Matrix II](topics/05-binary-search/0240-search-a-2d-matrix-ii/) | Medium | Staircase search from a corner | Extra | ✅ |
+| 0275 | [H-Index II](topics/05-binary-search/0275-h-index-ii/) | Medium | Binary search on sorted citations | Extra | ✅ |
+| 0702 | [Search in a Sorted Array of Unknown Size](topics/05-binary-search/0702-search-in-a-sorted-array-of-unknown-size/) | Medium | Exponential search + binary search | Extra | ✅ |
+| 0852 | [Peak Index in a Mountain Array](topics/05-binary-search/0852-peak-index-in-a-mountain-array/) | Medium | Binary search on slope | Extra | ✅ |
+| 1011 | [Capacity To Ship Packages Within D Days](topics/05-binary-search/1011-capacity-to-ship-packages-within-d-days/) | Medium | Binary search on answer + greedy check | Extra | ✅ |
+| 1283 | [Find the Smallest Divisor Given a Threshold](topics/05-binary-search/1283-find-the-smallest-divisor-given-a-threshold/) | Medium | Binary search on answer | Extra | ✅ |
+| 0154 | [Find Minimum in Rotated Sorted Array II](topics/05-binary-search/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard | Rotated min with duplicates (hi--) | Extra | ✅ |
+| 0410 | [Split Array Largest Sum](topics/05-binary-search/0410-split-array-largest-sum/) | Hard | Binary search on answer + greedy check | Extra | ✅ |
+| 0719 | [Find K-th Smallest Pair Distance](topics/05-binary-search/0719-find-k-th-smallest-pair-distance/) | Hard | Binary search on answer + two pointers | Extra | ✅ |
 
 ## 06. Linked List
 
@@ -243,20 +243,20 @@ Status: ✅ done · ⬜ not added yet. Within each table, problems are sorted Ea
 | 0023 | [Merge k Sorted Lists](topics/06-linked-list/0023-merge-k-sorted-lists/) | Hard | Min-heap / divide & conquer | NC150, TI150 | ✅ |
 | 0025 | [Reverse Nodes in k-Group](topics/06-linked-list/0025-reverse-nodes-in-k-group/) | Hard | Group reversal with dummy | NC150, TI150 | ✅ |
 
-**Wave 2 extras:** 0/10 done
+**Wave 2 extras:** 10/10 done
 
 | # | Problem | Difficulty | Pattern | Lists | Status |
 |---|---------|------------|---------|-------|--------|
-| 0083 | Remove Duplicates from Sorted List | Easy | Skip equal next nodes | Extra | ⬜ |
-| 0160 | Intersection of Two Linked Lists | Easy | Two pointers switch heads | Extra | ⬜ |
-| 0234 | Palindrome Linked List | Easy | Find middle, reverse second half | Extra | ⬜ |
-| 0876 | Middle of the Linked List | Easy | Slow/fast pointers | Extra | ⬜ |
-| 0024 | Swap Nodes in Pairs | Medium | Dummy node + pointer rewiring | Extra | ⬜ |
-| 0142 | Linked List Cycle II | Medium | Floyd, then reset one pointer | Extra | ⬜ |
-| 0147 | Insertion Sort List | Medium | Dummy head + insertion | Extra | ⬜ |
-| 0328 | Odd Even Linked List | Medium | Two chains, then join | Extra | ⬜ |
-| 0430 | Flatten a Multilevel Doubly Linked List | Medium | DFS / stack splice | Extra | ⬜ |
-| 0445 | Add Two Numbers II | Medium | Stacks / reverse, add with carry | Extra | ⬜ |
+| 0083 | [Remove Duplicates from Sorted List](topics/06-linked-list/0083-remove-duplicates-from-sorted-list/) | Easy | Skip equal next nodes | Extra | ✅ |
+| 0160 | [Intersection of Two Linked Lists](topics/06-linked-list/0160-intersection-of-two-linked-lists/) | Easy | Two pointers switch heads | Extra | ✅ |
+| 0234 | [Palindrome Linked List](topics/06-linked-list/0234-palindrome-linked-list/) | Easy | Find middle, reverse second half | Extra | ✅ |
+| 0876 | [Middle of the Linked List](topics/06-linked-list/0876-middle-of-the-linked-list/) | Easy | Slow/fast pointers | Extra | ✅ |
+| 0024 | [Swap Nodes in Pairs](topics/06-linked-list/0024-swap-nodes-in-pairs/) | Medium | Dummy node + pointer rewiring | Extra | ✅ |
+| 0142 | [Linked List Cycle II](topics/06-linked-list/0142-linked-list-cycle-ii/) | Medium | Floyd, then reset one pointer | Extra | ✅ |
+| 0147 | [Insertion Sort List](topics/06-linked-list/0147-insertion-sort-list/) | Medium | Dummy head + insertion | Extra | ✅ |
+| 0328 | [Odd Even Linked List](topics/06-linked-list/0328-odd-even-linked-list/) | Medium | Two chains, then join | Extra | ✅ |
+| 0430 | [Flatten a Multilevel Doubly Linked List](topics/06-linked-list/0430-flatten-a-multilevel-doubly-linked-list/) | Medium | DFS / stack splice | Extra | ✅ |
+| 0445 | [Add Two Numbers II](topics/06-linked-list/0445-add-two-numbers-ii/) | Medium | Stacks / reverse, add with carry | Extra | ✅ |
 
 ## 07. Trees
 

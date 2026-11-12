@@ -30,6 +30,10 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Stable partition (e.g. zeros to back) | `stable_partition(a.begin(), a.end(), pred)` | `a[:] = [x for x in a if p(x)] + [x for x in a if not p(x)]` | `slices` has none: two-pointer loop |
 | Transpose / rotate a matrix | `swap(m[r][c], m[c][r])` for `c > r`, then `reverse` each row | `m[:] = [list(r) for r in zip(*m[::-1])]` (clockwise) | swap loop, then `slices.Reverse(row)` |
 | 8 neighbours | nested `dr, dc` in `-1..1`, skip `(0, 0)` | `[(dr, dc) for dr in (-1,0,1) for dc in (-1,0,1) if (dr, dc) != (0, 0)]` | nested loops, skip `0, 0` |
+| Concatenate two arrays | `a.insert(a.end(), b.begin(), b.end());` | `a + b` (new) / `a.extend(b)` | `a = append(a, b...)` |
+| Every other element | loop with `i += 2` | `a[0::2]`, `a[1::2]` | loop with `i += 2` |
+| All pairs i < j | nested loops `j = i + 1` | `itertools.combinations(a, 2)` | nested loops |
+| k-th smallest without a full sort | `nth_element(a.begin(), a.begin() + k, a.end()); a[k]` (avg O(n)) | `heapq.nsmallest(k + 1, a)[-1]` / `sorted(a)[k]` | `slices.Sort(a); a[k]` |
 
 ## Hashmap
 
@@ -134,6 +138,8 @@ func (h *IntHeap) Pop() any {
 | New node | `new ListNode(x)` | `ListNode(x)` | `&ListNode{Val: x}` |
 | Dummy head | `ListNode dummy; ListNode* tail = &dummy;` | `dummy = tail = ListNode()` | `dummy := &ListNode{}; tail := dummy` |
 | Append + advance | `tail = tail->next = p;` | `tail.next = p; tail = p` | `tail.Next = p; tail = p` |
+| Prepend (build in reverse) | `head = new ListNode(d, head);` | `head = ListNode(d, head)` | `head = &ListNode{Val: d, Next: head}` |
+| Splice x between a and b (doubly linked) | `x->prev = a; x->next = b; a->next = x; if (b) b->prev = x;` | same four assignments | same four assignments |
 | Null check | `if (!p)` / `while (p)` | `if not p:` / `while p:` | `if p == nil` / `for p != nil` |
 | Walk | `for (auto p = head; p; p = p->next)` | `while p: ...; p = p.next` | `for p := head; p != nil; p = p.Next {` |
 | Reverse step (one line) | n/a (use a temp) | `c.next, prev, c = prev, c, c.next` | `c.Next, prev, c = prev, c, c.Next` |
@@ -224,6 +230,7 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 | Min / max | `min(a, b)`, `max({a, b, c})` | `min(a, b, c)` | `min(a, b, c)` (built-in, Go 1.21+) |
 | Quotient + remainder | `a / b`, `a % b` | `q, r = divmod(a, b)` | `a / b`, `a % b` |
 | Ceil division (positive) | `(a + b - 1) / b` (widen first) | `(a + b - 1) // b` or `-(-a // b)` | `(a + b - 1) / b` |
+| Integer square root | binary search with `long long` mid*mid (`sqrt` can be off by one) | `math.isqrt(n)` | binary search, or `int(math.Sqrt(float64(n)))` then adjust |
 | Truncating division | `a / b` | `int(a / b)` (`//` floors!) | `a / b` |
 | Float division of ints | `double(a) / b` | `a / b` | `float64(a) / float64(b)` |
 | Counting down safely | use `int i`, not `size_t` (wraps below 0) | n/a | `len()` is a signed `int` |

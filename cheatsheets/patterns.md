@@ -94,6 +94,15 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Unsorted but "any local peak"** -> Compare mid with mid+1, go uphill (0162)
 - **Versions per key, "latest at or before t"** -> Hashmap of sorted lists + upper bound - 1 (0981)
 - **Median / kth of two sorted arrays in log time** -> Binary search the partition of the shorter array (0004)
+- **"First version where it breaks", expensive check** -> First-true binary search, `lo < hi`, hi = mid (0278); mountain peak via slope (0852)
+- **Is n a perfect square, no sqrt** -> Binary search r with 64-bit r*r, or Newton (0367)
+- **"Minimise the maximum" over contiguous pieces/days** -> Binary search the cap in [max, sum] + greedy count (0410, 1011)
+- **Smallest divisor/speed under a budget of ceilings** -> Binary search on d with (x + d - 1) / d (1283)
+- **Rows AND columns sorted (not chained)** -> Staircase from top-right, O(m + n) (0240)
+- **Rotated array with duplicates** -> Shrink ends when lo = mid = hi (0081); hi-- on ties for the min (0154)
+- **Sorted, citation-style "h of n"** -> First i with c[i] >= n - i; answer n - i (0275)
+- **Sorted array, unknown length** -> Double hi until get(hi) >= target, then search (0702)
+- **k-th smallest pair distance / implicit sorted set** -> Binary search the value + two-pointer count <= mid (0719)
 
 ## Linked List
 - **Cycle / middle / nth from end** -> Fast & slow pointers (0141, 0019)
@@ -109,6 +118,16 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Stable partition / remove runs** -> Two dummy chains (0086); dummy + skip whole run (0082)
 - **Sort a linked list** -> Merge sort; split with fast = head.next (0148)
 - **Big numbers as digit lists** -> Digit-wise add with carry, loop while l1 or l2 or carry (0002)
+- **Digits most-significant first** -> Two stacks + prepend result nodes (0445)
+- **Where does the cycle start** -> Floyd, then one pointer from head, both speed 1 (0142)
+- **Palindrome list in O(1) space** -> Mid + reverse back half + compare + restore (0234)
+- **Middle node (second middle)** -> while fast and fast.next (0876)
+- **Where do two lists merge** -> Two pointers that switch to the other head at null (0160)
+- **Swap / rewire in fixed-size groups** -> Dummy + per-pair rewiring (0024); k-group (0025)
+- **Group by position parity** -> Odd and even tails leapfrog, then join (0328)
+- **Sorted list, keep one copy** -> Unlink equal successors, don't advance after unlinking (0083)
+- **Insertion sort on a list** -> Splice each node into a dummy-headed sorted list (0147)
+- **Nested child lists** -> Splice child between node and next; pre-order (0430)
 
 ## Trees
 - **Depth / height / path property** -> DFS returning a value up, global for the answer (0104, 0124)

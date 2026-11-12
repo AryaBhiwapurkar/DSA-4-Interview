@@ -93,7 +93,7 @@ Dummy node + groupPrev; check, reverse, reconnect, advance.
 - O(1) extra space.
 
 ## Follow-ups
-- **k = 2 specifically:** LC 0024 Swap Nodes in Pairs (not added yet)
+- **k = 2 specifically:** [LC 0024 Swap Nodes in Pairs](../0024-swap-nodes-in-pairs/)
 - **Reverse one range:** [LC 0092 Reverse Linked List II](../0092-reverse-linked-list-ii/)
 - **Reverse the leftover group too:** drop the existence check (reverse min(k, remaining)).
 - **Recursive version:** reverse the first k, then `first.next = reverseKGroup(rest, k)`; O(n/k) stack.

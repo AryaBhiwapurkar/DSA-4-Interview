@@ -98,5 +98,5 @@ Decide the sorted half at each step and test the target against its range.
 
 ## Follow-ups
 - **Find the minimum / rotation point:** [LC 0153 Find Minimum in Rotated Sorted Array](../0153-find-minimum-in-rotated-sorted-array/)
-- **With duplicates:** shrink lo++ and hi-- when the ends equal mid; O(n) worst case: LC 0081 Search in Rotated Sorted Array II (not added yet)
+- **With duplicates:** shrink lo++ and hi-- when the ends equal mid; O(n) worst case: [LC 0081 Search in Rotated Sorted Array II](../0081-search-in-rotated-sorted-array-ii/)
 - **Plain sorted array:** [LC 0704 Binary Search](../0704-binary-search/)
