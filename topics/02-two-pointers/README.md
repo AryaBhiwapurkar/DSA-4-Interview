@@ -107,6 +107,10 @@ out = append(append(out, a[i:]...), b[j:]...)
 - **Keep at most m copies:** compare with `nums[k-m]` (0026, 0080).
 - **Skip junk while converging:** non-alphanumerics in palindromes (0125).
 - **Swap with end:** O(1) removal when order doesn't matter (0027).
+- **Three-way partition:** lo/mid/hi Dutch flag; don't advance mid after swapping with hi (0075).
+- **Closest instead of exact:** same pointer moves, track the best distance (0016).
+- **One allowed mistake:** at the first mismatch, branch both ways once (0680).
+- **Many subsequence queries:** advance all words together with per-char buckets (0792).
 
 ## ⚠️ Pitfalls
 - **Sortedness is required** for converging pair sums; sorting loses original indices unless you keep (value, index) pairs.
@@ -124,9 +128,16 @@ out = append(append(out, a[i:]...), b[j:]...)
 | 0027 | [Remove Element](0027-remove-element/) | Easy | Read/write pointers | ✅ |
 | 0088 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Merge from the back | ✅ |
 | 0125 | [Valid Palindrome](0125-valid-palindrome/) | Easy | Converging pointers | ✅ |
+| 0283 | [Move Zeroes](0283-move-zeroes/) | Easy | Read/write pointers | ✅ |
 | 0392 | [Is Subsequence](0392-is-subsequence/) | Easy | Two pointers on two strings | ✅ |
+| 0680 | [Valid Palindrome II](0680-valid-palindrome-ii/) | Easy | Converging, one skip | ✅ |
+| 0977 | [Squares of a Sorted Array](0977-squares-of-a-sorted-array/) | Easy | Converging, fill from back | ✅ |
 | 0011 | [Container With Most Water](0011-container-with-most-water/) | Medium | Converging, move shorter side | ✅ |
 | 0015 | [3Sum](0015-3sum/) | Medium | Sort + fix one + two pointers | ✅ |
+| 0016 | [3Sum Closest](0016-3sum-closest/) | Medium | Sort + fix one + two pointers | ✅ |
+| 0018 | [4Sum](0018-4sum/) | Medium | Sort + fix two + two pointers | ✅ |
+| 0075 | [Sort Colors](0075-sort-colors/) | Medium | Dutch national flag | ✅ |
 | 0080 | [Remove Duplicates from Sorted Array II](0080-remove-duplicates-from-sorted-array-ii/) | Medium | Read/write, compare k back | ✅ |
 | 0167 | [Two Sum II - Input Array Is Sorted](0167-two-sum-ii-input-array-is-sorted/) | Medium | Converging pointers on sorted | ✅ |
+| 0792 | [Number of Matching Subsequences](0792-number-of-matching-subsequences/) | Medium | Waiting buckets per next char | ✅ |
 | 0042 | [Trapping Rain Water](0042-trapping-rain-water/) | Hard | Two pointers with running max | ✅ |
