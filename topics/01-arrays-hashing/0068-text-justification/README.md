@@ -105,6 +105,6 @@ Line 1 of example 3, `maxWidth = 20`: words "Science"(7) "is"(2) "what"(4) "we"(
 - All special cases handled without a mess of flags.
 
 ## Follow-ups
-- **How many times does a sentence fit on a screen:** LC 0418 Sentence Screen Fitting (not added yet)
+- **How many times does a sentence fit on a screen:** [LC 0418 Sentence Screen Fitting](../0418-sentence-screen-fitting/)
 - **Minimize raggedness (Knuth-Plass style):** DP over break points, O(n²), instead of greedy.
 - **Center-justify:** split the padding between both sides of the line.

@@ -100,6 +100,6 @@ Final candidate: 2.
 - Mention the verification pass when no majority is guaranteed.
 
 ## Follow-ups
-- **Elements appearing more than n/3 times:** two candidates: LC 0229 Majority Element II (not added yet)
+- **Elements appearing more than n/3 times:** two candidates: [LC 0229 Majority Element II](../0229-majority-element-ii/)
 - **No guarantee a majority exists:** add a second counting pass.
 - **Stream of numbers:** Boyer-Moore works online with O(1) memory.

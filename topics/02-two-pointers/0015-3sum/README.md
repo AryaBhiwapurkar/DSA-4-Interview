@@ -99,7 +99,7 @@ sorted = `[-4,-1,-1,0,1,2]`, i = 1 (a[i] = -1, need sum 0)
 - Correct O(n²) analysis (the sort is dominated).
 
 ## Follow-ups
-- **Closest sum to a target:** same loop, track the best |sum - target|: LC 0016 3Sum Closest (not added yet)
-- **Four numbers:** add one more fixed index (O(n³)), use 64-bit sums: LC 0018 4Sum (not added yet)
+- **Closest sum to a target:** same loop, track the best |sum - target|: [LC 0016 3Sum Closest](../0016-3sum-closest/)
+- **Four numbers:** add one more fixed index (O(n³)), use 64-bit sums: [LC 0018 4Sum](../0018-4sum/)
 - **Count triplets with sum < target:** when sum < target, add r - l and move l.
 - **Base problem:** [LC 0167 Two Sum II](../0167-two-sum-ii-input-array-is-sorted/)

@@ -25,6 +25,9 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Replace contents in place | `a = b;` (by-ref param) | `a[:] = b` (not `a = b`) | `copy(a, b)` |
 | Consecutive pairs | `for (i = 1; i < n; i++)` use `a[i-1], a[i]` | `for x, y in zip(a, a[1:]):` | `for i := 1; i < len(a); i++` |
 | Any / all match | `any_of(a.begin(), a.end(), pred)` / `all_of` | `any(p(x) for x in a)` / `all(...)` | `slices.ContainsFunc(a, pred)` / loop |
+| Prefix sums with leading 0 | `partial_sum(a.begin(), a.end(), P.begin() + 1)` on `P(n + 1)` | `list(accumulate(a, initial=0))` | loop: `P[i+1] = P[i] + a[i]` |
+| Next permutation in place | `next_permutation(a.begin(), a.end())` (false after wrapping) | no built-in: pivot + swap + reverse | no built-in |
+| Stable partition (e.g. zeros to back) | `stable_partition(a.begin(), a.end(), pred)` | `a[:] = [x for x in a if p(x)] + [x for x in a if not p(x)]` | `slices` has none: two-pointer loop |
 | Transpose / rotate a matrix | `swap(m[r][c], m[c][r])` for `c > r`, then `reverse` each row | `m[:] = [list(r) for r in zip(*m[::-1])]` (clockwise) | swap loop, then `slices.Reverse(row)` |
 | 8 neighbours | nested `dr, dc` in `-1..1`, skip `(0, 0)` | `[(dr, dc) for dr in (-1,0,1) for dc in (-1,0,1) if (dr, dc) != (0, 0)]` | nested loops, skip `0, 0` |
 
@@ -54,6 +57,7 @@ C++17 (`#include <bits/stdc++.h>`), Python 3.10+, Go (stdlib only).
 | Contains | `s.count(x)` | `x in s` | `_, ok := s[x]` |
 | Remove | `s.erase(x);` | `s.discard(x)` | `delete(s, x)` |
 | Insert + "was it new?" | `s.insert(x).second` | `if x not in s: s.add(x)` | `if _, ok := s[x]; !ok { s[x] = struct{}{} }` |
+| Fixed-width string key for a tuple | append `char('a' + v)` per element | `tuple(values)` | `string(byteSlice)` or `[k]int` array key |
 | Build from list | `unordered_set<int> s(a.begin(), a.end());` | `set(a)` | loop over `a` |
 | Bool set (small domain) | `bool seen[256] = {};` | `[False] * 256` | `var seen [256]bool` |
 | Ordered set | `set<int>` (`lower_bound`) | `sorted()` + `bisect` | sorted slice + `sort.SearchInts` |
@@ -213,6 +217,7 @@ Python and Go strings are immutable; C++ `std::string` is mutable.
 | Avoid overflow in product/sum | `(long long)a * b` | not needed | `int64(a) * int64(b)` if using `int32` |
 | Integer division toward | zero (`-7/2 == -3`) | floor (`-7//2 == -4`) | zero (`-7/2 == -3`) |
 | Modulo of negative | `-7 % 3 == -1` | `-7 % 3 == 2` | `-7 % 3 == -1` |
+| Non-negative remainder | `(a % k + k) % k` | `a % k` (already 0..k-1 for k > 0) | `(a%k + k) % k` |
 | Overflow pre-check for r*10 + d | `r > INT_MAX / 10 \|\| (r == INT_MAX / 10 && d > 7)` | not needed (check range at the end) | same as C++ with `math.MaxInt32` |
 | Min / max | `min(a, b)`, `max({a, b, c})` | `min(a, b, c)` | `min(a, b, c)` (built-in, Go 1.21+) |
 | Quotient + remainder | `a / b`, `a % b` | `q, r = divmod(a, b)` | `a / b`, `a % b` |

@@ -103,5 +103,5 @@ Grow r, shrink l while valid, record the minimum.
 
 ## Follow-ups
 - **Negatives allowed, sum ≥ k:** prefix sums + monotonic deque: LC 0862 Shortest Subarray with Sum at Least K (not added yet)
-- **Count subarrays with sum exactly k (negatives allowed):** prefix sums + hashmap: LC 0560 Subarray Sum Equals K (not added yet)
+- **Count subarrays with sum exactly k (negatives allowed):** prefix sums + hashmap: [LC 0560 Subarray Sum Equals K](../../01-arrays-hashing/0560-subarray-sum-equals-k/)
 - **Shortest window covering characters:** [LC 0076 Minimum Window Substring](../0076-minimum-window-substring/)

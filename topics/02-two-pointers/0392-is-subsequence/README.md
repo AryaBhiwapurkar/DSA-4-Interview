@@ -93,6 +93,6 @@ End: i = 1 ≠ 3, false.
 - A good answer to the "many s" follow-up (index + binary search).
 
 ## Follow-ups
-- **Count how many words are subsequences of s:** bucket words by their next needed char: LC 0792 Number of Matching Subsequences (not added yet)
+- **Count how many words are subsequences of s:** bucket words by their next needed char: [LC 0792 Number of Matching Subsequences](../0792-number-of-matching-subsequences/)
 - **Longest common subsequence of two strings:** 2-D DP: [LC 1143 Longest Common Subsequence](../../14-2d-dp/1143-longest-common-subsequence/)
 - **Count distinct ways s appears as a subsequence of t:** [LC 0115 Distinct Subsequences](../../14-2d-dp/0115-distinct-subsequences/)

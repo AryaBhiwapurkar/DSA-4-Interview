@@ -1,6 +1,6 @@
 # Wave 2 Plan: Interview Problems Beyond NC150 / TI150
 
-Status: **approved, not started.** 185 problems in 9 batches, worked topic by topic.
+Status: **in progress.** 185 problems in 9 batches, worked topic by topic. Batch 1 done (2026-11-12).
 
 ## Decisions
 - One list: the old Tier 1 and Tier 2 are merged. Rare and near-duplicate problems (old Tier 3) are **left out** and stay as "(not added yet)" mentions.
@@ -14,7 +14,7 @@ Status: **approved, not started.** 185 problems in 9 batches, worked topic by to
 
 | Batch | Topics | Problems |
 |-------|--------|----------|
-| 1 | 01 Arrays & Hashing, 02 Two Pointers | 23 |
+| 1 ✅ | 01 Arrays & Hashing, 02 Two Pointers | 23 |
 | 2 | 03 Sliding Window, 04 Stack | 21 |
 | 3 | 05 Binary Search, 06 Linked List | 22 |
 | 4 | 07 Trees | 24 |
@@ -32,31 +32,31 @@ Each batch gets one commit per topic, then one "index, cheatsheets, backfill" co
 ## Batch 1
 
 ### 01 Arrays & Hashing (16)
-- [ ] 0560 Subarray Sum Equals K
-- [ ] 0303 Range Sum Query - Immutable
-- [ ] 0304 Range Sum Query 2D - Immutable *
-- [ ] 0525 Contiguous Array *
-- [ ] 0974 Subarray Sums Divisible by K *
-- [ ] 0041 First Missing Positive
-- [ ] 0229 Majority Element II
-- [ ] 0448 Find All Numbers Disappeared in an Array
-- [ ] 0031 Next Permutation
-- [ ] 0187 Repeated DNA Sequences *
-- [ ] 0459 Repeated Substring Pattern
-- [ ] 0214 Shortest Palindrome
-- [ ] 0249 Group Shifted Strings (P)
-- [ ] 0418 Sentence Screen Fitting (P)
-- [ ] 0557 Reverse Words in a String III
-- [ ] 0890 Find and Replace Pattern
+- [x] 0560 Subarray Sum Equals K
+- [x] 0303 Range Sum Query - Immutable
+- [x] 0304 Range Sum Query 2D - Immutable *
+- [x] 0525 Contiguous Array *
+- [x] 0974 Subarray Sums Divisible by K *
+- [x] 0041 First Missing Positive
+- [x] 0229 Majority Element II
+- [x] 0448 Find All Numbers Disappeared in an Array
+- [x] 0031 Next Permutation
+- [x] 0187 Repeated DNA Sequences *
+- [x] 0459 Repeated Substring Pattern
+- [x] 0214 Shortest Palindrome
+- [x] 0249 Group Shifted Strings (P)
+- [x] 0418 Sentence Screen Fitting (P)
+- [x] 0557 Reverse Words in a String III
+- [x] 0890 Find and Replace Pattern
 
 ### 02 Two Pointers (7)
-- [ ] 0283 Move Zeroes
-- [ ] 0977 Squares of a Sorted Array
-- [ ] 0016 3Sum Closest
-- [ ] 0018 4Sum
-- [ ] 0075 Sort Colors
-- [ ] 0680 Valid Palindrome II
-- [ ] 0792 Number of Matching Subsequences
+- [x] 0283 Move Zeroes
+- [x] 0977 Squares of a Sorted Array
+- [x] 0016 3Sum Closest
+- [x] 0018 4Sum
+- [x] 0075 Sort Colors
+- [x] 0680 Valid Palindrome II
+- [x] 0792 Number of Matching Subsequences
 
 ## Batch 2
 

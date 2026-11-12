@@ -43,7 +43,7 @@ def find_done() -> dict[int, str]:
 
 DONE = find_done()
 
-# topic | number | title | difficulty | pattern | lists (N = NeetCode 150, T = Top Interview 150)
+# topic | number | title | difficulty | pattern | lists (N = NeetCode 150, T = Top Interview 150, X = Interview Extras / wave 2)
 DATA = """
 1|217|Contains Duplicate|E|Hash set|N
 1|242|Valid Anagram|E|Frequency count|NT
@@ -268,6 +268,29 @@ DATA = """
 18|67|Add Binary|E|Carry addition|T
 18|137|Single Number II|M|Bit counting mod 3|T
 18|201|Bitwise AND of Numbers Range|M|Common prefix|T
+1|560|Subarray Sum Equals K|M|Prefix sum + count map|X
+1|303|Range Sum Query - Immutable|E|Prefix sums|X
+1|304|Range Sum Query 2D - Immutable|M|2-D prefix sums|X
+1|525|Contiguous Array|M|Prefix balance + first-index map|X
+1|974|Subarray Sums Divisible by K|M|Prefix remainder counts|X
+1|41|First Missing Positive|H|Cyclic placement (index as hash)|X
+1|229|Majority Element II|M|Boyer-Moore, two candidates|X
+1|448|Find All Numbers Disappeared in an Array|E|Sign marking (index as hash)|X
+1|31|Next Permutation|M|Pivot, swap, reverse suffix|X
+1|187|Repeated DNA Sequences|M|Fixed window + set / 2-bit rolling|X
+1|459|Repeated Substring Pattern|E|Divisor check / KMP period|X
+1|214|Shortest Palindrome|H|KMP on s + # + reverse(s)|X
+1|249|Group Shifted Strings|M|Canonical gap key|X
+1|418|Sentence Screen Fitting|M|Joined-sentence pointer|X
+1|557|Reverse Words in a String III|E|Reverse each word in place|X
+1|890|Find and Replace Pattern|M|Bijection, two maps|X
+2|283|Move Zeroes|E|Read/write pointers|X
+2|977|Squares of a Sorted Array|E|Converging, fill from back|X
+2|16|3Sum Closest|M|Sort + fix one + two pointers|X
+2|18|4Sum|M|Sort + fix two + two pointers|X
+2|75|Sort Colors|M|Dutch national flag|X
+2|680|Valid Palindrome II|E|Converging, one skip|X
+2|792|Number of Matching Subsequences|M|Waiting buckets per next char|X
 """
 
 DIFF = {"E": "Easy", "M": "Medium", "H": "Hard"}
@@ -283,6 +306,7 @@ dups = [n for n, c in nums.items() if c > 1]
 nc = sum("N" in r[5] for r in rows)
 ti = sum("T" in r[5] for r in rows)
 both = sum(r[5] == "NT" for r in rows)
+xx = sum("X" in r[5] for r in rows)
 if dups or nc != 150 or ti != 150:
     sys.exit(f"bad data: dups={dups} nc={nc} ti={ti}")
 
@@ -294,18 +318,19 @@ if unindexed:
 
 
 def lists_str(s):
-    return ", ".join(x for x, f in (("NC150", "N"), ("TI150", "T")) if f in s)
+    return ", ".join(x for x, f in (("NC150", "N"), ("TI150", "T"), ("Extra", "X")) if f in s)
 
 
 out = []
 out.append("# DSA-4-Interview\n")
-out.append("Personal DSA interview revision repo. Each problem has an interview-style README plus C++, Python, and Go solutions. See [CLAUDE.md](CLAUDE.md) for conventions.\n")
+out.append("Personal DSA interview revision repo. Each problem has an interview-style README plus C++ and Python solutions (Go too for problems added before November 2026). See [CLAUDE.md](CLAUDE.md) for conventions.\n")
 out.append("## Progress\n")
 out.append("| List | Problems | Done |")
 out.append("|------|---------:|-----:|")
 out.append(f"| NeetCode 150 (NC150) | {nc} | {sum(1 for r in rows if 'N' in r[5] and r[1] in DONE)} |")
 out.append(f"| LeetCode Top Interview 150 (TI150) | {ti} | {sum(1 for r in rows if 'T' in r[5] and r[1] in DONE)} |")
 out.append(f"| In both lists | {both} | {sum(1 for r in rows if r[5] == 'NT' and r[1] in DONE)} |")
+out.append(f"| Interview Extras (wave 2: 185 planned, see [PLAN-wave2.md](PLAN-wave2.md)) | {xx} | {sum(1 for r in rows if 'X' in r[5] and r[1] in DONE)} |")
 out.append(f"| **Unique total** | **{total}** | **{done}** |")
 out.append("")
 out.append("Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)\n")
@@ -330,4 +355,4 @@ for i, (folder, name) in enumerate(TOPICS, 1):
     out.append("")
 
 (ROOT / "README.md").write_text("\n".join(out))
-print(f"README.md: nc={nc} ti={ti} both={both} total={total} done={done}")
+print(f"README.md: nc={nc} ti={ti} both={both} extras={xx} total={total} done={done}")

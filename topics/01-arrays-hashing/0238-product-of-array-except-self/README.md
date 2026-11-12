@@ -103,4 +103,4 @@ Pass 1 writes prefix products into `ans`. Pass 2 goes right to left with `suffix
 ## Follow-ups
 - **Division allowed?** Count zeros: 0 zeros → total/nums[i]; 1 zero → only that index gets the product of the rest; 2+ zeros → all 0.
 - **Same left/right max idea:** [LC 0042 Trapping Rain Water](../../02-two-pointers/0042-trapping-rain-water/)
-- **Range products/sums with many queries:** prefix arrays: LC 0303 Range Sum Query - Immutable (not added yet)
+- **Range products/sums with many queries:** prefix arrays: [LC 0303 Range Sum Query - Immutable](../0303-range-sum-query-immutable/)

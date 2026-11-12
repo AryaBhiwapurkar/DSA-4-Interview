@@ -93,6 +93,6 @@ For each x, if `x != val`, write `nums[k++] = x`.
 - Bonus: mention the swap-with-end variant and when it's better.
 
 ## Follow-ups
-- **Move all zeros to the end, keep order:** LC 0283 Move Zeroes (not added yet)
+- **Move all zeros to the end, keep order:** [LC 0283 Move Zeroes](../0283-move-zeroes/)
 - **Remove duplicates from a sorted array:** [LC 0026](../0026-remove-duplicates-from-sorted-array/)
 - **C++ idiom:** `nums.erase(remove(nums.begin(), nums.end(), val), nums.end())` is exactly Approach 1.

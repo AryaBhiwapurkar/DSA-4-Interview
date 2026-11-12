@@ -18,7 +18,17 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Rotate array / reverse word order in place** -> Reverse all, then reverse the parts (0189, 0151)
 - **Find a substring** -> Brute window; KMP (LPS array) for guaranteed O(n+m) (0028)
 - **Roman numerals / formatting rules** -> Lookup table + greedy or look-ahead (0013, 0012)
-- **Write text in a pattern / justify lines** -> Simulate rows or lines directly (0006, 0068)
+- **Write text in a pattern / justify lines** -> Simulate rows or lines directly (0006, 0068); repeated sentence on a screen -> pointer into the joined sentence (0418)
+- **Count subarrays with sum k, negatives allowed** -> Prefix sum + hashmap of prefix counts, seed {0: 1} (0560)
+- **Many range-sum queries on a fixed array/grid** -> Prefix sums with a zero pad row/col; 2-D uses inclusion-exclusion (0303, 0304)
+- **Longest subarray with equal 0s and 1s / sum k** -> 0 -> -1, prefix + first-index map, seed {0: -1} (0525)
+- **Subarray sum divisible by k** -> Count equal prefix remainders; normalise negative % in C++ (0974)
+- **Values in 1..n, find missing/duplicates, O(1) space** -> Index as hash: cyclic placement or sign marking (0041, 0448)
+- **Elements above n/3 (n/k)** -> Boyer-Moore with 2 (k-1) candidates + verify pass (0229)
+- **Next lexicographic arrangement** -> Rightmost a[i] < a[i+1], swap with rightmost larger, reverse suffix (0031)
+- **Repeated fixed-length substrings** -> Set of windows; 2-bit rolling code for DNA (0187)
+- **Is the string a repeated block / longest palindromic prefix** -> KMP prefix function (0459, 0214)
+- **Group strings equal up to a shift / letter bijection** -> Canonical key: gaps mod 26, first-occurrence signature or two maps (0249, 0890)
 
 ## Two Pointers
 - **Sorted array + pair/target** -> Two pointers converging (0167, 0015)
@@ -30,6 +40,12 @@ Read the problem, spot the signal, pick the pattern. Numbers are LC problems in 
 - **Keep at most m copies in a sorted array** -> Read/write, compare with nums[k-m] (0026, 0080)
 - **Is s a subsequence of t** -> One pointer per string, greedy match (0392)
 - **Three/four numbers summing to target** -> Sort, fix one, two-pointer the rest, skip duplicates (0015)
+- **Move zeros / filter in place, keep order** -> Read/write pointers with swap (0283)
+- **Sorted array, transform makes ends largest (squares)** -> Converging pointers, fill result from the back (0977)
+- **Sum closest to target / four numbers** -> Sort + fix one or two + two pointers; long long for 4Sum (0016, 0018)
+- **Three distinct values, sort in one pass** -> Dutch national flag lo/mid/hi (0075)
+- **Palindrome with one deletion allowed** -> Converging; on first mismatch try skipping either side (0680)
+- **Many words: which are subsequences of s** -> Bucket words by next needed char, one pass over s (0792)
 
 ## Sliding Window
 - **Longest/shortest contiguous subarray/substring with a constraint** -> Variable window, grow right, shrink left (0003, 0076)

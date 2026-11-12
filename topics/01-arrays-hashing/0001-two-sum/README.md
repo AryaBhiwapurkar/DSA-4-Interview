@@ -108,7 +108,7 @@ For each element, check whether `target - x` is in the map. If it is, return bot
 ## Follow-ups
 - **Input is sorted?** Use two pointers for O(1) space: [LC 0167 Two Sum II](../../02-two-pointers/0167-two-sum-ii-input-array-is-sorted/)
 - **Find all unique triplets summing to 0:** [LC 0015 3Sum](../../02-two-pointers/0015-3sum/)
-- **Four numbers, with overflow concerns:** LC 0018 4Sum (not added yet)
+- **Four numbers, with overflow concerns:** [LC 0018 4Sum](../../02-two-pointers/0018-4sum/)
 - **Input is a BST:** LC 0653 Two Sum IV (not added yet)
 - **Numbers arrive as a stream (add/find design):** LC 0170 Two Sum III. Trade-off between a fast `add` and a fast `find`.
 - **Return all pairs or count pairs:** a hashmap of counts, with duplicate handling.

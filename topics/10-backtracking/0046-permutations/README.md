@@ -96,6 +96,6 @@ For position `i`, swap each `j ≥ i` into slot `i`, recurse on `i + 1`, swap ba
 
 ## Follow-ups
 - **Input has duplicates:** LC 0047 Permutations II (not added yet): sort, and skip `nums[i] == nums[i-1] && !used[i-1]`.
-- **Next lexicographic permutation in place:** LC 0031 Next Permutation (not added yet)
+- **Next lexicographic permutation in place:** [LC 0031 Next Permutation](../../01-arrays-hashing/0031-next-permutation/)
 - **k-th permutation directly:** LC 0060 Permutation Sequence (factorial number system) (not added yet)
 - **Subsets instead:** [LC 0078 Subsets](../0078-subsets/)

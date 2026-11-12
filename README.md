@@ -1,6 +1,6 @@
 # DSA-4-Interview
 
-Personal DSA interview revision repo. Each problem has an interview-style README plus C++, Python, and Go solutions. See [CLAUDE.md](CLAUDE.md) for conventions.
+Personal DSA interview revision repo. Each problem has an interview-style README plus C++ and Python solutions (Go too for problems added before November 2026). See [CLAUDE.md](CLAUDE.md) for conventions.
 
 ## Progress
 
@@ -9,7 +9,8 @@ Personal DSA interview revision repo. Each problem has an interview-style README
 | NeetCode 150 (NC150) | 150 | 150 |
 | LeetCode Top Interview 150 (TI150) | 150 | 150 |
 | In both lists | 77 | 77 |
-| **Unique total** | **223** | **223** |
+| Interview Extras (wave 2: 185 planned, see [PLAN-wave2.md](PLAN-wave2.md)) | 23 | 23 |
+| **Unique total** | **246** | **246** |
 
 Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.md)
 
@@ -17,8 +18,8 @@ Cheatsheets: [patterns](cheatsheets/patterns.md) · [syntax](cheatsheets/syntax.
 
 | Topic | Problems | Done |
 |-------|---------:|-----:|
-| [01. Arrays & Hashing](topics/01-arrays-hashing/) | 24 | 24 |
-| [02. Two Pointers](topics/02-two-pointers/) | 10 | 10 |
+| [01. Arrays & Hashing](topics/01-arrays-hashing/) | 40 | 40 |
+| [02. Two Pointers](topics/02-two-pointers/) | 17 | 17 |
 | [03. Sliding Window](topics/03-sliding-window/) | 9 | 9 |
 | [04. Stack](topics/04-stack/) | 9 | 9 |
 | [05. Binary Search](topics/05-binary-search/) | 11 | 11 |
@@ -52,20 +53,36 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0217 | [Contains Duplicate](topics/01-arrays-hashing/0217-contains-duplicate/) | Easy | Hash set | NC150 | ✅ |
 | 0242 | [Valid Anagram](topics/01-arrays-hashing/0242-valid-anagram/) | Easy | Frequency count | NC150, TI150 | ✅ |
 | 0290 | [Word Pattern](topics/01-arrays-hashing/0290-word-pattern/) | Easy | Two-way mapping | TI150 | ✅ |
+| 0303 | [Range Sum Query - Immutable](topics/01-arrays-hashing/0303-range-sum-query-immutable/) | Easy | Prefix sums | Extra | ✅ |
 | 0383 | [Ransom Note](topics/01-arrays-hashing/0383-ransom-note/) | Easy | Frequency count | TI150 | ✅ |
+| 0448 | [Find All Numbers Disappeared in an Array](topics/01-arrays-hashing/0448-find-all-numbers-disappeared-in-an-array/) | Easy | Sign marking (index as hash) | Extra | ✅ |
+| 0459 | [Repeated Substring Pattern](topics/01-arrays-hashing/0459-repeated-substring-pattern/) | Easy | Divisor check / KMP period | Extra | ✅ |
+| 0557 | [Reverse Words in a String III](topics/01-arrays-hashing/0557-reverse-words-in-a-string-iii/) | Easy | Reverse each word in place | Extra | ✅ |
 | 0006 | [Zigzag Conversion](topics/01-arrays-hashing/0006-zigzag-conversion/) | Medium | Row simulation | TI150 | ✅ |
 | 0012 | [Integer to Roman](topics/01-arrays-hashing/0012-integer-to-roman/) | Medium | Greedy over value table | TI150 | ✅ |
+| 0031 | [Next Permutation](topics/01-arrays-hashing/0031-next-permutation/) | Medium | Pivot, swap, reverse suffix | Extra | ✅ |
 | 0036 | [Valid Sudoku](topics/01-arrays-hashing/0036-valid-sudoku/) | Medium | Hash sets per row/col/box | NC150, TI150 | ✅ |
 | 0049 | [Group Anagrams](topics/01-arrays-hashing/0049-group-anagrams/) | Medium | Hashmap with canonical key | NC150, TI150 | ✅ |
 | 0128 | [Longest Consecutive Sequence](topics/01-arrays-hashing/0128-longest-consecutive-sequence/) | Medium | Hash set, start-of-run | NC150, TI150 | ✅ |
 | 0151 | [Reverse Words in a String](topics/01-arrays-hashing/0151-reverse-words-in-a-string/) | Medium | Split + reverse | TI150 | ✅ |
+| 0187 | [Repeated DNA Sequences](topics/01-arrays-hashing/0187-repeated-dna-sequences/) | Medium | Fixed window + set / 2-bit rolling | Extra | ✅ |
 | 0189 | [Rotate Array](topics/01-arrays-hashing/0189-rotate-array/) | Medium | Reverse in place | TI150 | ✅ |
+| 0229 | [Majority Element II](topics/01-arrays-hashing/0229-majority-element-ii/) | Medium | Boyer-Moore, two candidates | Extra | ✅ |
 | 0238 | [Product of Array Except Self](topics/01-arrays-hashing/0238-product-of-array-except-self/) | Medium | Prefix & suffix products | NC150, TI150 | ✅ |
+| 0249 | [Group Shifted Strings](topics/01-arrays-hashing/0249-group-shifted-strings/) | Medium | Canonical gap key | Extra | ✅ |
 | 0271 | [Encode and Decode Strings](topics/01-arrays-hashing/0271-encode-and-decode-strings/) | Medium | Length-prefix encoding | NC150 | ✅ |
 | 0274 | [H-Index](topics/01-arrays-hashing/0274-h-index/) | Medium | Sort / counting | TI150 | ✅ |
+| 0304 | [Range Sum Query 2D - Immutable](topics/01-arrays-hashing/0304-range-sum-query-2d-immutable/) | Medium | 2-D prefix sums | Extra | ✅ |
 | 0347 | [Top K Frequent Elements](topics/01-arrays-hashing/0347-top-k-frequent-elements/) | Medium | Bucket sort / heap | NC150 | ✅ |
 | 0380 | [Insert Delete GetRandom O(1)](topics/01-arrays-hashing/0380-insert-delete-getrandom-o1/) | Medium | Hashmap + array, swap-delete | TI150 | ✅ |
+| 0418 | [Sentence Screen Fitting](topics/01-arrays-hashing/0418-sentence-screen-fitting/) | Medium | Joined-sentence pointer | Extra | ✅ |
+| 0525 | [Contiguous Array](topics/01-arrays-hashing/0525-contiguous-array/) | Medium | Prefix balance + first-index map | Extra | ✅ |
+| 0560 | [Subarray Sum Equals K](topics/01-arrays-hashing/0560-subarray-sum-equals-k/) | Medium | Prefix sum + count map | Extra | ✅ |
+| 0890 | [Find and Replace Pattern](topics/01-arrays-hashing/0890-find-and-replace-pattern/) | Medium | Bijection, two maps | Extra | ✅ |
+| 0974 | [Subarray Sums Divisible by K](topics/01-arrays-hashing/0974-subarray-sums-divisible-by-k/) | Medium | Prefix remainder counts | Extra | ✅ |
+| 0041 | [First Missing Positive](topics/01-arrays-hashing/0041-first-missing-positive/) | Hard | Cyclic placement (index as hash) | Extra | ✅ |
 | 0068 | [Text Justification](topics/01-arrays-hashing/0068-text-justification/) | Hard | Greedy line packing | TI150 | ✅ |
+| 0214 | [Shortest Palindrome](topics/01-arrays-hashing/0214-shortest-palindrome/) | Hard | KMP on s + # + reverse(s) | Extra | ✅ |
 
 ## 02. Two Pointers
 
@@ -75,11 +92,18 @@ Status: ✅ done · ⬜ not added yet. Within each topic, problems are sorted Ea
 | 0027 | [Remove Element](topics/02-two-pointers/0027-remove-element/) | Easy | Read/write pointers | TI150 | ✅ |
 | 0088 | [Merge Sorted Array](topics/02-two-pointers/0088-merge-sorted-array/) | Easy | Merge from the back | TI150 | ✅ |
 | 0125 | [Valid Palindrome](topics/02-two-pointers/0125-valid-palindrome/) | Easy | Converging pointers | NC150, TI150 | ✅ |
+| 0283 | [Move Zeroes](topics/02-two-pointers/0283-move-zeroes/) | Easy | Read/write pointers | Extra | ✅ |
 | 0392 | [Is Subsequence](topics/02-two-pointers/0392-is-subsequence/) | Easy | Two pointers on two strings | TI150 | ✅ |
+| 0680 | [Valid Palindrome II](topics/02-two-pointers/0680-valid-palindrome-ii/) | Easy | Converging, one skip | Extra | ✅ |
+| 0977 | [Squares of a Sorted Array](topics/02-two-pointers/0977-squares-of-a-sorted-array/) | Easy | Converging, fill from back | Extra | ✅ |
 | 0011 | [Container With Most Water](topics/02-two-pointers/0011-container-with-most-water/) | Medium | Converging, move shorter side | NC150, TI150 | ✅ |
 | 0015 | [3Sum](topics/02-two-pointers/0015-3sum/) | Medium | Sort + fix one + two pointers | NC150, TI150 | ✅ |
+| 0016 | [3Sum Closest](topics/02-two-pointers/0016-3sum-closest/) | Medium | Sort + fix one + two pointers | Extra | ✅ |
+| 0018 | [4Sum](topics/02-two-pointers/0018-4sum/) | Medium | Sort + fix two + two pointers | Extra | ✅ |
+| 0075 | [Sort Colors](topics/02-two-pointers/0075-sort-colors/) | Medium | Dutch national flag | Extra | ✅ |
 | 0080 | [Remove Duplicates from Sorted Array II](topics/02-two-pointers/0080-remove-duplicates-from-sorted-array-ii/) | Medium | Read/write, compare k back | TI150 | ✅ |
 | 0167 | [Two Sum II - Input Array Is Sorted](topics/02-two-pointers/0167-two-sum-ii-input-array-is-sorted/) | Medium | Converging pointers on sorted | NC150, TI150 | ✅ |
+| 0792 | [Number of Matching Subsequences](topics/02-two-pointers/0792-number-of-matching-subsequences/) | Medium | Waiting buckets per next char | Extra | ✅ |
 | 0042 | [Trapping Rain Water](topics/02-two-pointers/0042-trapping-rain-water/) | Hard | Two pointers with running max | NC150, TI150 | ✅ |
 
 ## 03. Sliding Window

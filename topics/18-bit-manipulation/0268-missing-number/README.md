@@ -98,5 +98,5 @@ Expected sum minus actual sum. Fine in Python; in C++ widen to long long for saf
 
 ## Follow-ups
 - **Every number twice except one:** [LC 0136 Single Number](../0136-single-number/)
-- **Smallest missing positive, unsorted with junk:** LC 0041 First Missing Positive (not added yet). In-place index marking.
+- **Smallest missing positive, unsorted with junk:** [LC 0041 First Missing Positive](../../01-arrays-hashing/0041-first-missing-positive/). In-place index marking.
 - **One duplicate instead of one missing:** [LC 0287 Find the Duplicate Number](../../06-linked-list/0287-find-the-duplicate-number/)

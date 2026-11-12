@@ -102,5 +102,5 @@ Key = the 26 counts (e.g. "1#0#0#...") or a tuple of counts. Strictly linear in 
 
 ## Follow-ups
 - **Just check two strings:** [LC 0242 Valid Anagram](../0242-valid-anagram/)
-- **Group strings that are shifts of each other ("abc", "bcd"):** key = differences between adjacent letters mod 26: LC 0249 Group Shifted Strings (not added yet)
+- **Group strings that are shifts of each other ("abc", "bcd"):** key = differences between adjacent letters mod 26: [LC 0249 Group Shifted Strings](../0249-group-shifted-strings/)
 - **Unicode / very long strings:** count key with a hashmap of counts, or sort runes.

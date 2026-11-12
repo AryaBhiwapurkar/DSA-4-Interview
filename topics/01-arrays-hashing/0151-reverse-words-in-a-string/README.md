@@ -95,5 +95,5 @@ Reverse the whole buffer; then walk it with a write pointer, copying each word (
 
 ## Follow-ups
 - **Words are already single-spaced in a char array, do it in place:** LC 0186 Reverse Words in a String II (not added yet)
-- **Reverse the letters of each word, keep word order:** LC 0557 Reverse Words in a String III (not added yet)
+- **Reverse the letters of each word, keep word order:** [LC 0557 Reverse Words in a String III](../0557-reverse-words-in-a-string-iii/)
 - **Same reversal trick on numbers:** [LC 0189 Rotate Array](../0189-rotate-array/)

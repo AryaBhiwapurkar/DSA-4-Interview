@@ -94,5 +94,5 @@ Walk both strings; if `s[i]` is mapped, it must map to `t[i]`; if `t[i]` is mapp
 
 ## Follow-ups
 - **Words instead of characters:** [LC 0290 Word Pattern](../0290-word-pattern/)
-- **Filter a list of words matching a pattern:** LC 0890 Find and Replace Pattern (not added yet)
+- **Filter a list of words matching a pattern:** [LC 0890 Find and Replace Pattern](../0890-find-and-replace-pattern/)
 - **Group strings that are isomorphic to each other:** use the first-occurrence signature as a hashmap key.

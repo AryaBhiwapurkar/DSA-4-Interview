@@ -90,5 +90,5 @@ LPS for KMP on `needle = "aabaaa"`: `[0,1,0,1,2,2]`.
 
 ## Follow-ups
 - **Linear time guarantee:** KMP (Approach 2) or Rabin-Karp rolling hash.
-- **Is the string made of a repeated substring:** KMP's LPS array: LC 0459 Repeated Substring Pattern (not added yet)
-- **Shortest palindrome by adding chars in front:** LPS on `s + "#" + reverse(s)`: LC 0214 Shortest Palindrome (not added yet)
+- **Is the string made of a repeated substring:** KMP's LPS array: [LC 0459 Repeated Substring Pattern](../0459-repeated-substring-pattern/)
+- **Shortest palindrome by adding chars in front:** LPS on `s + "#" + reverse(s)`: [LC 0214 Shortest Palindrome](../0214-shortest-palindrome/)
